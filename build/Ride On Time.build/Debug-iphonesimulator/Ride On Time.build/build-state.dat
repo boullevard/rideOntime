@@ -1,0 +1,2119 @@
+TRide On Time
+v7
+r0
+t300940068.163081
+cCheck dependencies
+cProcessInfoPlistFile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Info.plist" "Ride On Time-Info.plist"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib"
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib"
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/Default.png" Default.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/Icon.png" Icon.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/7.png" 7.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/123.png" 123.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/456.png" 456.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/ACE.png" ACE.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/BDFM.png" BDFM.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/G.png" G.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/JZ.png" JZ.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/L.png" L.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/NQR.png" NQR.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/S.png" S.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/SIR.png" SIR.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/subway_icon.png" subway_icon.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/rail_icon.png" rail_icon.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/bus_icon.png" bus_icon.png
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/bridge_icon.png" bridge_icon.png
+cCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib"
+cCpResource "build/Debug-iphonesimulator/Ride On Time.app/DefaultView.png" DefaultView.png
+cProcessPCH "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch.gch" "Ride On Time_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time" normal i386
+cGenerateDSYMFile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app.dSYM" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time"
+cTouch "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004BD236930000000000000110
+t1272067731
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004BD2001C0000000000193D80
+t1272053788
+s1654144
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BD1CD90000000000026F020
+t1272040848
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004BD1D4D20000000000061790
+t1272042706
+s399248
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BD1FFC200000000002A96A0
+t1272053698
+s2791072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BD20471000000000222E640
+t1272054897
+s35841600
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C3624AB0000000000000132
+t1278616747
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004BFF3B7600000000001C8900
+t1275018102
+s1870080
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004BFF44C00000000000068F90
+t1275020480
+s429968
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m
+c000000004BD1C1580000000000001BF7
+t1272037720
+s7159
+i"CXMLDocument.h"
+i<libxml/parser.h>
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLElement.h"
+i"CTidy.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.h
+c000000004BD1C15800000000000005FE
+t1272037720
+s1534
+i"CXMLDocument.h"
+i<libxml/parser.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m
+c000000004BD1C158000000000000067A
+t1272037720
+s1658
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m
+c000000004BD1C158000000000000112F
+t1272037720
+s4399
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m
+c000000004BD1C1580000000000000850
+t1272037720
+s2128
+i"CXMLElement_CreationExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m
+c000000004BD1C1580000000000000668
+t1272037720
+s1640
+i"CXMLElement_ElementTreeExtensions.h"
+i"CXMLElement_CreationExtensions.h"
+i"CXMLNode_CreationExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m
+c000000004BD1C1580000000000002257
+t1272037720
+s8791
+i"CXMLNode.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument.h"
+i"CXMLElement.h"
+i<libxml/xpath.h>
+i<libxml/xpathInternals.h>
+i<libxml/xmlIO.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.h
+c000000004BD1C1580000000000000624
+t1272037720
+s1572
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m
+c000000004BD1C1580000000000000A9F
+t1272037720
+s2719
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLElement.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m
+c000000004BD1C1580000000000000B1C
+t1272037720
+s2844
+i"CXMLNode_XPathExtensions.h"
+i"CXMLDocument.h"
+i"CXMLNode_PrivateExtensions.h"
+i<libxml/xpath.h>
+i<libxml/xpathInternals.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.h
+c000000004BD1C1580000000000000814
+t1272037720
+s2068
+i"CXMLDocument.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m
+c000000004BD1C1580000000000000720
+t1272037720
+s1824
+i"CXMLDocument_CreationExtensions.h"
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.h
+c000000004BD1C1580000000000000954
+t1272037720
+s2388
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m
+c000000004BD1C1580000000000000FE7
+t1272037720
+s4071
+i"CXMLNode_CreationExtensions.h"
+i"CXMLDocument.h"
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.h
+c000000004BD1C1580000000000000762
+t1272037720
+s1890
+i<Foundation/Foundation.h>
+i"tidy.h"
+i"buffio.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m
+c000000004BD1C1580000000000001D6D
+t1272037720
+s7533
+i"CTidy.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/TouchXML.h
+c000000004BD1C15800000000000005F3
+t1272037720
+s1523
+i"CXMLDocument.h"
+i"CXMLDocument_CreationExtensions.h"
+i"CXMLElement.h"
+i"CXMLElement_CreationExtensions.h"
+i"CXMLElement_ElementTreeExtensions.h"
+i"CXMLNode.h"
+i"CXMLNode_CreationExtensions.h"
+i"CXMLNode_XPathExtensions.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/123.png
+c000000004C332C160000000000000471
+t1278422038
+s1137
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/456.png
+c000000004C332B2C00000000000004CD
+t1278421804
+s1229
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/7.png
+c000000004C332C960000000000000252
+t1278422166
+s594
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/ACE.png
+c000000004C332B6C00000000000004D3
+t1278421868
+s1235
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/BDFM.png
+c000000004C332EBD0000000000000562
+t1278422717
+s1378
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.h
+c000000004C2FF4C000000000000003BA
+t1278211264
+s954
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.m
+c000000004C3FC2810000000000002EE1
+t1279246977
+s12001
+i"BTViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.xib
+c000000004C2AAE670000000000004453
+t1277865575
+s17491
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.h
+c000000004C2FF19400000000000003C2
+t1278210452
+s962
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.m
+c000000004C3FC1090000000000002B45
+t1279246601
+s11077
+i"BusTableViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.xib
+c000000004C2382B5000000000000450B
+t1277395637
+s17675
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/Line.h
+c000000004C2D048B00000000000002DD
+t1278018699
+s733
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/Line.m
+c000000004C198EDD000000000000016B
+t1276743389
+s363
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/MetroNorthViewController.xib
+c000000004C2A9C5C000000000000446B
+t1277860956
+s17515
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.h
+c000000004C367C3700000000000004C3
+t1278639159
+s1219
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.m
+c000000004C3FC3A30000000000003881
+t1279247267
+s14465
+i"RailsViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.xib
+c000000004C367C4600000000000049D3
+t1278639174
+s18899
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceDetailViewController.h
+c000000004C2CFCDA00000000000002CF
+t1278016730
+s719
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceDetailViewController.m
+c000000004C3A3D1C0000000000000783
+t1278885148
+s1923
+i"ServiceDetailViewController.h"
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.h
+c000000004C3A3F5A0000000000000235
+t1278885722
+s565
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.m
+c000000004C3A445F0000000000000C30
+t1278887007
+s3120
+i"SubwayServiceDetailViewController.h"
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.xib
+c000000004C3A3DDB00000000000047BB
+t1278885339
+s18363
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.h
+c000000004C3FB4110000000000000362
+t1279243281
+s866
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m
+c000000004C3FC0970000000000002D24
+t1279246487
+s11556
+i"SubwayViewController.h"
+i"TouchXML.h"
+i"SubwayServiceDetailViewController.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.h
+c000000004C3FC052000000000000054F
+t1279246418
+s1359
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m
+c000000004C3FC18C0000000000001799
+t1279246732
+s6041
+i"TabAppDelegate.h"
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Default.png
+c000000004C2E77EB0000000000003AA4
+t1278113771
+s15012
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/DefaultView.png
+c000000004C3B0F9F0000000000003A18
+t1278939039
+s14872
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/G.png
+c000000004C332EE20000000000000295
+t1278422754
+s661
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Icon.png
+c000000004C2F58A9000000000000094E
+t1278171305
+s2382
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/JZ.png
+c000000004C332C650000000000000383
+t1278422117
+s899
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/L.png
+c000000004C332CB100000000000001F7
+t1278422193
+s503
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/MainWindow.xib
+c000000004C3B105F000000000000BC66
+t1278939231
+s48230
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/NQR.png
+c000000004C332E160000000000000472
+t1278422550
+s1138
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/Ride On Time_Prefix.pch
+c000000004C1D197900000000000000AF
+t1276975481
+s175
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/S.png
+c000000004C332E370000000000000294
+t1278422583
+s660
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/SIR.png
+c000000004C332E7900000000000002DC
+t1278422649
+s732
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/ServiceDetailView.xib
+c000000004C38AD320000000000004BB0
+t1278782770
+s19376
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/SubwayViewController.xib
+c000000004C2FF012000000000000450B
+t1278210066
+s17675
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/bridge_icon.png
+c000000004C334C66000000000000038E
+t1278430310
+s910
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app
+t1279247268
+s1054
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app.dSYM
+t1279247268
+s102
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/123.png
+t1278782659
+s1137
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/456.png
+t1278782659
+s1229
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/7.png
+t1278782659
+s594
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/ACE.png
+t1278782659
+s1235
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/BDFM.png
+t1278782659
+s1378
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/BTViewController.nib
+t1278782695
+s1538
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/BusTableViewController.nib
+t1278782694
+s1542
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Default.png
+t1278782659
+s15012
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/DefaultView.png
+t1278939237
+s14872
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/G.png
+t1278782659
+s661
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Icon.png
+t1278782659
+s2382
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Info.plist
+t1278782693
+s706
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/JZ.png
+t1278782659
+s899
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/L.png
+t1278782659
+s503
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/MainWindow.nib
+t1278939237
+s6375
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/MetroNorthViewController.nib
+t1278782695
+s1538
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/NQR.png
+t1278782659
+s1138
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/PkgInfo
+t1278782693
+s8
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/RailsViewController.nib
+t1278782695
+s1542
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time
+t1279247268
+s138216
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/S.png
+t1278782659
+s660
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/SIR.png
+t1278782659
+s732
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/ServiceDetailView.nib
+t1278782774
+s1905
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/SubwayServiceDetailViewController.nib
+t1278885447
+s1596
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/SubwayViewController.nib
+t1278782694
+s1542
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/bridge_icon.png
+t1278782659
+s910
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/bus_icon.png
+t1278782659
+s830
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/rail_icon.png
+t1278782659
+s881
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/subway_icon.png
+t1278782659
+s1009
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o
+t1279246994
+s72032
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o
+t1279246602
+s72404
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o
+t1278782696
+s4076
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o
+t1278782696
+s25460
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o
+t1278782696
+s10944
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o
+t1278782696
+s9820
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o
+t1278782696
+s14252
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o
+t1278782696
+s13428
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o
+t1278782696
+s9576
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o
+t1278782696
+s38924
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o
+t1278782696
+s19140
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o
+t1278782696
+s14516
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o
+t1278782696
+s17100
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o
+t1278782697
+s12964
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o
+t1279247268
+s81032
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Ride On Time.LinkFileList
+c000000004C38ACC20000000000000CB8
+t1278782658
+s3256
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o
+t1278885153
+s48468
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o
+t1278939238
+s48392
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o
+t1279246531
+s71948
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o
+t1279246744
+s78872
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o
+t1278782696
+s6332
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/bus_icon.png
+c000000004C334C66000000000000033E
+t1278430310
+s830
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/main.m
+c000000004C2FF4C00000000000000161
+t1278211264
+s353
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/rail_icon.png
+c000000004C334C670000000000000371
+t1278430311
+s881
+
+N/Users/nmouzann/Documents/IPhone/rideOnTime/subway_icon.png
+c000000004C334C6700000000000003F1
+t1278430311
+s1009
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.h
+c000000004BD1C1580000000000000A9A
+t1272037720
+s2714
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m
+c000000004BD1C1580000000000001BF7
+t1272037720
+s7159
+i"CXMLDocument.h"
+i<libxml/parser.h>
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLElement.h"
+i"CTidy.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.h
+c000000004BD1C15800000000000005FE
+t1272037720
+s1534
+i"CXMLDocument.h"
+i<libxml/parser.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m
+c000000004BD1C158000000000000067A
+t1272037720
+s1658
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.h
+c000000004BD1C158000000000000078C
+t1272037720
+s1932
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m
+c000000004BD1C158000000000000112F
+t1272037720
+s4399
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m
+c000000004BD1C1580000000000000850
+t1272037720
+s2128
+i"CXMLElement_CreationExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m
+c000000004BD1C1580000000000000668
+t1272037720
+s1640
+i"CXMLElement_ElementTreeExtensions.h"
+i"CXMLElement_CreationExtensions.h"
+i"CXMLNode_CreationExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m
+c000000004BD1C1580000000000002257
+t1272037720
+s8791
+i"CXMLNode.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument.h"
+i"CXMLElement.h"
+i<libxml/xpath.h>
+i<libxml/xpathInternals.h>
+i<libxml/xmlIO.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.h
+c000000004BD1C1580000000000000624
+t1272037720
+s1572
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m
+c000000004BD1C1580000000000000A9F
+t1272037720
+s2719
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLElement.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m
+c000000004BD1C1580000000000000B1C
+t1272037720
+s2844
+i"CXMLNode_XPathExtensions.h"
+i"CXMLDocument.h"
+i"CXMLNode_PrivateExtensions.h"
+i<libxml/xpath.h>
+i<libxml/xpathInternals.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.h
+c000000004BD1C1580000000000000814
+t1272037720
+s2068
+i"CXMLDocument.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m
+c000000004BD1C1580000000000000720
+t1272037720
+s1824
+i"CXMLDocument_CreationExtensions.h"
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.h
+c000000004BD1C1580000000000000954
+t1272037720
+s2388
+i"CXMLNode.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m
+c000000004BD1C1580000000000000FE7
+t1272037720
+s4071
+i"CXMLNode_CreationExtensions.h"
+i"CXMLDocument.h"
+i"CXMLElement.h"
+i"CXMLNode_PrivateExtensions.h"
+i"CXMLDocument_PrivateExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.h
+c000000004BD1C1580000000000000762
+t1272037720
+s1890
+i<Foundation/Foundation.h>
+i"tidy.h"
+i"buffio.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m
+c000000004BD1C1580000000000001D6D
+t1272037720
+s7533
+i"CTidy.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/TouchXML.h
+c000000004BD1C15800000000000005F3
+t1272037720
+s1523
+i"CXMLDocument.h"
+i"CXMLDocument_CreationExtensions.h"
+i"CXMLElement.h"
+i"CXMLElement_CreationExtensions.h"
+i"CXMLElement_ElementTreeExtensions.h"
+i"CXMLNode.h"
+i"CXMLNode_CreationExtensions.h"
+i"CXMLNode_XPathExtensions.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/123.png
+c000000004C332C160000000000000471
+t1278422038
+s1137
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/456.png
+c000000004C332B2C00000000000004CD
+t1278421804
+s1229
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/7.png
+c000000004C332C960000000000000252
+t1278422166
+s594
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ACE.png
+c000000004C332B6C00000000000004D3
+t1278421868
+s1235
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/BDFM.png
+c000000004C332EBD0000000000000562
+t1278422717
+s1378
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.h
+c000000004C2FF4C000000000000003BA
+t1278211264
+s954
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m
+c000000004C3FC2810000000000002EE1
+t1279246977
+s12001
+i"BTViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib
+c000000004C2AAE670000000000004453
+t1277865575
+s17491
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.h
+c000000004C2FF19400000000000003C2
+t1278210452
+s962
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m
+c000000004C3FC1090000000000002B45
+t1279246601
+s11077
+i"BusTableViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib
+c000000004C2382B5000000000000450B
+t1277395637
+s17675
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.h
+c000000004C2D048B00000000000002DD
+t1278018699
+s733
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m
+c000000004C198EDD000000000000016B
+t1276743389
+s363
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib
+c000000004C2A9C5C000000000000446B
+t1277860956
+s17515
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.h
+c000000004C367C3700000000000004C3
+t1278639159
+s1219
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m
+c000000004C3FC3A30000000000003881
+t1279247267
+s14465
+i"RailsViewController.h"
+i"ServiceDetailViewController.h"
+i"TouchXML.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib
+c000000004C367C4600000000000049D3
+t1278639174
+s18899
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.h
+c000000004C2CFCDA00000000000002CF
+t1278016730
+s719
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m
+c000000004C3A3D1C0000000000000783
+t1278885148
+s1923
+i"ServiceDetailViewController.h"
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.h
+c000000004C3A3F5A0000000000000235
+t1278885722
+s565
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m
+c000000004C3A445F0000000000000C30
+t1278887007
+s3120
+i"SubwayServiceDetailViewController.h"
+i"Line.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib
+c000000004C3A3DDB00000000000047BB
+t1278885339
+s18363
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.h
+c000000004C3FB4110000000000000362
+t1279243281
+s866
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m
+c000000004C3FC0970000000000002D24
+t1279246487
+s11556
+i"SubwayViewController.h"
+i"TouchXML.h"
+i"SubwayServiceDetailViewController.h"
+i"TabAppDelegate.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.h
+c000000004C3FC052000000000000054F
+t1279246418
+s1359
+i<UIKit/UIKit.h>
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m
+c000000004C3FC18C0000000000001799
+t1279246732
+s6041
+i"TabAppDelegate.h"
+i"TouchXML.h"
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Default.png
+c000000004C2E77EB0000000000003AA4
+t1278113771
+s15012
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/DefaultView.png
+c000000004C3B0F9F0000000000003A18
+t1278939039
+s14872
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/G.png
+c000000004C332EE20000000000000295
+t1278422754
+s661
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Icon.png
+c000000004C2F58A9000000000000094E
+t1278171305
+s2382
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/JZ.png
+c000000004C332C650000000000000383
+t1278422117
+s899
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/L.png
+c000000004C332CB100000000000001F7
+t1278422193
+s503
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib
+c000000004C3B105F000000000000BC66
+t1278939231
+s48230
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/NQR.png
+c000000004C332E160000000000000472
+t1278422550
+s1138
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Ride On Time_Prefix.pch
+c000000004C1D197900000000000000AF
+t1276975481
+s175
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/S.png
+c000000004C332E370000000000000294
+t1278422583
+s660
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SIR.png
+c000000004C332E7900000000000002DC
+t1278422649
+s732
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib
+c000000004C38AD320000000000004BB0
+t1278782770
+s19376
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib
+c000000004C2FF012000000000000450B
+t1278210066
+s17675
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bridge_icon.png
+c000000004C334C66000000000000038E
+t1278430310
+s910
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app
+t1279247268
+s1054
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app.dSYM
+t1279247268
+s102
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/123.png
+t1278782659
+s1137
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/456.png
+t1278782659
+s1229
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/7.png
+t1278782659
+s594
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/ACE.png
+t1278782659
+s1235
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/BDFM.png
+t1278782659
+s1378
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/BTViewController.nib
+t1278782695
+s1538
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/BusTableViewController.nib
+t1278782694
+s1542
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Default.png
+t1278782659
+s15012
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/DefaultView.png
+t1278939237
+s14872
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/G.png
+t1278782659
+s661
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Icon.png
+t1278782659
+s2382
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Info.plist
+t1278782693
+s706
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/JZ.png
+t1278782659
+s899
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/L.png
+t1278782659
+s503
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/MainWindow.nib
+t1278939237
+s6375
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/MetroNorthViewController.nib
+t1278782695
+s1538
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/NQR.png
+t1278782659
+s1138
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/PkgInfo
+t1278782693
+s8
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/RailsViewController.nib
+t1278782695
+s1542
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time
+t1279247268
+s138216
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/S.png
+t1278782659
+s660
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/SIR.png
+t1278782659
+s732
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/ServiceDetailView.nib
+t1278782774
+s1905
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/SubwayServiceDetailViewController.nib
+t1278885447
+s1596
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/SubwayViewController.nib
+t1278782694
+s1542
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/bridge_icon.png
+t1278782659
+s910
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/bus_icon.png
+t1278782659
+s830
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/rail_icon.png
+t1278782659
+s881
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/subway_icon.png
+t1278782659
+s1009
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o
+t1279246994
+s72032
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o
+t1279246602
+s72404
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o
+t1278782696
+s4076
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o
+t1278782696
+s25460
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o
+t1278782696
+s10944
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o
+t1278782696
+s9820
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o
+t1278782696
+s14252
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o
+t1278782696
+s13428
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o
+t1278782696
+s9576
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o
+t1278782696
+s38924
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o
+t1278782696
+s19140
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o
+t1278782696
+s14516
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o
+t1278782696
+s17100
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o
+t1278782697
+s12964
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o
+t1279247268
+s81032
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Ride On Time.LinkFileList
+c000000004C38ACC20000000000000CB8
+t1278782658
+s3256
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o
+t1278885153
+s48468
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o
+t1278939238
+s48392
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o
+t1279246531
+s71948
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o
+t1279246744
+s78872
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o
+t1278782696
+s6332
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bus_icon.png
+c000000004C334C66000000000000033E
+t1278430310
+s830
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m
+c000000004C2FF4C00000000000000161
+t1278211264
+s353
+i<UIKit/UIKit.h>
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/rail_icon.png
+c000000004C334C670000000000000371
+t1278430311
+s881
+
+N/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/subway_icon.png
+c000000004C334C6700000000000003F1
+t1278430311
+s1009
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.h
+c000000004BD1C1580000000000000A9A
+t1272037720
+s2714
+i"CXMLNode.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.h
+c000000004BD1C15800000000000005FE
+t1272037720
+s1534
+i"CXMLDocument.h"
+i<libxml/parser.h>
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.h
+c000000004BD1C158000000000000078C
+t1272037720
+s1932
+i"CXMLNode.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.h
+c000000004BD1C158000000000000059D
+t1272037720
+s1437
+i"CXMLElement.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.h
+c000000004BD1C1580000000000000580
+t1272037720
+s1408
+i"CXMLElement.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.h
+c000000004BD1C1580000000000000B07
+t1272037720
+s2823
+i<Foundation/Foundation.h>
+i<libxml/tree.h>
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.h
+c000000004BD1C1580000000000000624
+t1272037720
+s1572
+i"CXMLNode.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.h
+c000000004BD1C15800000000000005FC
+t1272037720
+s1532
+i"CXMLNode.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.h
+c000000004BD1C1580000000000000814
+t1272037720
+s2068
+i"CXMLDocument.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.h
+c000000004BD1C1580000000000000954
+t1272037720
+s2388
+i"CXMLNode.h"
+
+N/Users/nmouzann/Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.h
+c000000004BD1C1580000000000000762
+t1272037720
+s1890
+i<Foundation/Foundation.h>
+i"tidy.h"
+i"buffio.h"
+
+N/usr/include/libxml2/libxml/parser.h
+c000000004B90C69700000000000098A9
+t1267779223
+s39081
+
+N/usr/include/libxml2/libxml/tree.h
+c000000004B90C6970000000000008F14
+t1267779223
+s36628
+
+N/usr/include/libxml2/libxml/xmlIO.h
+c000000004B90C69700000000000028D0
+t1267779223
+s10448
+
+N/usr/include/libxml2/libxml/xpath.h
+c000000004B90C6970000000000003F47
+t1267779223
+s16199
+
+N/usr/include/libxml2/libxml/xpathInternals.h
+c000000004B90C6970000000000004BF8
+t1267779223
+s19448
+
+N/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-dsloivxpssgsldfdizmghwqctkha/Ride On Time_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch.gch
+t1278782696
+s15232016
+
+N/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-hghpcjojadheprhblfnzrwgctmqn/Ride On Time_Prefix.pch.gch
+t1278638809
+s13825936
+
+NRide On Time-Info.plist
+c000000004C37A25C00000000000003CC
+t1278714460
+s972
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies300940067#300940067#0(0"0(0#1#0"8638625856#0"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300939794.708272
+e300939794.916979
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m300939794#300939794#0(0"0(0#0#80"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m8604263488#2275"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BTViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300939402.308931
+e300939402.450914
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m300939402#300939402#0(0"0(0#0#86"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m8635309248#2287"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/BusTableViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.797597
+e300475496.843643
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@139"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m300475496#300475496#0(0"0(0#0#131"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m8608895776#2315"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CTidy.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Tidy/CTidy.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.404671
+e300475496.510531
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m: In function '-[CXMLDocument XMLStringWithOptions:]':
+o/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: no '-_XMLStringWithOptions:appendingToString:' method found
+o/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: (Messages without a matching method signature
+o/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: will be assumed to return 'id' and accept
+o/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: '...' as arguments.)
+lSLF07#2@141"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m300475496#300475496#0(949"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m: In function '-[CXMLDocument XMLStringWithOptions:]':/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: no '-_XMLStringWithOptions:appendingToString:' method found/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: (Messages without a matching method signature/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: will be assumed to return 'id' and accept/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m:229: warning: '...' as arguments.)2(22@59"No '-_XMLStringWithOptions:appendingToString:' method found300475496#188#208#0(6@133"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m293730520#229#0#229#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300475496#396#194#0(6@133"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m293730520#229#0#229#0#0"0(0#0#133"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m8611306688#2324"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.320105
+e300475496.404575
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@169"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m300475496#300475496#0(0"0(0#0#161"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m8601114624#2371"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_CreationExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLDocument_CreationExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.487912
+e300475496.573970
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@159"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m300475496#300475496#0(0"0(0#0#151"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m8605713856#2360"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLDocument_PrivateExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLDocument_PrivateExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.510628
+e300475496.605825
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@140"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m300475496#300475496#0(0"0(0#0#132"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m8603819040#2322"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.574064
+e300475496.659673
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@159"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m300475496#300475496#0(0"0(0#0#151"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m8598380384#2360"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_CreationExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_CreationExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.605923
+e300475496.681903
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@162"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m300475496#300475496#0(0"0(0#0#154"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m8609028800#2366"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLElement_ElementTreeExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLElement_ElementTreeExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.659778
+e300475496.797500
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m300475496#300475496#0(0"0(0#0#129"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m8605909024#2316"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.373227
+e300475496.487797
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@165"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m300475496#300475496#0(0"0(0#0#157"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m8601955968#2363"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_CreationExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/Creation/CXMLNode_CreationExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.682166
+e300475496.768496
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@155"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m300475496#300475496#0(0"0(0#0#147"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m8607092448#2352"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_PrivateExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_PrivateExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.768602
+e300475496.858824
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@153"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m300475496#300475496#0(0"0(0#0#145"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m8611116032#2348"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/CXMLNode_XPathExtensions.o" /Users/nmouzann/Documents/IPhone/rideOnTime/../../../Downloads/TouchXML_1.0.8_Release/TouchXML/Common/Source/CXMLNode_XPathExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475497.018763
+e300475497.084314
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m300475497#300475497#0(0"0(0#0#68"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m8608942368#2251"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/Line.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Line.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/Line.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300940067.958140
+e300940068.089867
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m300940067#300940068#0(0"0(0#0#83"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m8622051904#2281"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/RailsViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300577953.049826
+e300577953.150655
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m300577953#300577953#0(0"0(0#0#91"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m8601045856#2297"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/ServiceDetailViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/ServiceDetailViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceDetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300632037.935450
+e300632038.827526
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@105"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m300632037#300632038#0(0"0(0#0#97"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m8605581056#2309"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayServiceDetailViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300939331.830931
+e300939331.991570
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m300939331#300939331#0(0"0(0#0#84"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m8635383584#2283"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayViewController.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/SubwayViewController.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300939544.289243
+e300939544.444899
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m300939544#300939544#0(0"0(0#0#78"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m8628681760#2271"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/TabAppDelegate.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/TabAppDelegate.o" /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475496.263640
+e300475496.319769
+r1
+xCompileC
+xbuild/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m300475496#300475496#0(0"0(0#0#60"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m8605823392#2243"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -include "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/main.m" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o"0#
+
+CCompileC "build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/main.o" /Users/nmouzann/Documents/IPhone/rideOnTime/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib"
+s300475495.123406
+e300475495.512392
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib
+lSLF07#2@39"CompileXIB Classes/BTViewController.xib300475495#300475495#0(0"0(0#0#82"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib8610013536#648"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/BTViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BTViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib"
+s300475494.363929
+e300475494.742525
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib
+lSLF07#2@45"CompileXIB Classes/BusTableViewController.xib300475494#300475494#0(0"0(0#0#88"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib8611543680#660"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/BusTableViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/BusTableViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib"
+s300475494.782443
+e300475495.186902
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib
+lSLF07#2@47"CompileXIB Classes/MetroNorthViewController.xib300475494#300475495#0(0"0(0#0#90"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib8606943520#664"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/MetroNorthViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/MetroNorthViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib"
+s300475494.742611
+e300475495.123326
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib
+lSLF07#2@42"CompileXIB Classes/RailsViewController.xib300475494#300475495#0(0"0(0#0#85"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib8607411968#654"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/RailsViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/RailsViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib"
+s300578247.592313
+e300578247.955959
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib
+lSLF07#2@56"CompileXIB Classes/SubwayServiceDetailViewController.xib300578247#300578247#0(0"0(0#0#99"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib8606884576#682"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/SubwayServiceDetailViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Classes/SubwayServiceDetailViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib"
+s300632037.384598
+e300632037.932368
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib300632037#300632037#0(0"0(0#0#68"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib32932997484183620#628"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/MainWindow.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib"
+s300475574.402803
+e300475574.822833
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib
+lSLF07#2@32"CompileXIB ServiceDetailView.xib300475574#300475574#0(0"0(0#0#75"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib8604237120#642"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/ServiceDetailView.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ServiceDetailView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib"
+s300475493.870635
+e300475494.384239
+r1
+xCompileXIB
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib
+lSLF07#2@35"CompileXIB SubwayViewController.xib300475493#300475494#0(0"0(0#0#78"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib8610553632#648"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/SubwayViewController.nib" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SubwayViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/MetroNorthViewController.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/MainWindow.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/ServiceDetailView.xib
+r0
+
+CCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/SubwayViewController.xib
+r0
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/123.png" 123.png
+s300475459.787509
+e300475459.810827
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/123.png
+x123.png
+lSLF07#2@12"Copy 123.png300475459#300475459#0(0"0(0#0#61"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/123.png8611851456#507"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/123.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/456.png" 456.png
+s300475459.788043
+e300475459.802235
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/456.png
+x456.png
+lSLF07#2@12"Copy 456.png300475459#300475459#0(0"0(0#0#61"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/456.png8611298720#507"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/456.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/7.png" 7.png
+s300475459.786892
+e300475459.814346
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/7.png
+x7.png
+lSLF07#2@10"Copy 7.png300475459#300475459#0(0"0(0#0#59"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/7.png8602451456#505"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/7.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/ACE.png" ACE.png
+s300475459.788557
+e300475459.805823
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/ACE.png
+xACE.png
+lSLF07#2@12"Copy ACE.png300475459#300475459#0(0"0(0#0#61"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ACE.png8611061216#507"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/ACE.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/BDFM.png" BDFM.png
+s300475459.789191
+e300475459.804181
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/BDFM.png
+xBDFM.png
+lSLF07#2@13"Copy BDFM.png300475459#300475459#0(0"0(0#0#62"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/BDFM.png8610564512#508"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/BDFM.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/Default.png" Default.png
+s300475459.785726
+e300475459.812545
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/Default.png
+xDefault.png
+lSLF07#2@16"Copy Default.png300475459#300475459#0(0"0(0#0#65"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Default.png8606389024#511"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Default.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/DefaultView.png" DefaultView.png
+s300632037.417700
+e300632037.438634
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/DefaultView.png
+xDefaultView.png
+lSLF07#2@20"Copy DefaultView.png300632037#300632037#0(0"0(0#0#69"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/DefaultView.png8612521472#515"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/DefaultView.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/G.png" G.png
+s300475459.789719
+e300475459.818389
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/G.png
+xG.png
+lSLF07#2@10"Copy G.png300475459#300475459#0(0"0(0#0#59"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/G.png8610308608#505"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/G.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/Icon.png" Icon.png
+s300475459.786390
+e300475459.809132
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/Icon.png
+xIcon.png
+lSLF07#2@13"Copy Icon.png300475459#300475459#0(0"0(0#0#62"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Icon.png8605834560#508"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Icon.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/JZ.png" JZ.png
+s300475459.790603
+e300475459.807475
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/JZ.png
+xJZ.png
+lSLF07#2@11"Copy JZ.png300475459#300475459#0(0"0(0#0#60"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/JZ.png8610000416#506"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/JZ.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/L.png" L.png
+s300475459.802520
+e300475459.820911
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/L.png
+xL.png
+lSLF07#2@10"Copy L.png300475459#300475459#0(0"0(0#0#59"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/L.png8609842976#505"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/L.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/NQR.png" NQR.png
+s300475459.804239
+e300475459.814448
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/NQR.png
+xNQR.png
+lSLF07#2@12"Copy NQR.png300475459#300475459#0(0"0(0#0#61"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/NQR.png8609685376#507"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/NQR.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/S.png" S.png
+s300475459.805882
+e300475459.825353
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/S.png
+xS.png
+lSLF07#2@10"Copy S.png300475459#300475459#0(0"0(0#0#59"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/S.png8609150272#505"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/S.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/SIR.png" SIR.png
+s300475459.807533
+e300475459.817980
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/SIR.png
+xSIR.png
+lSLF07#2@12"Copy SIR.png300475459#300475459#0(0"0(0#0#61"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SIR.png8608918624#507"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/SIR.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/bridge_icon.png" bridge_icon.png
+s300475459.814505
+e300475459.824869
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/bridge_icon.png
+xbridge_icon.png
+lSLF07#2@20"Copy bridge_icon.png300475459#300475459#0(0"0(0#0#69"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bridge_icon.png8606648896#515"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bridge_icon.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/bus_icon.png" bus_icon.png
+s300475459.812606
+e300475459.826094
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/bus_icon.png
+xbus_icon.png
+lSLF07#2@17"Copy bus_icon.png300475459#300475459#0(0"0(0#0#66"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bus_icon.png8606876384#512"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/bus_icon.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/rail_icon.png" rail_icon.png
+s300475459.810880
+e300475459.827681
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/rail_icon.png
+xrail_icon.png
+lSLF07#2@18"Copy rail_icon.png300475459#300475459#0(0"0(0#0#67"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/rail_icon.png8607058624#513"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/rail_icon.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Ride On Time.app/subway_icon.png" subway_icon.png
+s300475459.809189
+e300475459.817648
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Ride On Time.app/subway_icon.png
+xsubway_icon.png
+lSLF07#2@20"Copy subway_icon.png300475459#300475459#0(0"0(0#0#69"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/subway_icon.png8607481056#515"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/subway_icon.png" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
+CGenerateDSYMFile "/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app.dSYM" "/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time"
+r0
+
+CGenerateDSYMFile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app.dSYM" "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time"
+s300940068.128662
+e300940068.160873
+r1
+xGenerateDSYMFile
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app.dSYM
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time
+lSLF07#2@128"GenerateDSYMFile "build/Debug-iphonesimulator/Ride On Time.app.dSYM" "build/Debug-iphonesimulator/Ride On Time.app/Ride On Time"300940068#300940068#0(0"0(0#0#111"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time8638485632#449"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time" -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app.dSYM"0#
+
+CLd "/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time" normal i386
+r0
+
+CLd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time" normal i386
+s300940068.089955
+e300940068.128557
+r1
+xLd
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time
+xnormal
+xi386
+lSLF07#2@116"Link /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time300940068#300940068#0(0"0(0#0#0"8639001280#1065"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" -filelist "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Objects-normal/i386/Ride On Time.LinkFileList" -mmacosx-version-min=10.6 -lxml2 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Ride On Time"0#
+
+CProcessInfoPlistFile "/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app/Info.plist" "Ride On Time-Info.plist"
+r0
+
+CProcessInfoPlistFile "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Info.plist" "Ride On Time-Info.plist"
+s300475493.856180
+e300475493.868889
+r1
+xProcessInfoPlistFile
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Info.plist
+xRide On Time-Info.plist
+lSLF07#2@31"Process Ride On Time-Info.plist300475493#300475493#0(0"0(0#0#77"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Ride On Time-Info.plist8612335456#547"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility "Ride On Time-Info.plist" -genpkginfo "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app/Info.plist"0#
+
+CProcessPCH "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-dsloivxpssgsldfdizmghwqctkha/Ride On Time_Prefix.pch.gch" "Ride On Time_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch.gch" "Ride On Time_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+s300475495.546310
+e300475496.263480
+r1
+xProcessPCH
+x/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch.gch
+xRide On Time_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile Ride On Time_Prefix.pch300475495#300475496#0(0"0(0#0#77"/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Ride On Time_Prefix.pch8610849056#2113"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-generated-files.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-own-target-headers.hmap" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-all-target-headers.hmap" -iquote "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/Ride On Time-project-headers.hmap" "-F/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/include" -I/usr/include/libxml2 -I/usr/include/libxml2/libxml "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources/i386" "-I/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Ride On Time.build/Debug-iphonesimulator/Ride On Time.build/DerivedSources" -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/Ride On Time_Prefix.pch" -o "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-guajcxlgplwckffpwokrdilbagui/Ride On Time_Prefix.pch.gch"0#
+
+CProcessPCH "/var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Ride On Time_Prefix-hghpcjojadheprhblfnzrwgctmqn/Ride On Time_Prefix.pch.gch" "Ride On Time_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/Ride On Time.app"
+r0
+
+CTouch "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"
+s300940068.160954
+e300940068.163050
+r1
+xTouch
+x/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app
+lSLF07#2@104"Touch /Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app300940068#300940068#0(0"0(0#0#0"8638279808#317"    cd "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/nmouzann/Documents/IPhoneBootCamp/Ride On Time/build/Debug-iphonesimulator/Ride On Time.app"0#
+
