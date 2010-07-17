@@ -84,7 +84,7 @@
     return 1;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSString *currentTimeStamp = [NSString stringWithFormat: @"Current as of %@", appDelegate.getTimeStamp];
+	NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
 	return currentTimeStamp;
 }
 
@@ -97,8 +97,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UIImageView *lineImage = nil;
 	UILabel *statusLabel = nil;
-	UILabel *timeLabel = nil;
-	UILabel *dateLabel = nil;
+	//UILabel *timeLabel = nil;
+//	UILabel *dateLabel = nil;
 	NSString *newStringStatus;
     static NSString *CellIdentifier = @"Cell";
     
@@ -107,16 +107,17 @@
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 		lineImage = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"123.png"]] autorelease];
         CGRect imageFrame = lineImage.frame;
-        imageFrame.origin = CGPointMake(8, 8);
+        imageFrame.origin = CGPointMake(8, 11);
         lineImage.frame = imageFrame;
         lineImage.tag = 1;
         [cell.contentView addSubview:lineImage];
 
-		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(120, 8, 170, 14)] autorelease];
+		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(120, 15, 170, 14)] autorelease];
 		statusLabel.tag = 2;
 		statusLabel.font = [UIFont boldSystemFontOfSize:16];
 		[cell.contentView addSubview:statusLabel];
 		
+	/*
 		dateLabel = [[[UILabel alloc] initWithFrame:CGRectMake(120, 28, 170, 10)] autorelease];
 		dateLabel.tag = 3;
 		dateLabel.font = [UIFont boldSystemFontOfSize:10];
@@ -128,11 +129,12 @@
 		timeLabel.font = [UIFont boldSystemFontOfSize:10];
 		timeLabel.textColor = [UIColor grayColor];
 		[cell.contentView addSubview:timeLabel];
+	 */
     } else{
 		lineImage = (UIImageView *)[cell.contentView viewWithTag:1];
 		statusLabel = (UILabel *)[cell.contentView viewWithTag:2];
-		dateLabel = (UILabel *)[cell.contentView viewWithTag:3];
-		timeLabel = (UILabel *)[cell.contentView viewWithTag:4];
+	//	dateLabel = (UILabel *)[cell.contentView viewWithTag:3];
+	//	timeLabel = (UILabel *)[cell.contentView viewWithTag:4];
 }
 
 	blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];
@@ -142,27 +144,27 @@
 	if ([newStringStatus isEqualToString: @"GOOD SERVICE"]){
 		statusLabel.textColor = [UIColor colorWithRed: 0 green: 0.6 blue: 0 alpha:1];//getRGB values and divide by 255
 		//nameLabel.textColor = [UIColor colorWithRed: 0.37 green: 0.61 blue: 0.47 alpha:1];
-		dateLabel.textColor = [UIColor grayColor];
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}else if ([newStringStatus isEqualToString: @"PLANNED WORK"] ||
 			  [newStringStatus isEqualToString: @"DELAYS"]){
 		statusLabel.textColor = [UIColor redColor];
 		//	nameLabel.textColor = [UIColor redColor];
-		dateLabel.textColor = [UIColor grayColor];
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}else if ([newStringStatus isEqualToString: @"SERVICE CHANGE"]){
 		statusLabel.textColor = [UIColor orangeColor];
 		//	nameLabel.textColor = [UIColor orangeColor];
-		dateLabel.textColor = [UIColor grayColor];		
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];		
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}
 	
 	statusLabel.text = [[[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	dateLabel.text = [NSString stringWithFormat: @"Last Updated %@", [[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"Date"]];
-	timeLabel.text = [[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"Time"];
+//	dateLabel.text = [NSString stringWithFormat: @"Last Updated %@", [[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"Date"]];
+//	timeLabel.text = [[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"Time"];
 	NSString *lineImageName = [[blogEntries objectAtIndex: blogEntryIndex] objectForKey: @"name"];
 	lineImage.image = [self imageForLine:lineImageName];
 	

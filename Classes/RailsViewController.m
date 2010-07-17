@@ -126,7 +126,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSString *titleAndCurrentTimeStamp = [NSString stringWithFormat: @"%@ %@", [self.sortedKeys objectAtIndex:section], appDelegate.getTimeStamp];	return titleAndCurrentTimeStamp;
+	NSString *titleAndCurrentTimeStamp = [NSString stringWithFormat: @"%@ as of %@", [self.sortedKeys objectAtIndex:section], appDelegate.getTimeStamp];	return titleAndCurrentTimeStamp;
 	return titleAndCurrentTimeStamp;
 }
 
@@ -143,8 +143,8 @@
 
 	UILabel *nameLabel = nil;
 	UILabel *statusLabel = nil;
-	UILabel *timeLabel = nil;
-	UILabel *dateLabel = nil;
+	//UILabel *timeLabel = nil;
+//	UILabel *dateLabel = nil;
 	NSString *newStringStatus;
     static NSString *CellIdentifier = @"Cell";
     
@@ -156,16 +156,16 @@
 		// cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 				
-		nameLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 8, 100, 20)] autorelease];
+		nameLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 11, 100, 20)] autorelease];
 		nameLabel.tag = 1;
 		nameLabel.font = [UIFont boldSystemFontOfSize:14];
 		[cell.contentView addSubview:nameLabel];
 		
-		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 8, 170, 14)] autorelease];
+		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 15, 170, 14)] autorelease];
 		statusLabel.tag = 2;
 		statusLabel.font = [UIFont boldSystemFontOfSize:16];
 		[cell.contentView addSubview:statusLabel];
-		
+	/*	
 		dateLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 28, 170, 10)] autorelease];
 		dateLabel.tag = 3;
 		dateLabel.font = [UIFont boldSystemFontOfSize:10];
@@ -177,12 +177,13 @@
 		timeLabel.font = [UIFont boldSystemFontOfSize:10];
 		timeLabel.textColor = [UIColor grayColor];
 		[cell.contentView addSubview:timeLabel];
-    } else{
+    */
+	 } else{
 		
 		nameLabel = (UILabel *)[cell.contentView viewWithTag:1];			
 		statusLabel = (UILabel *)[cell.contentView viewWithTag:2];
-		dateLabel = (UILabel *)[cell.contentView viewWithTag:3];
-		timeLabel = (UILabel *)[cell.contentView viewWithTag:4];
+	//	dateLabel = (UILabel *)[cell.contentView viewWithTag:3];
+	//	timeLabel = (UILabel *)[cell.contentView viewWithTag:4];
 	}
 	
 	blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];
@@ -191,21 +192,21 @@
 	if ([newStringStatus isEqualToString: @"GOOD SERVICE"]){
 		statusLabel.textColor = [UIColor colorWithRed: 0 green: 0.6 blue: 0 alpha:1];//getRGB values and divide by 255
 		//nameLabel.textColor = [UIColor colorWithRed: 0.37 green: 0.61 blue: 0.47 alpha:1];
-		dateLabel.textColor = [UIColor grayColor];
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}else if ([newStringStatus isEqualToString: @"PLANNED WORK"] ||
 			  [newStringStatus isEqualToString: @"DELAYS"]){
 		statusLabel.textColor = [UIColor redColor];
 		//nameLabel.textColor = [UIColor redColor];
-		dateLabel.textColor = [UIColor grayColor];
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}else if ([newStringStatus isEqualToString: @"SERVICE CHANGE"]){
 		statusLabel.textColor = [UIColor orangeColor];
 		//nameLabel.textColor = [UIColor orangeColor];
-		dateLabel.textColor = [UIColor grayColor];		
-		timeLabel.textColor = [UIColor grayColor];
+	//	dateLabel.textColor = [UIColor grayColor];		
+	//	timeLabel.textColor = [UIColor grayColor];
 		
 	}
 	
@@ -214,8 +215,8 @@
 	
 	nameLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"];
 	statusLabel.text = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	dateLabel.text = [NSString stringWithFormat: @"Last Updated %@", [[listData objectAtIndex: blogEntryIndex] objectForKey: @"Date"]];
-	timeLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"Time"];
+	//dateLabel.text = [NSString stringWithFormat: @"Last Updated %@", [[listData objectAtIndex: blogEntryIndex] objectForKey: @"Date"]];
+	//timeLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"Time"];
 	
 	//show do not show accessory
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
@@ -328,7 +329,7 @@
 		 [self grabRSSFeed1:nodeAddress];
 		
 		NSDictionary *temp =[[NSDictionary alloc]
-							 initWithObjectsAndKeys:blogEntries,@"Long Island Rail Road",blogEntries1,@"Metro-North Rail Road",nil];
+							 initWithObjectsAndKeys:blogEntries,@"LIRR",blogEntries1,@"Metro-North",nil];
 		self.tableContents =temp;
 		[temp release];
 		self.sortedKeys =[[self.tableContents allKeys]

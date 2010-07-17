@@ -275,13 +275,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>18</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 115}, {373, 632}}</string>
+							<string>{{0, 0}, {373, 632}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>04EB001311CD52DC00994BBA</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RailsViewController.m</string>
+								<string>BTViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>04EB001411CD52DC00994BBA</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RailsViewController.m</string>
+										<string>BTViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>04DF7A8911F247FD00B9D916</string>
+										<string>04DF7AF311F24C3400B9D916</string>
 										<key>history</key>
 										<array>
 											<string>04B0240511DA754B00DC97E2</string>
@@ -339,23 +339,23 @@
 											<string>0444EA5311E3E1EB00D56BFA</string>
 											<string>04E2E37011E7D962003303F0</string>
 											<string>04E2E37111E7D962003303F0</string>
-											<string>04A6BC8611EA75C800DAD07D</string>
 											<string>047E714811EA7E6F006B402A</string>
 											<string>043A684B11EB47E7000074A8</string>
 											<string>049F9D6411EE59E500F127B5</string>
-											<string>049F9D6511EE59E500F127B5</string>
 											<string>04A2AC3E11EFEADD00A83967</string>
-											<string>04A2AC5811EFF04800A83967</string>
 											<string>04A2ACC011EFF8AF00A83967</string>
-											<string>04A2ACC111EFF8AF00A83967</string>
-											<string>04A2ACC211EFF8AF00A83967</string>
 											<string>04A2ACC411EFF8AF00A83967</string>
-											<string>04A2ACC511EFF8AF00A83967</string>
-											<string>04A2ACD811EFF91800A83967</string>
 											<string>04A2ACF511EFFA1300A83967</string>
-											<string>04A2AD0311EFFAEE00A83967</string>
-											<string>04A2AD0411EFFAEE00A83967</string>
-											<string>04DF7A8811F247F900B9D916</string>
+											<string>04DF7AAD11F24AB100B9D916</string>
+											<string>04DF7AAE11F24AB100B9D916</string>
+											<string>04DF7AAF11F24AB100B9D916</string>
+											<string>04DF7ABB11F24AED00B9D916</string>
+											<string>04DF7AC811F24B2A00B9D916</string>
+											<string>04DF7AE311F24BCA00B9D916</string>
+											<string>04DF7AE411F24BCA00B9D916</string>
+											<string>04DF7AEC11F24BF700B9D916</string>
+											<string>04DF7AED11F24BF700B9D916</string>
+											<string>04DF7AF211F24C3100B9D916</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -672,7 +672,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>04DF7A8A11F247FD00B9D916</string>
 		<string>04DF7A8B11F247FD00B9D916</string>
 		<string>04DF7A8C11F247FD00B9D916</string>
 		<string>/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime.xcodeproj</string>
