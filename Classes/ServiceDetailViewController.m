@@ -18,7 +18,6 @@
 
 
 - (void)viewDidLoad {
-	
 }
 
 - (void)viewDidUnload {
@@ -26,23 +25,35 @@
 	
 }
 
-- (void)viewWillAppear:(BOOL)animated { 
-
-	//html = @"!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!";
+- (void)webViewDidStartLoad:(UIWebView *)webView{
 	[self showActivityIndicator];
-	//clear the webview
-	[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];  
-    // Update the views appropriately  
 	
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+	[self stopAndHideActivityIndicator];
+	
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+	//clear webview
+	//[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];
+}
+- (void)viewWillAppear:(BOOL)animated { 
+    // Update the views appropriately  
 	html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
 			 [aLine objectForKey: @"Date"],
 			 [aLine objectForKey: @"Time"],
 			[aLine objectForKey: @"name"],
 					  [aLine objectForKey: @"status"],
 					  [aLine objectForKey: @"text"]];
-//NSLog(@"html %@ = ", html);
+
 	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/widgetImages/nyct/"]];   
-	[self stopAndHideActivityIndicator];
 }
 - (void) showActivityIndicator{
 	[self.activityIndicator startAnimating];
@@ -51,6 +62,7 @@
 
 - (void) stopAndHideActivityIndicator{
 	[self.activityIndicator stopAnimating];
+	//[self.activityIndicator hidesWhenStopped:YES];
 	self.activityIndicator.hidden = YES;
 }
 

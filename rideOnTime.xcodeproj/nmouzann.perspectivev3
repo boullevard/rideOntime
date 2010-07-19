@@ -275,13 +275,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>1</integer>
+									<integer>46</integer>
+									<integer>20</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {373, 632}}</string>
+							<string>{{0, 285}, {373, 632}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>04EB001311CD52DC00994BBA</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BTViewController.m</string>
+								<string>rideOnTime-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>04EB001411CD52DC00994BBA</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BTViewController.m</string>
+										<string>rideOnTime-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>04DF7AF311F24C3400B9D916</string>
+										<string>040DA0BD11F3E74800FB7E92</string>
 										<key>history</key>
 										<array>
 											<string>04B0240511DA754B00DC97E2</string>
@@ -338,24 +338,25 @@
 											<string>04FA0ACF11E3B51300DF43A9</string>
 											<string>0444EA5311E3E1EB00D56BFA</string>
 											<string>04E2E37011E7D962003303F0</string>
-											<string>04E2E37111E7D962003303F0</string>
 											<string>047E714811EA7E6F006B402A</string>
 											<string>043A684B11EB47E7000074A8</string>
-											<string>049F9D6411EE59E500F127B5</string>
-											<string>04A2AC3E11EFEADD00A83967</string>
 											<string>04A2ACC011EFF8AF00A83967</string>
 											<string>04A2ACC411EFF8AF00A83967</string>
-											<string>04A2ACF511EFFA1300A83967</string>
-											<string>04DF7AAD11F24AB100B9D916</string>
-											<string>04DF7AAE11F24AB100B9D916</string>
-											<string>04DF7AAF11F24AB100B9D916</string>
 											<string>04DF7ABB11F24AED00B9D916</string>
-											<string>04DF7AC811F24B2A00B9D916</string>
-											<string>04DF7AE311F24BCA00B9D916</string>
-											<string>04DF7AE411F24BCA00B9D916</string>
-											<string>04DF7AEC11F24BF700B9D916</string>
-											<string>04DF7AED11F24BF700B9D916</string>
-											<string>04DF7AF211F24C3100B9D916</string>
+											<string>04DF7BD711F36A4200B9D916</string>
+											<string>04DF7C1311F36E9100B9D916</string>
+											<string>04DF7C1411F36E9100B9D916</string>
+											<string>04DF7C1511F36E9100B9D916</string>
+											<string>04DF7C4711F38FC200B9D916</string>
+											<string>04DF7C6711F390BF00B9D916</string>
+											<string>04DF7C8911F3919300B9D916</string>
+											<string>04DF7CCE11F3948300B9D916</string>
+											<string>04D8289311F3CE0600B2DDE8</string>
+											<string>04D828C211F3D08400B2DDE8</string>
+											<string>04D828D811F3D26800B2DDE8</string>
+											<string>040DA0AC11F3E6C000FB7E92</string>
+											<string>040DA0B311F3E74800FB7E92</string>
+											<string>040DA0B411F3E74800FB7E92</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -369,18 +370,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {954, 484}}</string>
+								<string>{{0, 0}, {954, 468}}</string>
 								<key>RubberWindowFrame</key>
 								<string>25 182 1349 691 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>484pt</string>
+							<string>468pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>161pt</string>
+							<string>177pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -394,7 +395,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {954, 134}}</string>
+										<string>{{10, 27}, {954, 150}}</string>
 										<key>RubberWindowFrame</key>
 										<string>25 182 1349 691 0 0 1440 878 </string>
 									</dict>
@@ -478,11 +479,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>04DF7A7211F2472400B9D916</string>
+				<string>040DA0A711F3E63B00FB7E92</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>04DF7A7311F2472400B9D916</string>
+				<string>040DA0A811F3E63B00FB7E92</string>
 				<string>04EB001311CD52DC00994BBA</string>
-				<string>04DF7A7411F2472400B9D916</string>
+				<string>040DA0A911F3E63B00FB7E92</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -631,14 +632,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>04DF7A7511F2472400B9D916</string>
+				<string>040DA0B611F3E74800FB7E92</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>04DF7A7611F2472400B9D916</string>
-				<string>04DF7A7711F2472400B9D916</string>
-				<string>04DF7A7811F2472400B9D916</string>
-				<string>04DF7A7911F2472400B9D916</string>
-				<string>04DF7A7A11F2472400B9D916</string>
+				<string>040DA0B711F3E74800FB7E92</string>
+				<string>040DA0B811F3E74800FB7E92</string>
+				<string>040DA0B911F3E74800FB7E92</string>
+				<string>040DA0BA11F3E74800FB7E92</string>
+				<string>04EB001311CD52DC00994BBA</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -672,8 +673,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>04DF7A8B11F247FD00B9D916</string>
-		<string>04DF7A8C11F247FD00B9D916</string>
+		<string>040DA0BB11F3E74800FB7E92</string>
+		<string>040DA0BC11F3E74800FB7E92</string>
 		<string>/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

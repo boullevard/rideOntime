@@ -13,25 +13,41 @@
 
 @synthesize aLine;
 @synthesize myWebView;
+@synthesize activityIndicator;
 @synthesize html;
 
 
 - (void)viewDidLoad {
-	NSLog(@"viewDidLoad");
+
 }
 
 - (void)viewDidUnload {
 	[super viewDidUnload];
-	NSLog(@"viewDidUnload");
 }
 
-- (void)viewWillAppear:(BOOL)animated { 
-	//html = @"!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!";
-	//clear the webview
-	[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];  
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+	[self showActivityIndicator];
+	
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+	[self stopAndHideActivityIndicator];
+	
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+	//clear webview
+	//[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];
+}
+
+- (void)viewWillAppear:(BOOL)animated { 	
     // Update the views appropriately  
 	NSString *newStringStatus = [[aLine objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	NSLog(@"newStringStatus = %@ ",newStringStatus);
 	if ([newStringStatus isEqualToString: @"DELAYS"]){
 		html = [NSString stringWithFormat :@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font style= \'font-family:arial; color: 0xFF0000;'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
 				[aLine objectForKey: @"Date"],
@@ -56,12 +72,20 @@
 				[aLine objectForKey: @"text"]];
 	}
 
-	
-	
-	//NSLog(@"html %@ = ", html);
 	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/"]];   
 	
 }
+- (void) showActivityIndicator{
+	[self.activityIndicator startAnimating];
+	
+}
+
+- (void) stopAndHideActivityIndicator{
+	[self.activityIndicator stopAnimating];
+	self.activityIndicator.hidden = YES;
+}
+
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Support all orientations except upside-down
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);

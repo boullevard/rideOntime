@@ -31,8 +31,8 @@
 	
 	CXMLDocument *rssParser = [[[CXMLDocument alloc] initWithXMLString:[appDelegate getBody] options:0 error:nil] autorelease];
 	
-	NSArray *resultsTimeStamp = [[rssParser rootElement] nodesForXPath:@"//service/timestamp" error:nil];
-	NSLog(@"timestamp %@", [[resultsTimeStamp objectAtIndex:0] stringValue]);
+	//NSArray *resultsTimeStamp = [[rssParser rootElement] nodesForXPath:@"//service/timestamp" error:nil];
+	//NSLog(@"timestamp %@", [[resultsTimeStamp objectAtIndex:0] stringValue]);
 
     // Create a new Array object to be used with the looping of the results from the rssParser
     NSArray *resultNodes = NULL;
@@ -112,7 +112,7 @@
         lineImage.tag = 1;
         [cell.contentView addSubview:lineImage];
 
-		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(120, 15, 170, 14)] autorelease];
+		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 15, 170, 14)] autorelease];
 		statusLabel.tag = 2;
 		statusLabel.font = [UIFont boldSystemFontOfSize:16];
 		[cell.contentView addSubview:statusLabel];
@@ -173,8 +173,11 @@
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
 		cell.accessoryType = UITableViewCellAccessoryNone;
+		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
 	}
 	
 	return cell;	
@@ -182,6 +185,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// Navigation logic -- create and push a new view controller
+	
 	NSString *newStringStatus = [[[blogEntries objectAtIndex: indexPath.row] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||

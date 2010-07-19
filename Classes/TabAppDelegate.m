@@ -45,6 +45,7 @@
 	activityIndicator = [[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
 	activityIndicator.frame=CGRectMake(145, 320, 25, 25);
 	activityIndicator.tag  = 1;
+	activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
 	[self startAnimation];
 
 	[window addSubview:activityIndicator];	

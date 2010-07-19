@@ -179,8 +179,11 @@
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
 		cell.accessoryType = UITableViewCellAccessoryNone;
+		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+		
 	}
 	
 	return cell;	
@@ -190,7 +193,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// Navigation logic -- create and push a new view controller
 	NSString *newStringStatus = [[[blogEntries objectAtIndex: indexPath.row] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	NSLog(@"newStringStatus = %@",newStringStatus);
+	//NSLog(@"newStringStatus = %@",newStringStatus);
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){

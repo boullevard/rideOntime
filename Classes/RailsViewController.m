@@ -159,6 +159,7 @@
 		nameLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 11, 100, 20)] autorelease];
 		nameLabel.tag = 1;
 		nameLabel.font = [UIFont boldSystemFontOfSize:14];
+		nameLabel.adjustsFontSizeToFitWidth = YES;
 		[cell.contentView addSubview:nameLabel];
 		
 		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 15, 170, 14)] autorelease];
@@ -223,9 +224,13 @@
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
 		cell.accessoryType = UITableViewCellAccessoryNone;
+		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+		
 	}
+	
 	
 	
 	return cell;	

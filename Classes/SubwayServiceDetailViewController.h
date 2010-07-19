@@ -16,11 +16,15 @@
 	@private
 		UIWebView *myWebView;
 		Line *aLine;
+		IBOutlet UIActivityIndicatorView *activityIndicator;
 		NSString *html ;
 	}
 	
 	@property (nonatomic, retain) IBOutlet UIWebView *myWebView;
 	@property (nonatomic, retain) Line *aLine;
 	@property (nonatomic, retain) NSString *html ;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *   activityIndicator;
 
+- (void) stopAndHideActivityIndicator;
+- (void) showActivityIndicator;
 	@end

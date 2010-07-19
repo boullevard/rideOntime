@@ -104,7 +104,7 @@
 				nameLabel.font = [UIFont boldSystemFontOfSize:14];
 				[cell.contentView addSubview:nameLabel];
 		
-		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(120, 15, 170, 14)] autorelease];
+		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 15, 170, 14)] autorelease];
 		statusLabel.tag = 2;
 		statusLabel.font = [UIFont boldSystemFontOfSize:16];
 		[cell.contentView addSubview:statusLabel];
@@ -160,8 +160,11 @@
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton
+		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
 		cell.accessoryType = UITableViewCellAccessoryNone;
+		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+		
 	}
 	
 	return cell;
@@ -171,7 +174,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// Navigation logic -- create and push a new view controller
 	NSString *newStringStatus = [[[blogEntries objectAtIndex: indexPath.row] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	NSLog(@"newStringStatus = %@",newStringStatus);
+	
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]){
