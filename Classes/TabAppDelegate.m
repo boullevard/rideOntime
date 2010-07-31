@@ -30,6 +30,9 @@
 	*/
 	//[application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 	
+	// NABIL I CHANGED SOMETHING NOWWWWW N epxerimental!!!!
+	
+	
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"]];
 	//cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:6
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
