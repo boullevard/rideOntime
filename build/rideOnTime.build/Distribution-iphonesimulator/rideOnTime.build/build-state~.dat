@@ -238,9 +238,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.m
-c000000004C4337050000000000002F70
-t1279473413
-s12144
+c000000004C3FC2810000000000002EE1
+t1279246977
+s12001
 i"BTViewController.h"
 i"ServiceDetailViewController.h"
 i"TouchXML.h"
@@ -259,9 +259,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BusTableViewController.m
-c000000004C4336480000000000002BA5
-t1279473224
-s11173
+c000000004C3FC1090000000000002B45
+t1279246601
+s11077
 i"BusTableViewController.h"
 i"ServiceDetailViewController.h"
 i"TouchXML.h"
@@ -297,9 +297,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/RailsViewController.m
-c000000004C43355D0000000000003935
-t1279472989
-s14645
+c000000004C3FC3A30000000000003881
+t1279247267
+s14465
 i"RailsViewController.h"
 i"ServiceDetailViewController.h"
 i"TouchXML.h"
@@ -317,29 +317,29 @@ s719
 i<UIKit/UIKit.h>
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceDetailViewController.m
-c000000004C439AE5000000000000081E
-t1279498981
-s2078
+c000000004C3A3D1C0000000000000783
+t1278885148
+s1923
 i"ServiceDetailViewController.h"
 i"Line.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.h
-c000000004C435CD90000000000000309
-t1279483097
-s777
+c000000004C3A3F5A0000000000000235
+t1278885722
+s565
 i<UIKit/UIKit.h>
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.m
-c000000004C439AE00000000000000D64
-t1279498976
-s3428
+c000000004C3A445F0000000000000C30
+t1278887007
+s3120
 i"SubwayServiceDetailViewController.h"
 i"Line.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayServiceDetailViewController.xib
-c000000004C4399990000000000004D74
-t1279498649
-s19828
+c000000004C3A3DDB00000000000047BB
+t1278885339
+s18363
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.h
 c000000004C3FB4110000000000000362
@@ -349,9 +349,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m
-c000000004C4336EF0000000000002DBC
-t1279473391
-s11708
+c000000004C3FC0970000000000002D24
+t1279246487
+s11556
 i"SubwayViewController.h"
 i"TouchXML.h"
 i"SubwayServiceDetailViewController.h"
@@ -365,9 +365,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m
-c000000004C43AF3300000000000017EC
-t1279504179
-s6124
+c000000004C3FC18C0000000000001799
+t1279246732
+s6041
 i"TabAppDelegate.h"
 i"TouchXML.h"
 
@@ -422,9 +422,9 @@ t1278422649
 s732
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/ServiceDetailView.xib
-c000000004C4399960000000000004CF0
-t1279498646
-s19696
+c000000004C38AD320000000000004BB0
+t1278782770
+s19376
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/SubwayViewController.xib
 c000000004C2FF012000000000000450B
@@ -748,8 +748,8 @@ t2
 s0
 
 NrideOnTime-Info.plist
-c000000004C445BE600000000000003CC
-t1279548390
+c000000004C37A25C00000000000003CC
+t1278714460
 s972
 
 CCompileC build/rideOnTime.build/Distribution-iphonesimulator/rideOnTime.build/Objects-normal/i386/BTViewController.o /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2

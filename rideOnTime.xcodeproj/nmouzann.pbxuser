@@ -20,29 +20,6 @@
 		vrLen = 1159;
 		vrLoc = 1080;
 	};
-	040DA0B411F3E74800FB7E92 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* rideOnTime-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleExecutable,
-		);
-		name = "/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime-Info.plist";
-		rLen = 0;
-		rLoc = 0;
-	};
-	040DA0BD11F3E74800FB7E92 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* rideOnTime-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
 	0430E87211E3880A007B92A4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 044C628C11D1B23B009D8BA3 /* Line.h */;
@@ -116,6 +93,30 @@
 		name = CGGeometry.h;
 		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h;
 		sourceTree = "<absolute>";
+	};
+	0483577511F626C10032B3B8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* rideOnTime-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleInfoDictionaryVersion,
+		);
+		name = "/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	0483577611F626C40032B3B8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* rideOnTime-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleInfoDictionaryVersion,
+		);
+		name = "/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	04A2ACC011EFF8AF00A83967 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -478,7 +479,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 04EBFFF911CD50F900994BBA /* rideOnTime */;
-		activeSDKPreference = iphoneos4.0;
+		activeSDKPreference = iphonesimulator4.0;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* rideOnTime */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* rideOnTime */,
@@ -517,7 +518,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					791,
+					675,
 					60,
 					20,
 					48,
@@ -534,19 +535,19 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 301196852;
-			PBXWorkspaceStateSaveDate = 301196852;
+			PBXPerProjectTemplateStateSaveDate = 301240033;
+			PBXWorkspaceStateSaveDate = 301240033;
 		};
 		perUserProjectItems = {
 			040DA0AC11F3E6C000FB7E92 /* PBXTextBookmark */ = 040DA0AC11F3E6C000FB7E92 /* PBXTextBookmark */;
 			040DA0B311F3E74800FB7E92 /* PBXTextBookmark */ = 040DA0B311F3E74800FB7E92 /* PBXTextBookmark */;
-			040DA0B411F3E74800FB7E92 /* PlistBookmark */ = 040DA0B411F3E74800FB7E92 /* PlistBookmark */;
-			040DA0BD11F3E74800FB7E92 /* PlistBookmark */ = 040DA0BD11F3E74800FB7E92 /* PlistBookmark */;
 			0430E87211E3880A007B92A4 /* PBXTextBookmark */ = 0430E87211E3880A007B92A4 /* PBXTextBookmark */;
 			043A684B11EB47E7000074A8 /* PBXBookmark */ = 043A684B11EB47E7000074A8 /* PBXBookmark */;
 			0444EA5311E3E1EB00D56BFA /* PBXTextBookmark */ = 0444EA5311E3E1EB00D56BFA /* PBXTextBookmark */;
 			044BFD1811DF9E2C00DEBDF9 /* PBXBookmark */ = 044BFD1811DF9E2C00DEBDF9 /* PBXBookmark */;
 			047E714811EA7E6F006B402A /* PBXTextBookmark */ = 047E714811EA7E6F006B402A /* PBXTextBookmark */;
+			0483577511F626C10032B3B8 /* PlistBookmark */ = 0483577511F626C10032B3B8 /* PlistBookmark */;
+			0483577611F626C40032B3B8 /* PlistBookmark */ = 0483577611F626C40032B3B8 /* PlistBookmark */;
 			04A2ACC011EFF8AF00A83967 /* PBXTextBookmark */ = 04A2ACC011EFF8AF00A83967 /* PBXTextBookmark */;
 			04A2ACC411EFF8AF00A83967 /* PBXTextBookmark */ = 04A2ACC411EFF8AF00A83967 /* PBXTextBookmark */;
 			04B0240511DA754B00DC97E2 /* PBXTextBookmark */ = 04B0240511DA754B00DC97E2 /* PBXTextBookmark */;
