@@ -1,7 +1,7 @@
 TrideOnTime
 v7
 r0
-t302236753.864570
+t302237925.284314
 cCheck dependencies
 cProcessInfoPlistFile /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/Info.plist rideOnTime-Info.plist
 cCompileXIB /Users/nmouzann/Documents/IPhone/rideOnTime/MainWindow.xib
@@ -393,9 +393,9 @@ i<UIKit/UIKit.h>
 i"TouchXML.h"
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m
-c000000004C538F4000000000000017EC
-t1280544576
-s6124
+c000000004C538FA60000000000001829
+t1280544678
+s6185
 i"TabAppDelegate.h"
 i"TouchXML.h"
 
@@ -465,11 +465,11 @@ t1278430310
 s910
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app
-t1279553973
+t1280545125
 s1054
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app.dSYM
-t1279553973
+t1280545125
 s102
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/123.png
@@ -581,7 +581,7 @@ t1279397806
 s881
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime
-t1279553972
+t1280545125
 s135880
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/subway_icon.png
@@ -661,7 +661,7 @@ t1279483139
 s68432
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/TabAppDelegate.o
-t1279553972
+t1280545125
 s78980
 
 N/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/main.o
@@ -807,7 +807,7 @@ s972
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies302236753#302236753#0(0"0(0#1#0"8620899520#0"0#
+lSLF07#2@18"Check dependencies302237924#302237924#0(0"0(0#1#0"8621938592#0"0#
 
 CCompileC build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/BTViewController.o /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/BTViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s301166363.682941
@@ -1049,8 +1049,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@82"Compile /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m301175938#301175939#0(0"0(0#0#74"/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m8614223776#2109"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-generated-files.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-own-target-headers.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-all-target-headers.hmap -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-project-headers.hmap -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/include -I/usr/include/libxml2 -I/usr/include/libxml2/libxml -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources/i386 -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources -include /var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rideOnTime_Prefix-dsloivxpssgsldfdizmghwqctkha/rideOnTime_Prefix.pch -c /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/SubwayViewController.m -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/SubwayViewController.o0#
 
 CCompileC build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/TabAppDelegate.o /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s301246771.846463
-e301246772.596611
+s302237924.184157
+e302237925.138015
 r1
 xCompileC
 xbuild/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/TabAppDelegate.o
@@ -1059,7 +1059,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m301246771#301246772#0(0"0(0#0#68"/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m8612634784#2097"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-generated-files.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-own-target-headers.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-all-target-headers.hmap -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-project-headers.hmap -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/include -I/usr/include/libxml2 -I/usr/include/libxml2/libxml -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources/i386 -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources -include /var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rideOnTime_Prefix-dsloivxpssgsldfdizmghwqctkha/rideOnTime_Prefix.pch -c /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/TabAppDelegate.o0#
+lSLF07#2@76"Compile /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m302237924#302237925#0(0"0(0#0#68"/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m8623145952#2097"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-generated-files.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-own-target-headers.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-all-target-headers.hmap -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-project-headers.hmap -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/include -I/usr/include/libxml2 -I/usr/include/libxml2/libxml -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources/i386 -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources -include /var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rideOnTime_Prefix-dsloivxpssgsldfdizmghwqctkha/rideOnTime_Prefix.pch -c /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/TabAppDelegate.m -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/TabAppDelegate.o0#
 
 CCompileC build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/main.o /Users/nmouzann/Documents/IPhone/rideOnTime/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s301090607.881095
@@ -1301,23 +1301,23 @@ xsubway_icon.png
 lSLF07#2@20"Copy subway_icon.png301090606#301090606#0(0"0(0#0#59"/Users/nmouzann/Documents/IPhone/rideOnTime/subway_icon.png8606330080#477"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/nmouzann/Documents/IPhone/rideOnTime/subway_icon.png /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app0#
 
 CGenerateDSYMFile /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app.dSYM /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime
-s301246772.979773
-e301246773.020444
+s302237925.218008
+e302237925.281231
 r1
 xGenerateDSYMFile
 x/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app.dSYM
 x/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime
-lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/rideOnTime.app.dSYM build/Debug-iphonesimulator/rideOnTime.app/rideOnTime301246772#301246773#0(0"0(0#0#97"/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime8612964352#407"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app.dSYM0#
+lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/rideOnTime.app.dSYM build/Debug-iphonesimulator/rideOnTime.app/rideOnTime302237925#302237925#0(0"0(0#0#97"/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime8625752768#407"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app.dSYM0#
 
 CLd /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime normal i386
-s301246772.660532
-e301246772.979562
+s302237925.138091
+e302237925.217915
 r1
 xLd
 x/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime
 xnormal
 xi386
-lSLF07#2@102"Link /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime301246772#301246772#0(0"0(0#0#0"8603674656#995"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -filelist /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/rideOnTime.LinkFileList -mmacosx-version-min=10.6 -lxml2 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime0#
+lSLF07#2@102"Link /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime302237925#302237925#0(0"0(0#0#0"8622643744#995"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -filelist /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/Objects-normal/i386/rideOnTime.LinkFileList -mmacosx-version-min=10.6 -lxml2 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CoreLocation -o /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/rideOnTime0#
 
 CProcessInfoPlistFile /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app/Info.plist rideOnTime-Info.plist
 s301246769.758874
@@ -1342,10 +1342,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@32"Precompile rideOnTime_Prefix.pch301090606#301090607#0(0"0(0#0#65"/Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime_Prefix.pch8600763584#1953"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-generated-files.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-own-target-headers.hmap -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-all-target-headers.hmap -iquote /Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/rideOnTime-project-headers.hmap -F/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/include -I/usr/include/libxml2 -I/usr/include/libxml2/libxml -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources/i386 -I/Users/nmouzann/Documents/IPhone/rideOnTime/build/rideOnTime.build/Debug-iphonesimulator/rideOnTime.build/DerivedSources -c /Users/nmouzann/Documents/IPhone/rideOnTime/rideOnTime_Prefix.pch -o /var/folders/DF/DFRwU2tDFxmlULFLAoURRU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rideOnTime_Prefix-dsloivxpssgsldfdizmghwqctkha/rideOnTime_Prefix.pch.gch0#
 
 CTouch /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app
-s301246773.020525
-e301246773.023200
+s302237925.281312
+e302237925.284166
 r1
 xTouch
 x/Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app
-lSLF07#2@92"Touch /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app301246773#301246773#0(0"0(0#0#0"8612715168#291"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app0#
+lSLF07#2@92"Touch /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app302237925#302237925#0(0"0(0#0#0"8626364352#291"    cd /Users/nmouzann/Documents/IPhone/rideOnTime    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nmouzann/Documents/IPhone/rideOnTime/build/Debug-iphonesimulator/rideOnTime.app0#
 
