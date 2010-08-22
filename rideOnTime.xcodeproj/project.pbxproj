@@ -22,18 +22,74 @@
 		0430E85E11E38432007B92A4 /* rail_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0430E85A11E38432007B92A4 /* rail_icon.png */; };
 		0430E85F11E38432007B92A4 /* bus_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0430E85B11E38432007B92A4 /* bus_icon.png */; };
 		0430E86011E38432007B92A4 /* bridge_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0430E85C11E38432007B92A4 /* bridge_icon.png */; };
+		043999C512049CE700A74860 /* MTA_Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 043999C412049CE700A74860 /* MTA_Map.png */; };
+		043999C712049CED00A74860 /* MTA_Map_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 043999C612049CED00A74860 /* MTA_Map_thumb.png */; };
+		043999F41204A22D00A74860 /* MapTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043999F21204A22D00A74860 /* MapTableViewController.m */; };
+		043999F51204A22D00A74860 /* MapTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043999F31204A22D00A74860 /* MapTableViewController.xib */; };
 		043A684611EB473C000074A8 /* DefaultView.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A684511EB473C000074A8 /* DefaultView.png */; };
+		0447BD3D1208CD810074EA25 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0447BD3C1208CD810074EA25 /* MapDetailViewController.xib */; };
+		0447BD5D1208CE180074EA25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0447BD5C1208CE180074EA25 /* QuartzCore.framework */; };
 		044BFD0E11DF904500DEBDF9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 044BFD0D11DF904500DEBDF9 /* Icon.png */; };
 		044C626D11D1AFB3009D8BA3 /* ServiceDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C626C11D1AFB3009D8BA3 /* ServiceDetailView.xib */; };
 		044C627111D1AFDF009D8BA3 /* ServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C627011D1AFDF009D8BA3 /* ServiceDetailViewController.m */; };
 		044C628E11D1B23B009D8BA3 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C628D11D1B23B009D8BA3 /* Line.m */; };
+		046A79A6120CA63E00DC063B /* TiledDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A79A5120CA63E00DC063B /* TiledDelegate.m */; };
+		046F3CB51208B577006FE7B1 /* SimpleTiledScrollExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F3CB41208B577006FE7B1 /* SimpleTiledScrollExampleViewController.m */; };
+		046F3CB71208B589006FE7B1 /* SimpleTiledScrollExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F3CB61208B589006FE7B1 /* SimpleTiledScrollExampleViewController.xib */; };
+		046F3CB91208B5B7006FE7B1 /* subwaymapInPdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 046F3CB81208B5B7006FE7B1 /* subwaymapInPdf.pdf */; };
+		046F3CBE1208B60B006FE7B1 /* MapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F3CBC1208B60B006FE7B1 /* MapDetailViewController.m */; };
+		0479842A121C92DF0093A90D /* subwaymap300.png in Resources */ = {isa = PBXBuildFile; fileRef = 04798429121C92DF0093A90D /* subwaymap300.png */; };
+		0485F8131203C9C5001B676C /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485F8111203C9C5001B676C /* MapsViewController.m */; };
+		0485F8141203C9C5001B676C /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0485F8121203C9C5001B676C /* MapsViewController.xib */; };
+		0485F8191203CAA2001B676C /* TapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485F8161203CAA2001B676C /* TapDetectingImageView.m */; };
+		0485F81A1203CAA2001B676C /* ThumbImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485F8181203CAA2001B676C /* ThumbImageView.m */; };
+		0485F81F1203CAB5001B676C /* sub_Jun10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F81C1203CAB5001B676C /* sub_Jun10.png */; };
+		0485F8201203CAB5001B676C /* lirr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F81D1203CAB5001B676C /* lirr.png */; };
+		0485F8211203CAB5001B676C /* mnrmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F81E1203CAB5001B676C /* mnrmap.png */; };
+		0485F8261203CABE001B676C /* lirr_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F8231203CABE001B676C /* lirr_thumb.png */; };
+		0485F8271203CABE001B676C /* mnrmap_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F8241203CABE001B676C /* mnrmap_thumb.png */; };
+		0485F8281203CABE001B676C /* sub_Jun10_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485F8251203CABE001B676C /* sub_Jun10_thumb.png */; };
+		0485F82A1203CAC8001B676C /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0485F8291203CAC8001B676C /* Images.plist */; };
+		0485F83E1203CD94001B676C /* ServiceAdvisories.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485F83C1203CD94001B676C /* ServiceAdvisories.m */; };
+		0485F83F1203CD94001B676C /* ServiceAdvisories.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0485F83D1203CD94001B676C /* ServiceAdvisories.xib */; };
+		0491083F1211FC48007AC9E3 /* subwaymap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0491083E1211FC48007AC9E3 /* subwaymap.png */; };
+		04AC0B4C1213805B003F92CA /* SubwayLinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0B4A1213805B003F92CA /* SubwayLinesViewController.m */; };
+		04AC0B4D1213805B003F92CA /* SubwayLinesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AC0B4B1213805B003F92CA /* SubwayLinesViewController.xib */; };
 		04B0260011DACFBE00DC97E2 /* RailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B025FE11DACFBE00DC97E2 /* RailsViewController.m */; };
 		04B0260111DACFBE00DC97E2 /* RailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B025FF11DACFBE00DC97E2 /* RailsViewController.xib */; };
 		04B0262511DAD15C00DC97E2 /* MetroNorthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0262311DAD15C00DC97E2 /* MetroNorthViewController.xib */; };
 		04B0264C11DAE4BC00DC97E2 /* BTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0264A11DAE4BC00DC97E2 /* BTViewController.m */; };
 		04B0264D11DAE4BC00DC97E2 /* BTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0264B11DAE4BC00DC97E2 /* BTViewController.xib */; };
+		04BFB10D121F6D7900EB846F /* bullet-z.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0F7121F6D7900EB846F /* bullet-z.gif */; };
+		04BFB10E121F6D7900EB846F /* grey_s.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0F8121F6D7900EB846F /* grey_s.gif */; };
+		04BFB10F121F6D7900EB846F /* bullet-r.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0F9121F6D7900EB846F /* bullet-r.gif */; };
+		04BFB110121F6D7900EB846F /* bullet_q.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FA121F6D7900EB846F /* bullet_q.gif */; };
+		04BFB111121F6D7900EB846F /* bullet-n.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FB121F6D7900EB846F /* bullet-n.gif */; };
+		04BFB112121F6D7900EB846F /* bullet-m.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FC121F6D7900EB846F /* bullet-m.gif */; };
+		04BFB113121F6D7900EB846F /* bullet-l.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FD121F6D7900EB846F /* bullet-l.gif */; };
+		04BFB114121F6D7900EB846F /* bullet-j.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FE121F6D7900EB846F /* bullet-j.gif */; };
+		04BFB115121F6D7900EB846F /* bullet-g.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB0FF121F6D7900EB846F /* bullet-g.gif */; };
+		04BFB116121F6D7900EB846F /* bullet-f.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB100121F6D7900EB846F /* bullet-f.gif */; };
+		04BFB117121F6D7900EB846F /* bullet-e.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB101121F6D7900EB846F /* bullet-e.gif */; };
+		04BFB118121F6D7900EB846F /* bullet-d.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB102121F6D7900EB846F /* bullet-d.gif */; };
+		04BFB119121F6D7900EB846F /* bullet-c.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB103121F6D7900EB846F /* bullet-c.gif */; };
+		04BFB11A121F6D7900EB846F /* bullet-b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB104121F6D7900EB846F /* bullet-b.gif */; };
+		04BFB11B121F6D7900EB846F /* bullet-a.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB105121F6D7900EB846F /* bullet-a.gif */; };
+		04BFB11C121F6D7900EB846F /* bullet-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB106121F6D7900EB846F /* bullet-7.gif */; };
+		04BFB11D121F6D7900EB846F /* bullet-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB107121F6D7900EB846F /* bullet-6.gif */; };
+		04BFB11E121F6D7900EB846F /* bullet-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB108121F6D7900EB846F /* bullet-5.gif */; };
+		04BFB11F121F6D7900EB846F /* bullet-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB109121F6D7900EB846F /* bullet-4.gif */; };
+		04BFB120121F6D7900EB846F /* bullet-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB10A121F6D7900EB846F /* bullet-3.gif */; };
+		04BFB121121F6D7900EB846F /* bullet-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB10B121F6D7900EB846F /* bullet-2.gif */; };
+		04BFB122121F6D7900EB846F /* bullet-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04BFB10C121F6D7900EB846F /* bullet-1.gif */; };
+		04CCD1961212E59700815D86 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CCD1951212E59700815D86 /* CustomCell.xib */; };
+		04CCD1991212E5A100815D86 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CCD1981212E5A100815D86 /* CustomCell.m */; };
 		04E2E36E11E7970F003303F0 /* SubwayServiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2E36C11E7970F003303F0 /* SubwayServiceDetailViewController.m */; };
 		04E2E36F11E7970F003303F0 /* SubwayServiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E2E36D11E7970F003303F0 /* SubwayServiceDetailViewController.xib */; };
+		04E75B12120902670030FBD2 /* ServiceAdvisoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75B10120902670030FBD2 /* ServiceAdvisoryViewController.m */; };
+		04E75B13120902670030FBD2 /* ServiceAdvisoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E75B11120902670030FBD2 /* ServiceAdvisoryViewController.xib */; };
+		04E75B521209056A0030FBD2 /* ServiceAdvisoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E75B501209056A0030FBD2 /* ServiceAdvisoryDetailViewController.m */; };
+		04E75B531209056A0030FBD2 /* ServiceAdvisoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E75B511209056A0030FBD2 /* ServiceAdvisoryDetailViewController.xib */; };
 		04EB019711CD611700994BBA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EB019611CD611700994BBA /* AudioToolbox.framework */; };
 		04EB01DA11CD68E100994BBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EB01D911CD68E100994BBA /* CoreLocation.framework */; };
 		04ECE50211D1568A00FC1D6A /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECE4EB11D1568A00FC1D6A /* CXMLDocument_CreationExtensions.m */; };
@@ -76,13 +132,51 @@
 		0430E85A11E38432007B92A4 /* rail_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rail_icon.png; sourceTree = "<group>"; };
 		0430E85B11E38432007B92A4 /* bus_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus_icon.png; sourceTree = "<group>"; };
 		0430E85C11E38432007B92A4 /* bridge_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bridge_icon.png; sourceTree = "<group>"; };
+		043999C412049CE700A74860 /* MTA_Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTA_Map.png; sourceTree = "<group>"; };
+		043999C612049CED00A74860 /* MTA_Map_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTA_Map_thumb.png; sourceTree = "<group>"; };
+		043999F11204A22D00A74860 /* MapTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTableViewController.h; sourceTree = "<group>"; };
+		043999F21204A22D00A74860 /* MapTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTableViewController.m; sourceTree = "<group>"; };
+		043999F31204A22D00A74860 /* MapTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapTableViewController.xib; path = Classes/MapTableViewController.xib; sourceTree = "<group>"; };
 		043A684511EB473C000074A8 /* DefaultView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultView.png; sourceTree = "<group>"; };
+		0447BD3C1208CD810074EA25 /* MapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
+		0447BD5C1208CE180074EA25 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		044BFD0D11DF904500DEBDF9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		044C626C11D1AFB3009D8BA3 /* ServiceDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailView.xib; sourceTree = "<group>"; };
 		044C626F11D1AFDF009D8BA3 /* ServiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceDetailViewController.h; sourceTree = "<group>"; };
 		044C627011D1AFDF009D8BA3 /* ServiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceDetailViewController.m; sourceTree = "<group>"; };
 		044C628C11D1B23B009D8BA3 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
 		044C628D11D1B23B009D8BA3 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		046A79A4120CA63E00DC063B /* TiledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledDelegate.h; sourceTree = "<group>"; };
+		046A79A5120CA63E00DC063B /* TiledDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledDelegate.m; sourceTree = "<group>"; };
+		046F3CB31208B577006FE7B1 /* SimpleTiledScrollExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTiledScrollExampleViewController.h; sourceTree = "<group>"; };
+		046F3CB41208B577006FE7B1 /* SimpleTiledScrollExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTiledScrollExampleViewController.m; sourceTree = "<group>"; };
+		046F3CB61208B589006FE7B1 /* SimpleTiledScrollExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTiledScrollExampleViewController.xib; sourceTree = "<group>"; };
+		046F3CB81208B5B7006FE7B1 /* subwaymapInPdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = subwaymapInPdf.pdf; sourceTree = "<group>"; };
+		046F3CBB1208B60B006FE7B1 /* MapDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailViewController.h; sourceTree = "<group>"; };
+		046F3CBC1208B60B006FE7B1 /* MapDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailViewController.m; sourceTree = "<group>"; };
+		04798429121C92DF0093A90D /* subwaymap300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subwaymap300.png; sourceTree = "<group>"; };
+		0485F8101203C9C5001B676C /* MapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
+		0485F8111203C9C5001B676C /* MapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
+		0485F8121203C9C5001B676C /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapsViewController.xib; path = Classes/MapsViewController.xib; sourceTree = "<group>"; };
+		0485F8151203CAA2001B676C /* TapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapDetectingImageView.h; sourceTree = "<group>"; };
+		0485F8161203CAA2001B676C /* TapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapDetectingImageView.m; sourceTree = "<group>"; };
+		0485F8171203CAA2001B676C /* ThumbImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbImageView.h; sourceTree = "<group>"; };
+		0485F8181203CAA2001B676C /* ThumbImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbImageView.m; sourceTree = "<group>"; };
+		0485F81C1203CAB5001B676C /* sub_Jun10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sub_Jun10.png; sourceTree = "<group>"; };
+		0485F81D1203CAB5001B676C /* lirr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lirr.png; sourceTree = "<group>"; };
+		0485F81E1203CAB5001B676C /* mnrmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mnrmap.png; sourceTree = "<group>"; };
+		0485F8231203CABE001B676C /* lirr_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lirr_thumb.png; sourceTree = "<group>"; };
+		0485F8241203CABE001B676C /* mnrmap_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mnrmap_thumb.png; sourceTree = "<group>"; };
+		0485F8251203CABE001B676C /* sub_Jun10_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sub_Jun10_thumb.png; sourceTree = "<group>"; };
+		0485F8291203CAC8001B676C /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
+		0485F83B1203CD94001B676C /* ServiceAdvisories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAdvisories.h; sourceTree = "<group>"; };
+		0485F83C1203CD94001B676C /* ServiceAdvisories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAdvisories.m; sourceTree = "<group>"; };
+		0485F83D1203CD94001B676C /* ServiceAdvisories.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServiceAdvisories.xib; path = Classes/ServiceAdvisories.xib; sourceTree = "<group>"; };
+		0485F8711203D058001B676C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		0491083E1211FC48007AC9E3 /* subwaymap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subwaymap.png; sourceTree = "<group>"; };
+		04AC0B491213805B003F92CA /* SubwayLinesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubwayLinesViewController.h; sourceTree = "<group>"; };
+		04AC0B4A1213805B003F92CA /* SubwayLinesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubwayLinesViewController.m; sourceTree = "<group>"; };
+		04AC0B4B1213805B003F92CA /* SubwayLinesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SubwayLinesViewController.xib; path = Classes/SubwayLinesViewController.xib; sourceTree = "<group>"; };
 		04B025FD11DACFBE00DC97E2 /* RailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RailsViewController.h; sourceTree = "<group>"; };
 		04B025FE11DACFBE00DC97E2 /* RailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RailsViewController.m; sourceTree = "<group>"; };
 		04B025FF11DACFBE00DC97E2 /* RailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RailsViewController.xib; path = Classes/RailsViewController.xib; sourceTree = "<group>"; };
@@ -90,10 +184,41 @@
 		04B0264911DAE4BC00DC97E2 /* BTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTViewController.h; sourceTree = "<group>"; };
 		04B0264A11DAE4BC00DC97E2 /* BTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTViewController.m; sourceTree = "<group>"; };
 		04B0264B11DAE4BC00DC97E2 /* BTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BTViewController.xib; path = Classes/BTViewController.xib; sourceTree = "<group>"; };
+		04BFB0F7121F6D7900EB846F /* bullet-z.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-z.gif"; sourceTree = "<group>"; };
+		04BFB0F8121F6D7900EB846F /* grey_s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grey_s.gif; sourceTree = "<group>"; };
+		04BFB0F9121F6D7900EB846F /* bullet-r.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-r.gif"; sourceTree = "<group>"; };
+		04BFB0FA121F6D7900EB846F /* bullet_q.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bullet_q.gif; sourceTree = "<group>"; };
+		04BFB0FB121F6D7900EB846F /* bullet-n.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-n.gif"; sourceTree = "<group>"; };
+		04BFB0FC121F6D7900EB846F /* bullet-m.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-m.gif"; sourceTree = "<group>"; };
+		04BFB0FD121F6D7900EB846F /* bullet-l.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-l.gif"; sourceTree = "<group>"; };
+		04BFB0FE121F6D7900EB846F /* bullet-j.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-j.gif"; sourceTree = "<group>"; };
+		04BFB0FF121F6D7900EB846F /* bullet-g.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-g.gif"; sourceTree = "<group>"; };
+		04BFB100121F6D7900EB846F /* bullet-f.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-f.gif"; sourceTree = "<group>"; };
+		04BFB101121F6D7900EB846F /* bullet-e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-e.gif"; sourceTree = "<group>"; };
+		04BFB102121F6D7900EB846F /* bullet-d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-d.gif"; sourceTree = "<group>"; };
+		04BFB103121F6D7900EB846F /* bullet-c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-c.gif"; sourceTree = "<group>"; };
+		04BFB104121F6D7900EB846F /* bullet-b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-b.gif"; sourceTree = "<group>"; };
+		04BFB105121F6D7900EB846F /* bullet-a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-a.gif"; sourceTree = "<group>"; };
+		04BFB106121F6D7900EB846F /* bullet-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-7.gif"; sourceTree = "<group>"; };
+		04BFB107121F6D7900EB846F /* bullet-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-6.gif"; sourceTree = "<group>"; };
+		04BFB108121F6D7900EB846F /* bullet-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-5.gif"; sourceTree = "<group>"; };
+		04BFB109121F6D7900EB846F /* bullet-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-4.gif"; sourceTree = "<group>"; };
+		04BFB10A121F6D7900EB846F /* bullet-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-3.gif"; sourceTree = "<group>"; };
+		04BFB10B121F6D7900EB846F /* bullet-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-2.gif"; sourceTree = "<group>"; };
+		04BFB10C121F6D7900EB846F /* bullet-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bullet-1.gif"; sourceTree = "<group>"; };
+		04CCD1951212E59700815D86 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		04CCD1971212E5A100815D86 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		04CCD1981212E5A100815D86 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		04E2E35311E78D2D003303F0 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		04E2E36B11E7970F003303F0 /* SubwayServiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubwayServiceDetailViewController.h; sourceTree = "<group>"; };
 		04E2E36C11E7970F003303F0 /* SubwayServiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubwayServiceDetailViewController.m; sourceTree = "<group>"; };
 		04E2E36D11E7970F003303F0 /* SubwayServiceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SubwayServiceDetailViewController.xib; path = Classes/SubwayServiceDetailViewController.xib; sourceTree = "<group>"; };
+		04E75B0F120902670030FBD2 /* ServiceAdvisoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAdvisoryViewController.h; sourceTree = "<group>"; };
+		04E75B10120902670030FBD2 /* ServiceAdvisoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAdvisoryViewController.m; sourceTree = "<group>"; };
+		04E75B11120902670030FBD2 /* ServiceAdvisoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServiceAdvisoryViewController.xib; path = Classes/ServiceAdvisoryViewController.xib; sourceTree = "<group>"; };
+		04E75B4F1209056A0030FBD2 /* ServiceAdvisoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAdvisoryDetailViewController.h; sourceTree = "<group>"; };
+		04E75B501209056A0030FBD2 /* ServiceAdvisoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAdvisoryDetailViewController.m; sourceTree = "<group>"; };
+		04E75B511209056A0030FBD2 /* ServiceAdvisoryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ServiceAdvisoryDetailViewController.xib; path = Classes/ServiceAdvisoryDetailViewController.xib; sourceTree = "<group>"; };
 		04EB019611CD611700994BBA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		04EB01D911CD68E100994BBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		04ECE4EA11D1568A00FC1D6A /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
@@ -148,12 +273,66 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				04EB019711CD611700994BBA /* AudioToolbox.framework in Frameworks */,
 				04EB01DA11CD68E100994BBA /* CoreLocation.framework in Frameworks */,
+				0447BD5D1208CE180074EA25 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0485F81B1203CAB5001B676C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				043999C412049CE700A74860 /* MTA_Map.png */,
+				04798429121C92DF0093A90D /* subwaymap300.png */,
+				0491083E1211FC48007AC9E3 /* subwaymap.png */,
+				0485F81C1203CAB5001B676C /* sub_Jun10.png */,
+				0485F81D1203CAB5001B676C /* lirr.png */,
+				0485F81E1203CAB5001B676C /* mnrmap.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0485F8221203CABE001B676C /* Thumbs */ = {
+			isa = PBXGroup;
+			children = (
+				043999C612049CED00A74860 /* MTA_Map_thumb.png */,
+				0485F8231203CABE001B676C /* lirr_thumb.png */,
+				0485F8241203CABE001B676C /* mnrmap_thumb.png */,
+				0485F8251203CABE001B676C /* sub_Jun10_thumb.png */,
+			);
+			name = Thumbs;
+			sourceTree = "<group>";
+		};
+		04BFB0EA121F6D6300EB846F /* linesImages */ = {
+			isa = PBXGroup;
+			children = (
+				04BFB0F7121F6D7900EB846F /* bullet-z.gif */,
+				04BFB0F8121F6D7900EB846F /* grey_s.gif */,
+				04BFB0F9121F6D7900EB846F /* bullet-r.gif */,
+				04BFB0FA121F6D7900EB846F /* bullet_q.gif */,
+				04BFB0FB121F6D7900EB846F /* bullet-n.gif */,
+				04BFB0FC121F6D7900EB846F /* bullet-m.gif */,
+				04BFB0FD121F6D7900EB846F /* bullet-l.gif */,
+				04BFB0FE121F6D7900EB846F /* bullet-j.gif */,
+				04BFB0FF121F6D7900EB846F /* bullet-g.gif */,
+				04BFB100121F6D7900EB846F /* bullet-f.gif */,
+				04BFB101121F6D7900EB846F /* bullet-e.gif */,
+				04BFB102121F6D7900EB846F /* bullet-d.gif */,
+				04BFB103121F6D7900EB846F /* bullet-c.gif */,
+				04BFB104121F6D7900EB846F /* bullet-b.gif */,
+				04BFB105121F6D7900EB846F /* bullet-a.gif */,
+				04BFB106121F6D7900EB846F /* bullet-7.gif */,
+				04BFB107121F6D7900EB846F /* bullet-6.gif */,
+				04BFB108121F6D7900EB846F /* bullet-5.gif */,
+				04BFB109121F6D7900EB846F /* bullet-4.gif */,
+				04BFB10A121F6D7900EB846F /* bullet-3.gif */,
+				04BFB10B121F6D7900EB846F /* bullet-2.gif */,
+				04BFB10C121F6D7900EB846F /* bullet-1.gif */,
+			);
+			name = linesImages;
+			sourceTree = "<group>";
+		};
 		04ECE4E811D1568A00FC1D6A /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,14 +385,25 @@
 			children = (
 				04ECE4E811D1568A00FC1D6A /* Source */,
 				1D3623240D0F684500981E51 /* TabAppDelegate.h */,
+				0485F8711203D058001B676C /* Constants.h */,
 				04ECE59311D159BD00FC1D6A /* SubwayViewController.h */,
 				04ECE59411D159BD00FC1D6A /* SubwayViewController.m */,
+				046F3CB31208B577006FE7B1 /* SimpleTiledScrollExampleViewController.h */,
+				046A79A4120CA63E00DC063B /* TiledDelegate.h */,
+				046A79A5120CA63E00DC063B /* TiledDelegate.m */,
+				046F3CB41208B577006FE7B1 /* SimpleTiledScrollExampleViewController.m */,
 				1D3623250D0F684500981E51 /* TabAppDelegate.m */,
 				044C628C11D1B23B009D8BA3 /* Line.h */,
 				044C628D11D1B23B009D8BA3 /* Line.m */,
 				044C626F11D1AFDF009D8BA3 /* ServiceDetailViewController.h */,
 				04E2E36B11E7970F003303F0 /* SubwayServiceDetailViewController.h */,
+				0485F8151203CAA2001B676C /* TapDetectingImageView.h */,
+				0485F8161203CAA2001B676C /* TapDetectingImageView.m */,
+				0485F8171203CAA2001B676C /* ThumbImageView.h */,
+				0485F8181203CAA2001B676C /* ThumbImageView.m */,
 				04E2E36C11E7970F003303F0 /* SubwayServiceDetailViewController.m */,
+				04CCD1971212E5A100815D86 /* CustomCell.h */,
+				04CCD1981212E5A100815D86 /* CustomCell.m */,
 				044C627011D1AFDF009D8BA3 /* ServiceDetailViewController.m */,
 				04ECE67811D1642100FC1D6A /* BusTableViewController.h */,
 				04ECE67911D1642100FC1D6A /* BusTableViewController.m */,
@@ -221,6 +411,20 @@
 				04B025FE11DACFBE00DC97E2 /* RailsViewController.m */,
 				04B0264911DAE4BC00DC97E2 /* BTViewController.h */,
 				04B0264A11DAE4BC00DC97E2 /* BTViewController.m */,
+				0485F8101203C9C5001B676C /* MapsViewController.h */,
+				0485F8111203C9C5001B676C /* MapsViewController.m */,
+				0485F83B1203CD94001B676C /* ServiceAdvisories.h */,
+				0485F83C1203CD94001B676C /* ServiceAdvisories.m */,
+				043999F11204A22D00A74860 /* MapTableViewController.h */,
+				043999F21204A22D00A74860 /* MapTableViewController.m */,
+				046F3CBB1208B60B006FE7B1 /* MapDetailViewController.h */,
+				046F3CBC1208B60B006FE7B1 /* MapDetailViewController.m */,
+				04E75B0F120902670030FBD2 /* ServiceAdvisoryViewController.h */,
+				04E75B10120902670030FBD2 /* ServiceAdvisoryViewController.m */,
+				04E75B4F1209056A0030FBD2 /* ServiceAdvisoryDetailViewController.h */,
+				04E75B501209056A0030FBD2 /* ServiceAdvisoryDetailViewController.m */,
+				04AC0B491213805B003F92CA /* SubwayLinesViewController.h */,
+				04AC0B4A1213805B003F92CA /* SubwayLinesViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -258,6 +462,19 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04BFB0EA121F6D6300EB846F /* linesImages */,
+				04AC0B4B1213805B003F92CA /* SubwayLinesViewController.xib */,
+				04CCD1951212E59700815D86 /* CustomCell.xib */,
+				04E75B11120902670030FBD2 /* ServiceAdvisoryViewController.xib */,
+				04E75B511209056A0030FBD2 /* ServiceAdvisoryDetailViewController.xib */,
+				046F3CB61208B589006FE7B1 /* SimpleTiledScrollExampleViewController.xib */,
+				043999F31204A22D00A74860 /* MapTableViewController.xib */,
+				0485F83D1203CD94001B676C /* ServiceAdvisories.xib */,
+				0485F8291203CAC8001B676C /* Images.plist */,
+				046F3CB81208B5B7006FE7B1 /* subwaymapInPdf.pdf */,
+				0485F8221203CABE001B676C /* Thumbs */,
+				0485F8121203C9C5001B676C /* MapsViewController.xib */,
+				0485F81B1203CAB5001B676C /* Images */,
 				0430E82711E36701007B92A4 /* 7.png */,
 				04E2E36D11E7970F003303F0 /* SubwayServiceDetailViewController.xib */,
 				0430E82811E36701007B92A4 /* 123.png */,
@@ -285,6 +502,7 @@
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* rideOnTime-Info.plist */,
 				044C626C11D1AFB3009D8BA3 /* ServiceDetailView.xib */,
+				0447BD3C1208CD810074EA25 /* MapDetailViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -297,6 +515,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				04EB019611CD611700994BBA /* AudioToolbox.framework */,
 				04EB01D911CD68E100994BBA /* CoreLocation.framework */,
+				0447BD5C1208CE180074EA25 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +588,49 @@
 				0430E86011E38432007B92A4 /* bridge_icon.png in Resources */,
 				04E2E36F11E7970F003303F0 /* SubwayServiceDetailViewController.xib in Resources */,
 				043A684611EB473C000074A8 /* DefaultView.png in Resources */,
+				0485F8141203C9C5001B676C /* MapsViewController.xib in Resources */,
+				0485F81F1203CAB5001B676C /* sub_Jun10.png in Resources */,
+				0485F8201203CAB5001B676C /* lirr.png in Resources */,
+				0485F8211203CAB5001B676C /* mnrmap.png in Resources */,
+				0485F8261203CABE001B676C /* lirr_thumb.png in Resources */,
+				0485F8271203CABE001B676C /* mnrmap_thumb.png in Resources */,
+				0485F8281203CABE001B676C /* sub_Jun10_thumb.png in Resources */,
+				0485F82A1203CAC8001B676C /* Images.plist in Resources */,
+				0485F83F1203CD94001B676C /* ServiceAdvisories.xib in Resources */,
+				043999C512049CE700A74860 /* MTA_Map.png in Resources */,
+				043999C712049CED00A74860 /* MTA_Map_thumb.png in Resources */,
+				043999F51204A22D00A74860 /* MapTableViewController.xib in Resources */,
+				046F3CB71208B589006FE7B1 /* SimpleTiledScrollExampleViewController.xib in Resources */,
+				046F3CB91208B5B7006FE7B1 /* subwaymapInPdf.pdf in Resources */,
+				0447BD3D1208CD810074EA25 /* MapDetailViewController.xib in Resources */,
+				04E75B13120902670030FBD2 /* ServiceAdvisoryViewController.xib in Resources */,
+				04E75B531209056A0030FBD2 /* ServiceAdvisoryDetailViewController.xib in Resources */,
+				0491083F1211FC48007AC9E3 /* subwaymap.png in Resources */,
+				04CCD1961212E59700815D86 /* CustomCell.xib in Resources */,
+				04AC0B4D1213805B003F92CA /* SubwayLinesViewController.xib in Resources */,
+				0479842A121C92DF0093A90D /* subwaymap300.png in Resources */,
+				04BFB10D121F6D7900EB846F /* bullet-z.gif in Resources */,
+				04BFB10E121F6D7900EB846F /* grey_s.gif in Resources */,
+				04BFB10F121F6D7900EB846F /* bullet-r.gif in Resources */,
+				04BFB110121F6D7900EB846F /* bullet_q.gif in Resources */,
+				04BFB111121F6D7900EB846F /* bullet-n.gif in Resources */,
+				04BFB112121F6D7900EB846F /* bullet-m.gif in Resources */,
+				04BFB113121F6D7900EB846F /* bullet-l.gif in Resources */,
+				04BFB114121F6D7900EB846F /* bullet-j.gif in Resources */,
+				04BFB115121F6D7900EB846F /* bullet-g.gif in Resources */,
+				04BFB116121F6D7900EB846F /* bullet-f.gif in Resources */,
+				04BFB117121F6D7900EB846F /* bullet-e.gif in Resources */,
+				04BFB118121F6D7900EB846F /* bullet-d.gif in Resources */,
+				04BFB119121F6D7900EB846F /* bullet-c.gif in Resources */,
+				04BFB11A121F6D7900EB846F /* bullet-b.gif in Resources */,
+				04BFB11B121F6D7900EB846F /* bullet-a.gif in Resources */,
+				04BFB11C121F6D7900EB846F /* bullet-7.gif in Resources */,
+				04BFB11D121F6D7900EB846F /* bullet-6.gif in Resources */,
+				04BFB11E121F6D7900EB846F /* bullet-5.gif in Resources */,
+				04BFB11F121F6D7900EB846F /* bullet-4.gif in Resources */,
+				04BFB120121F6D7900EB846F /* bullet-3.gif in Resources */,
+				04BFB121121F6D7900EB846F /* bullet-2.gif in Resources */,
+				04BFB122121F6D7900EB846F /* bullet-1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +661,18 @@
 				04B0260011DACFBE00DC97E2 /* RailsViewController.m in Sources */,
 				04B0264C11DAE4BC00DC97E2 /* BTViewController.m in Sources */,
 				04E2E36E11E7970F003303F0 /* SubwayServiceDetailViewController.m in Sources */,
+				0485F8131203C9C5001B676C /* MapsViewController.m in Sources */,
+				0485F8191203CAA2001B676C /* TapDetectingImageView.m in Sources */,
+				0485F81A1203CAA2001B676C /* ThumbImageView.m in Sources */,
+				0485F83E1203CD94001B676C /* ServiceAdvisories.m in Sources */,
+				043999F41204A22D00A74860 /* MapTableViewController.m in Sources */,
+				046F3CB51208B577006FE7B1 /* SimpleTiledScrollExampleViewController.m in Sources */,
+				046F3CBE1208B60B006FE7B1 /* MapDetailViewController.m in Sources */,
+				04E75B12120902670030FBD2 /* ServiceAdvisoryViewController.m in Sources */,
+				04E75B521209056A0030FBD2 /* ServiceAdvisoryDetailViewController.m in Sources */,
+				046A79A6120CA63E00DC063B /* TiledDelegate.m in Sources */,
+				04CCD1991212E5A100815D86 /* CustomCell.m in Sources */,
+				04AC0B4C1213805B003F92CA /* SubwayLinesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +719,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "~/Documents/IPhoneBootCamp/Ride On Time/Entitlements.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nabil Mouzannar (2BKA8F7SX5)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -452,6 +727,7 @@
 				GCC_PREFIX_HEADER = rideOnTime_Prefix.pch;
 				INFOPLIST_FILE = "rideOnTime-Info.plist";
 				PRODUCT_NAME = rideOnTime;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "499F85A6-A540-4A36-A654-0B1F7EAD2AC1";
 			};
 			name = Debug;
 		};
@@ -473,15 +749,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nabil Mouzannar (2BKA8F7SX5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nabil Mouzannar";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "28921316-6C7E-46C4-8979-B390635FA915";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "86754882-971B-4D46-8D37-C581E8C2B5B5";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;

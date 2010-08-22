@@ -25,10 +25,14 @@
 	int blogEntryIndex;
 	
 	TabAppDelegate *appDelegate;
+	
+	IBOutlet UIButton *reload;
 }
 
 @property (nonatomic, retain) NSMutableArray *blogEntries; 
+@property (nonatomic, retain) IBOutlet UIButton *reload;
+
 
 - (UIImage *)imageForLine:(NSString *)name;
-
+- (IBAction)reloadData:(id)sender;
 @end

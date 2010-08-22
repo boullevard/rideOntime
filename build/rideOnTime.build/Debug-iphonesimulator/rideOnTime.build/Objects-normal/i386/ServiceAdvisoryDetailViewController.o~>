@@ -1,0 +1,2 @@
+In file included from /Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceAdvisoryDetailViewController.m:9:
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/ServiceAdvisoryDetailViewController.h:33: warning: property 'title' 'copy' attribute does not match super class 'UIViewController' property

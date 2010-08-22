@@ -13,11 +13,11 @@
 
 @implementation SubwayViewController
 
-@synthesize blogEntries;
+@synthesize blogEntries, reload;
 
 // grabRSSFeed function that takes a string (blogAddress) as a parameter and
 // fills the global blogEntries with the entries
--(void) grabRSSFeed:(NSString *)blogAddress {
+-(void) grabRSSFeed {
 	
     // Initialize the blogEntries MutableArray that we declared in the header
     blogEntries = [[NSMutableArray alloc] init];	
@@ -84,8 +84,8 @@
     return 1;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
-	return currentTimeStamp;
+	//NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
+	//return currentTimeStamp;
 }
 
 
@@ -205,77 +205,24 @@
 	return [UIImage imageNamed:[NSString stringWithFormat: @"%@.png", newStringStatus]];
 }
 
-/*
- - (void)viewDidLoad {
- [super viewDidLoad];
- // Uncomment the following line to add the Edit button to the navigation bar.
- // self.navigationItem.rightBarButtonItem = self.editButtonItem;
- }
- */
-
-
-/*
- // Override to support editing the list
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- 
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
- }   
- if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }   
- }
- */
-
-
-/*
- // Override to support conditional editing of the list
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-
-/*
- // Override to support rearranging the list
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-
-/*
- // Override to support conditional rearranging of the list
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-/*
- - (void)viewWillAppear:(BOOL)animated {
- [super viewWillAppear:animated];
- }
- */
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     // Check if blogEntries has already been filled, if not
     // then send the request
-    if([blogEntries count] == 0) {
-        // Create the feed string, in this case I have used dBlog
-        NSString *blogAddress = @"http://mta.info/status/serviceStatus.txt";
-		
-        // Call the grabRSSFeed function with the above
-        // string as a parameter
-        [self grabRSSFeed:blogAddress];
-		
-        // Call the reloadData function on the blogTable, this
-        // will cause it to refresh itself with our new data
+	NSLog(@"viewDidAppear in SubwayView Controller [blogEntries count] %d",[blogEntries count]);
+  //  if([blogEntries count] == 0) {
+		[self grabRSSFeed];
         [blogTable reloadData];
-    }
+   // }
 }
 
+
+- (IBAction)reloadData:(id)sender
+{
+	NSLog(@"RELOAD Data!");
+	appDelegate = (TabAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[appDelegate reloadData];
+}
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

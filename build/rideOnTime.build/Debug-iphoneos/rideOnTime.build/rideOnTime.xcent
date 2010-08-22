@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>M44LSLC5SF.com.boullevard.rideontimenyc</string>
+	<string>W787ULES9H.com.boullevard.rideontimenyc</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>M44LSLC5SF.com.boullevard.rideontimenyc</string>
+		<string>W787ULES9H.com.boullevard.rideontimenyc</string>
 	</array>
 </dict>
 </plist>

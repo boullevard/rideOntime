@@ -26,11 +26,15 @@
 		</data>
 		<key>BTViewController.nib</key>
 		<data>
-		8sf5L0r5ECfKBDc0+8C/oqHMKcc=
+		9KUcQLDSxsQG8obYAb4etsi5zPM=
 		</data>
 		<key>BusTableViewController.nib</key>
 		<data>
-		Xks1n+7n2OZu42jfAfoqNhIxfJQ=
+		NktKdCaiQgHSrCI6I65OabGcejA=
+		</data>
+		<key>CustomCell.nib</key>
+		<data>
+		KKhy1KTuSaX0FKwU+6YKr0vOqjE=
 		</data>
 		<key>Default.png</key>
 		<data>
@@ -48,6 +52,10 @@
 		<data>
 		UjnfuJY0rfpdOn/S4zy4iZYESOY=
 		</data>
+		<key>Images.plist</key>
+		<data>
+		8316PwJ0//7ggCvUVMGwPdpkRJM=
+		</data>
 		<key>JZ.png</key>
 		<data>
 		nuQe574gHMZINlklepZ8G+85fLM=
@@ -56,13 +64,33 @@
 		<data>
 		PJ2zAIoOzHY/w+G49pooxViGoTQ=
 		</data>
+		<key>MTA_Map.png</key>
+		<data>
+		KEpKGhNnz9pfTyIXzBRuPbClTWA=
+		</data>
+		<key>MTA_Map_thumb.png</key>
+		<data>
+		7tlJTQ4BJY9KzdPyZk9Agt2wtuc=
+		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		ZQqcde7VP1c4C7Qrcpp79mhb494=
+		aHUR1cbHOt+rflggz7FOxxazi+w=
+		</data>
+		<key>MapDetailViewController.nib</key>
+		<data>
+		TTaFT/Oc+0XRp/NuIqE6fathUJQ=
+		</data>
+		<key>MapTableViewController.nib</key>
+		<data>
+		k/+urUfSe8yTxQHUQn3LElcAR+I=
+		</data>
+		<key>MapsViewController.nib</key>
+		<data>
+		KldvGDcqdaPdtsgh21cpjzwtyew=
 		</data>
 		<key>MetroNorthViewController.nib</key>
 		<data>
-		fVZxtkqm0TgWRUcgGi6CAHSg//0=
+		9KUcQLDSxsQG8obYAb4etsi5zPM=
 		</data>
 		<key>NQR.png</key>
 		<data>
@@ -74,7 +102,7 @@
 		</data>
 		<key>RailsViewController.nib</key>
 		<data>
-		6drswVP9TFwXDcviD5CIYHLdHnE=
+		mu7OEdb2kJKM2NTLl9r/E9owhbQ=
 		</data>
 		<key>S.png</key>
 		<data>
@@ -84,13 +112,33 @@
 		<data>
 		tQmy9kLVZEMc8u83NeEHxPz3h8Y=
 		</data>
+		<key>ServiceAdvisories.nib</key>
+		<data>
+		1X+7nFz6vJAuIm0LvEKMAQLssyo=
+		</data>
+		<key>ServiceAdvisoryDetailViewController.nib</key>
+		<data>
+		ogoz//rcNDNbXSsYmtOBmzFqH1U=
+		</data>
+		<key>ServiceAdvisoryViewController.nib</key>
+		<data>
+		q62VEbnJYWVfcthGP37Gp17EXeI=
+		</data>
 		<key>ServiceDetailView.nib</key>
 		<data>
-		JyT7eAX6W/jhrz1L4LI55xsocrQ=
+		CRby19b7Jx9aeP+iJzS0F8n2z3k=
+		</data>
+		<key>SimpleTiledScrollExampleViewController.nib</key>
+		<data>
+		py5hHsxqxJEJFZsVa8RrjjjSxhQ=
+		</data>
+		<key>SubwayLinesViewController.nib</key>
+		<data>
+		25kUout09qiF6ztXw4K4hlR1clw=
 		</data>
 		<key>SubwayServiceDetailViewController.nib</key>
 		<data>
-		MJ23wKQSqHi7fv9I8fBo01gPtBU=
+		T2E0nEW8wY5QZq4KIZJgLrJd0Cs=
 		</data>
 		<key>SubwayViewController.nib</key>
 		<data>
@@ -100,21 +148,145 @@
 		<data>
 		5+ZwTXNqAoUq485lVpeeMd8lsoc=
 		</data>
+		<key>bullet-1.gif</key>
+		<data>
+		fWxZUlHJjFFnvEg3fNZPOoozS70=
+		</data>
+		<key>bullet-2.gif</key>
+		<data>
+		mbF62ZzhkynxFVtRIdztig0i3W8=
+		</data>
+		<key>bullet-3.gif</key>
+		<data>
+		Y3sOyn2dcwC2TSMswlb2zyOo20I=
+		</data>
+		<key>bullet-4.gif</key>
+		<data>
+		ajWMPKNw2p8LqKDkux2nvnT3U1c=
+		</data>
+		<key>bullet-5.gif</key>
+		<data>
+		ZAlCed5HJsTQ1pmh4HfgNTj5GR8=
+		</data>
+		<key>bullet-6.gif</key>
+		<data>
+		JDD+I7nGE5RDYw0XsB5YI/1stEQ=
+		</data>
+		<key>bullet-7.gif</key>
+		<data>
+		jwst+pWrWHbpvXQOb938KON8ULU=
+		</data>
+		<key>bullet-a.gif</key>
+		<data>
+		vsD1ZaRusDZbXgosgsQaPQqqeWU=
+		</data>
+		<key>bullet-b.gif</key>
+		<data>
+		eBtOO9fgia9gd9duOtCOn2hUsPA=
+		</data>
+		<key>bullet-c.gif</key>
+		<data>
+		yIU60wM+1rj86Xtr2dDmuCeUZ4g=
+		</data>
+		<key>bullet-d.gif</key>
+		<data>
+		3Ywv5Xu6sQM6MqzGDpESSMUJgwc=
+		</data>
+		<key>bullet-e.gif</key>
+		<data>
+		6VsfuuU12uQxsk9mbbRKyu0HTs8=
+		</data>
+		<key>bullet-f.gif</key>
+		<data>
+		RL8n/vUvXPQE8uHZgKrsAh27BBs=
+		</data>
+		<key>bullet-g.gif</key>
+		<data>
+		XqlNnJDdzFqKqdwNwwL0w3eSIWY=
+		</data>
+		<key>bullet-j.gif</key>
+		<data>
+		+/y6EJVRRQWo420lTMKJhe4vpl8=
+		</data>
+		<key>bullet-l.gif</key>
+		<data>
+		5jZJB4zqH6NOnTrl0D4KWun648I=
+		</data>
+		<key>bullet-m.gif</key>
+		<data>
+		ryvGohKTmIPVv5YzKek1u7Yuw6Q=
+		</data>
+		<key>bullet-n.gif</key>
+		<data>
+		DPrNiJxNL7y2A+9lD6gLOhUCdpM=
+		</data>
+		<key>bullet-r.gif</key>
+		<data>
+		ITBwTa/umBvyR6B+Itc7Nqse/0U=
+		</data>
+		<key>bullet-z.gif</key>
+		<data>
+		pDwRAfzg/HEGOnueDkQqdpSTe2c=
+		</data>
+		<key>bullet_q.gif</key>
+		<data>
+		ifet8GsVntD0fsnhgZg3MR9RsQc=
+		</data>
 		<key>bus_icon.png</key>
 		<data>
 		Bc19NOeBG2EVNyatkOyJPfE90Ek=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		NUPTBW+gpZrLAqBvrfXIy4hvf6U=
+		P0Tt8r4eueBZI/X5AvoEwWNrohY=
+		</data>
+		<key>grey_s.gif</key>
+		<data>
+		b6JU7pztxZG4fcGdJyPhYEn19aw=
+		</data>
+		<key>lirr.png</key>
+		<data>
+		fQO9kZVQnuLEHqTQtoya/qidtxQ=
+		</data>
+		<key>lirr_thumb.png</key>
+		<data>
+		MOV+FA4morZFstCp+BWOWchuMP8=
+		</data>
+		<key>mnrmap.png</key>
+		<data>
+		Cz25BI9XIGGbLfexxgFISvS4hpk=
+		</data>
+		<key>mnrmap_thumb.png</key>
+		<data>
+		oLqlvXGocV8WM/lstLN2+TlR4II=
 		</data>
 		<key>rail_icon.png</key>
 		<data>
 		u5JSZmJWtmHo/1LVS/t1ZdDwz4k=
 		</data>
+		<key>sub_Jun10.png</key>
+		<data>
+		LGKpi96Wze2nz6JleXj3XMQU/JI=
+		</data>
+		<key>sub_Jun10_thumb.png</key>
+		<data>
+		7tlJTQ4BJY9KzdPyZk9Agt2wtuc=
+		</data>
 		<key>subway_icon.png</key>
 		<data>
 		mIcWbCWomay2jvxTkfazSTu8D0Q=
+		</data>
+		<key>subwaymap.png</key>
+		<data>
+		HfLjQJEbMYPiB/hoWgGXmVVwleA=
+		</data>
+		<key>subwaymap300.png</key>
+		<data>
+		BOLi2pUvVbCnJRlNXvXukcLoSB8=
+		</data>
+		<key>subwaymapInPdf.pdf</key>
+		<data>
+		Hi1rJzH84S9KAQz9sj7PH5zc4IQ=
 		</data>
 	</dict>
 	<key>rules</key>

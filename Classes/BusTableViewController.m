@@ -84,8 +84,8 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
-	return currentTimeStamp;
+//	NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
+//	return currentTimeStamp;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

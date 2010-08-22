@@ -96,8 +96,8 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
-	return currentTimeStamp;
+	//NSString *currentTimeStamp = [NSString stringWithFormat: @"As of %@", appDelegate.getTimeStamp];
+	//return currentTimeStamp;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -272,7 +272,7 @@
     // then send the request
     if([blogEntries count] == 0) {
         // Create the feed string, in this case I have used dBlog
-        NSString *blogAddress = @"http://mta.info/status/serviceStatus.txt";//http://dblog.com.au/feed/";
+        NSString *blogAddress = @"http://mta.info/status/serviceStatus.txt";
 		
         // Call the grabRSSFeed function with the above
         // string as a parameter
@@ -283,14 +283,9 @@
         [table reloadData];
 	}
 }
-/*
- - (void)viewWillDisappear:(BOOL)animated {
- }
- */
-/*
- - (void)viewDidDisappear:(BOOL)animated {
- }
- */
+
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
