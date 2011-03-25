@@ -10,13 +10,14 @@
 #import "ServiceDetailViewController.h"
 #import "TouchXML.h"
 #import "TabAppDelegate.h"
+#import "FlurryAPI.h"
 
 @implementation RailsViewController
 
 @synthesize blogEntries,blogEntries1,blogEntries2,blogEntries3,blogEntries4;
-@synthesize tableContents;
 @synthesize reloadButton;
 @synthesize sortedKeys;
+@synthesize tableContents;
 @synthesize mReceivedData;
 @synthesize requestBody;
 @synthesize timeStampLabel;
@@ -214,55 +215,65 @@
 	UILabel *nameLabel = nil;
 	UILabel *statusLabel = nil;
 	NSString *newStringStatus;
-	NSString *newNameString;
     static NSString *CellIdentifier = @"Cell";
     	
-	NSArray *listData =[self.tableContents objectForKey:
-						[self.sortedKeys objectAtIndex:[indexPath section]]];
+	NSArray *listData =[self.tableContents objectForKey: [self.sortedKeys objectAtIndex:[indexPath section]]];
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   	blogEntryIndex = [indexPath indexAtPosition: [indexPath length] -1];
+	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+			
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 	
+		myImagePath = [[NSBundle mainBundle] pathForResource: [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"] ofType:@"png"];
+		exists = [fileManager fileExistsAtPath:myImagePath];
+		
 		lineImage = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"123.png"]] autorelease];
 		CGRect imageFrame = lineImage.frame;
 		imageFrame.origin = CGPointMake(8, 11);
 		lineImage.frame = imageFrame;
 		lineImage.tag = 1;
-			[cell.contentView addSubview:lineImage];
+		[cell.contentView addSubview:lineImage];
+		
 		
 		nameLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 11, 100, 20)] autorelease];
 		nameLabel.tag = 2;
 		nameLabel.font = [UIFont boldSystemFontOfSize:14];
 		nameLabel.adjustsFontSizeToFitWidth = YES;
 		[cell.contentView addSubview:nameLabel];
-		
+			
 		statusLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140, 15, 170, 14)] autorelease];
 		statusLabel.tag = 3;
 		statusLabel.font = [UIFont boldSystemFontOfSize:16];
 		[cell.contentView addSubview:statusLabel];
-	} else{
-		newNameString = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		//if ([newNameString isEqualToString: @"123"]){
-			NSLog(@"SHOU add image");
-	//	lineImage.image
-		
-			lineImage = (UIImageView *)[cell.contentView viewWithTag:1];
-			nameLabel = (UILabel *)[cell.contentView viewWithTag:2];			
-			statusLabel = (UILabel *)[cell.contentView viewWithTag:3];
-		//}else {
-		//	nameLabel = (UILabel *)[cell.contentView viewWithTag:1];			
-		//	statusLabel = (UILabel *)[cell.contentView viewWithTag:2];
-		//}
-
-		
-	}
 	
+	} else{
+		myImagePath = [[NSBundle mainBundle] pathForResource: [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"] ofType:@"png"];
+		exists = [fileManager fileExistsAtPath:myImagePath];
+		
+		lineImage = (UIImageView *)[cell.contentView viewWithTag:1];
+		nameLabel = (UILabel *)[cell.contentView viewWithTag:2];			
+		statusLabel = (UILabel *)[cell.contentView viewWithTag:3];
+	}
+		if (exists){
+			NSString *lineImageName = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"];
+			lineImage.image = [self imageForLine:lineImageName];
+			lineImage.hidden = NO;
+			nameLabel.hidden = YES;
+			nameLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"];
+			statusLabel.text = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+		}else {
+			lineImage.hidden = YES;
+			nameLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"];
+			nameLabel.hidden = NO;
+			statusLabel.text = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+		}
+
 	newStringStatus = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	if ([newStringStatus isEqualToString: @"GOOD SERVICE"]){
 		statusLabel.textColor = [UIColor colorWithRed: 0 green: 0.6 blue: 0 alpha:1];//getRGB values and divide by 255
-		
 	}else if ([newStringStatus isEqualToString: @"PLANNED WORK"] ||
 			  [newStringStatus isEqualToString: @"DELAYS"] ||
 			  [newStringStatus isEqualToString: @"SUSPENDED"]){
@@ -271,13 +282,6 @@
 		statusLabel.textColor = [UIColor orangeColor];
 	}
 	
-	newNameString = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	//if ([newNameString isEqualToString: @"123"]){
-	//	lineImage.image = [UIImage imageNamed: @"123.png"];
-	//}
-	nameLabel.text = [[listData objectAtIndex: blogEntryIndex] objectForKey: @"name"];
-	statusLabel.text = [[[listData objectAtIndex: blogEntryIndex] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-
 	//show do not show accessory
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
@@ -293,11 +297,8 @@
 	return cell;	
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-		
-	NSArray *listData =[self.tableContents objectForKey:
-						[self.sortedKeys objectAtIndex:[indexPath section]]];
+	NSArray *listData =[self.tableContents objectForKey: [self.sortedKeys objectAtIndex:[indexPath section]]];
 	// Navigation logic -- create and push a new view controller
 	NSString *newStringStatus = [[[listData objectAtIndex: indexPath.row] objectForKey: @"status"] stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
@@ -316,41 +317,60 @@
 
 
 - (UIImage *)imageForLine:(NSString *)name {	
-	NSLog(@"name %@", name);
-	return [UIImage imageNamed:[NSString stringWithFormat: @"%@.png", name]];
+	NSString *newStringStatus = [name stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	return [UIImage imageNamed:[NSString stringWithFormat: @"%@.png", newStringStatus]];
 }
-
 
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Uncomment the following line to add the Edit button to the navigation bar.
-	// self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	// self.navigationItem.leftBarButtonItem = self.editButtonItem;
+	NSLog(@"1 RailsViewController : view viewDidLoad");
+	appDelegate = (TabAppDelegate *)[[UIApplication sharedApplication] delegate];
+	self.tableContents = [[NSDictionary alloc] init];
+	NSLog(@"Railssss viewDidAppear self.tableContents ");
+	
 }
 
+/*
 - (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
+    [super viewWillAppear:animated];
+	NSLog(@"************ Rails Flurry : view viewWillAppear");
+	[FlurryAPI logEvent:@"RailsViewController"];
 }
-
+*/
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-	NSLog(@"view viewDidAppear");
-
+	//NSLog(@"3 RailsViewController: view viewDidAppear");
+	//[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"linesData"]; //clear rowSelectedArray from NSUserDefaults
 	if([blogEntries count] == 0) {
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
-	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];	
-	if (!connection){
-		NSLog (@"Unable To Connect");
-		[self showAlertTitle:@"Network Connection Failure" Text:@"Unable To Connect"];
-	}
-	[request release];
+		//reload button is initially disabled
+		[self disableReloadButton];
+		NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+		NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];	
+		if (!connection){
+			NSLog (@"Unable To Connect");
+			[self showAlertTitle:@"Network Connection Failure" Text:@"Unable To Connect"];
+		}
+		[request release];
+		[self startAnimation];
 	
+	}else if (self.timeStamp != @"null" ){
 	
-	[self startAnimation];
+		NSString *currentTimeFromTabAppDelegate = [appDelegate getTimeStamp];
+		self.timeStampLabel.text = [NSString stringWithFormat: @"Current as of %@", currentTimeFromTabAppDelegate];
+		//update lines with the latest linesData that was refresehd from Lines Favorites
+		self.tableContents = [appDelegate getLinesData];
+		NSLog(@"viewDidAppear blogTable reloadData");
+		[blogTable reloadData];
+	
 	}
 }
 
 - (void) showTableData{
+	NSLog(@"showTableData");
+	
 	// Create the feed string, in this case I have used dBlog
 	NSString *nodeAddress = @"//service/subway/line";
 	[self grabRSSFeed:nodeAddress];
@@ -360,27 +380,27 @@
 						 blogEntries4,@"Bridges And Tunnels",
 						 nil
 						 ];
-	self.tableContents =temp;
+	
+	self.tableContents = temp;
+	
+	// save data to appdelegate
+	[appDelegate setLinesData: temp];
+
 	[temp release];
-	self.sortedKeys = [self.tableContents allKeys];//[[self.tableContents allKeys] sortedArrayUsingSelector:@selector(compare:)];
 	
-	[blogEntries release];
-	[blogEntries1 release];
-	[blogEntries2 release];
-	[blogEntries3 release];
-	[blogEntries4 release];
-	
+	// finally figured this one out - is create my own array of keys sorted the way i want them
+	self.sortedKeys = [NSArray arrayWithObjects:@"Subway",@"Bus",@"LIRR",@"Metro-North",@"Bridges And Tunnels", nil];
+
 	[self enableReloadButton];
 	
 	// Call the reloadData function on the blogTable, this
 	// will cause it to refresh itself with our new data
-
+NSLog(@"showTableData blogTable reloadData");
 	[blogTable reloadData];
 }	
-- (IBAction)reloadData:(id)sender
+- (IBAction)refreshData:(id)sender
 {
-	NSLog(@"RELOAD Data!");
-	reloadButton.enabled = NO;
+	[self disableReloadButton];
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (!connection){
@@ -391,15 +411,32 @@
 	
 	UIApplication *application = [UIApplication sharedApplication];
 	application.networkActivityIndicatorVisible = YES;
+}
+
+- (void)refreshDataApplicationDidBecomeActive
+{
+	[self disableReloadButton];
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
+	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	if (!connection){
+		NSLog (@"Unable To Connect");
+		[self showAlertTitle:@"Network Connection Failure" Text:@"Unable To Connect"];
+	}
+	[request release];
 	
-	
+	UIApplication *application = [UIApplication sharedApplication];
+	application.networkActivityIndicatorVisible = YES;
+}
+
+- (void) disableReloadButton{
+	//NSLog(@"disableReloadButton  !");
+	self.reloadButton.enabled = NO;
 }
 
 - (void) enableReloadButton{
-	NSLog(@"enableReloadButton  !");
-	reloadButton.enabled = YES;
+	//NSLog(@"enableReloadButton  !");
+	self.reloadButton.enabled = YES;
 }
-
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
 	self.mReceivedData = [[NSMutableData alloc] init];
@@ -410,19 +447,16 @@
 		[connection cancel];
 		[connection release];
 	}
-	
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
-	[mReceivedData appendData:data];
+	[self.mReceivedData appendData:data];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-	
 	[connection release];
-	mReceivedData = nil;
+	self.mReceivedData = nil;
 
-	
 	NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
@@ -430,80 +464,61 @@
 	// - %@",[error localizedDescription]
 	
 	//Retrieve xml requestBody if no connection
-	self.requestBody = [self retrieveFromUserDefaults];
-	self.timeStamp = [self retrieveTimeStampFromUserDefaults];
-	
-	//tODO load the table!!
+	self.requestBody = [self retrieveRequestBodyFromUserDefaults];
+	self.timeStamp = [appDelegate retrieveTimeStampFromUserDefaults];
+	self.getInitialTimeStamp;
+	//load the table!!
 	[self showTableData];	
 	[self stopAnimation];
 	self.timeStampLabel.text = [NSString stringWithFormat: @"Current as of %@", self.timeStamp];
-	
+	//NSLog(@"from ERROR: self.timeStampLabel.text %@",self.timeStampLabel.text);
 	[self showAlertTitle:@"Network Connection Failure" Text: msg];
-
 }
 
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	self.requestBody	= [[NSString alloc] initWithData:mReceivedData encoding:NSUTF8StringEncoding];
+	self.requestBody	= [[NSString alloc] initWithData:self.mReceivedData encoding:NSUTF8StringEncoding];
 	self.getInitialTimeStamp;
 	
 	//SAVE!!
-	[self saveToUserDefaults: self.requestBody];
-	[self saveTimeStampToUserDefaults: self.timeStamp];
+	[self saveRequestBodyToUserDefaults: self.requestBody];
+	[appDelegate saveTimeStampToUserDefaults: self.timeStamp];
 	
-	//tODO load the table!!
+	//load the table!!
 	[self showTableData];	
 	[self stopAnimation];
 	self.timeStampLabel.text = [NSString stringWithFormat: @"Current as of %@", self.timeStamp];
+	//NSLog(@"from connectionDidFinishLoading: self.timeStampLabel.text %@",self.timeStampLabel.text);
 	
 	[connection release];
-	[requestBody release];
-	mReceivedData = nil;
+	[self.requestBody release];
+	self.mReceivedData = nil;
 	
 }
-
--(void)saveToUserDefaults:(NSString*)myString
+//saverequestBody for rails
+-(void)saveRequestBodyToUserDefaults:(NSString*)value //removed the one saveToUserDefaults in railsViewController
 {
 	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
 	
 	if (standardUserDefaults) {
-		[standardUserDefaults setObject:myString forKey:@"Prefs"];
+		[standardUserDefaults setObject:value forKey:@"requestBody"];
 		[standardUserDefaults synchronize];
 	}
 }
 
--(NSString*)retrieveFromUserDefaults
+-(NSString*)retrieveRequestBodyFromUserDefaults
 {
 	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
 	NSString *val = nil;
 	
 	if (standardUserDefaults) 
-		val = [standardUserDefaults objectForKey:@"Prefs"];
+		val = [standardUserDefaults objectForKey:@"requestBody"];
 	
 	return val;
 }
 
--(void)saveTimeStampToUserDefaults:(NSString*)myString
-{
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
-	
-	if (standardUserDefaults) {
-		[standardUserDefaults setObject:myString forKey:@"Timestamp"];
-		[standardUserDefaults synchronize];
-	}
-}
-
--(NSString*)retrieveTimeStampFromUserDefaults
-{
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
-	NSString *val = nil;
-	
-	if (standardUserDefaults) 
-		val = [standardUserDefaults objectForKey:@"Timestamp"];
-	
-	return val;
-}
 - (NSString *) getBody {
+	//return [appDelegate retrieveRequestBodyFromUserDefaults];
 	return self.requestBody;
 }
 
@@ -511,6 +526,9 @@
 	CXMLDocument *rssParser = [[[CXMLDocument alloc] initWithXMLString:[self getBody] options:0 error:nil] autorelease];
 	NSArray *resultsTimeStamp = [[rssParser rootElement] nodesForXPath:@"//service/timestamp" error:nil];
 	self.timeStamp = [[resultsTimeStamp objectAtIndex:0] stringValue];
+	
+	//save timeStamp to appDelegate so that LineFavorites class can display it 
+	[appDelegate setTimeStamp: self.timeStamp];
 }
 
 /* show the user that loading activity has started */
@@ -541,13 +559,10 @@
 	[alert release];
 }
 
-
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    // Support all orientations except upside-down
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
@@ -556,11 +571,17 @@
 
 
 - (void)dealloc {
-	[tableContents release];
-	[sortedKeys release];
 	[blogEntries release];
+	[blogEntries1 release];
+	[blogEntries2 release];
+	[blogEntries3 release];
+	[blogEntries4 release];
+	[self.tableContents release];
+	[self.sortedKeys release];
 	[CXMLDocument release];
-	[mReceivedData release];
+	[self.mReceivedData release];
+	[serviceDetailController release];
+
     [super dealloc];
 }
 

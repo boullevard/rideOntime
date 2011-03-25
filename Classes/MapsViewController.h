@@ -10,17 +10,12 @@
 #import <UIKit/UIKit.h>
 
 #import "TapDetectingImageView.h"
-#import "ThumbImageView.h"
+
 	
-	@interface MapsViewController : UIViewController <UIScrollViewDelegate, TapDetectingImageViewDelegate, ThumbImageViewDelegate> {
-		UIScrollView *imageScrollView;
-		UIScrollView *thumbScrollView;
-		UIView       *slideUpView; // Contains thumbScrollView and a label giving credit for the images.
-		
-		BOOL thumbViewShowing;
-		
-		NSTimer *autoscrollTimer;  // Timer used for auto-scrolling.
-		float autoscrollDistance;  // Distance to scroll the thumb view when auto-scroll timer fires.
-	}
+@interface MapsViewController : UIViewController <UIScrollViewDelegate, TapDetectingImageViewDelegate> {
+	UIScrollView *imageScrollView;
+}
+
+- (void)refreshDataApplicationDidBecomeActive;
 	
-	@end
+@end

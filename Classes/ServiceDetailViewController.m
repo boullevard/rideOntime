@@ -8,6 +8,7 @@
 
 #import "ServiceDetailViewController.h"
 #import "Line.h"
+#import "FlurryAPI.h"
 
 @implementation ServiceDetailViewController
 
@@ -45,16 +46,37 @@
 	//[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];
 }
 - (void)viewWillAppear:(BOOL)animated { 
-    // Update the views appropriately  
-	html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
-			 [aLine objectForKey: @"Date"],
-			 [aLine objectForKey: @"Time"],
-			[aLine objectForKey: @"name"],
-					  [aLine objectForKey: @"status"],
-					  [aLine objectForKey: @"text"]];
+	[super viewWillAppear:animated];
+	NSFileManager *fileManager = [NSFileManager defaultManager];
 
-	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/widgetImages/nyct/"]];   
+	myImagePath = [[NSBundle mainBundle] pathForResource: [aLine objectForKey: @"name"] ofType:@"png"];
+	exists = [fileManager fileExistsAtPath:myImagePath];
+	//NSString *webImage = [NSString stringWithFormat: @"<img src=\'http://mta.info/status/widgetImages/%@.gif'>", [aLine objectForKey: @"name"]];
+
+	if (exists){
+		html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><img src=\'http://mta.info/status/widgetImages/%@.gif'><br><font face=\'arial'><b> (%@)</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
+								[aLine objectForKey: @"Date"],
+							   [aLine objectForKey: @"Time"],
+							   [aLine objectForKey: @"name"],
+								[aLine objectForKey: @"name"],
+							   [aLine objectForKey: @"status"],
+							   [aLine objectForKey: @"text"]];					   
+		}else{
+					   html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
+							   [aLine objectForKey: @"Date"],
+							   [aLine objectForKey: @"Time"],
+							   [aLine objectForKey: @"name"],
+							   [aLine objectForKey: @"status"],
+							   [aLine objectForKey: @"text"]];
+					   
+				   }
+    // Update the views appropriately  
+
+	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/widgetImages/"]]; 
+		NSLog(@"************ ServiceDetailViewController Flurry : view viewWillAppear");
+	[FlurryAPI logEvent:@"ServiceDetailViewController"];
 }
+
 - (void) showActivityIndicator{
 	[self.activityIndicator startAnimating];
 

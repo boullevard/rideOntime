@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "TouchXML.h"
 
-@class ServiceDetailViewController;
+@class TabAppDelegate,ServiceDetailViewController;
 
 @interface RailsViewController : UIViewController <UITableViewDelegate>{
-    // This is the outlet for the blog view, it will allow the data from the controller to be used in a view
+   TabAppDelegate *appDelegate;
+	
+	// This is the outlet for the blog view, it will allow the data from the controller to be used in a view
     IBOutlet UITableView *blogTable;
-	IBOutlet UIView *myView;
     // blogEntries is used to store the data retrieved from the RSS feed before being added to the view
     NSMutableArray *blogEntries;
 	NSMutableArray *blogEntries1;
@@ -35,6 +36,8 @@
 	NSString *requestBody;
 	NSString *timeStamp;
 	BOOL IS_FIRSTTIME;
+	BOOL exists;
+	NSString *myImagePath;
 	
 }
 @property (nonatomic,retain) NSDictionary *tableContents;
@@ -52,23 +55,18 @@
 
 @property (nonatomic, retain) IBOutlet UILabel * timeStampLabel;
 
-
 - (void) showAlertTitle:(NSString *) Title Text: (NSString *) Text;
 - (void) startAnimation;
 - (void) stopAnimation;
--(void)saveToUserDefaults:(NSString*)myString;
--(NSString*)retrieveFromUserDefaults;
--(void)saveTimeStampToUserDefaults:(NSString*)myString;
--(NSString*)retrieveTimeStampFromUserDefaults;
 
 - (NSString *) getBody;
 - (void) getInitialTimeStamp;
-- (NSString *) getTimeStamp;
-- (void) reloadData;
-
 
 - (UIImage *)imageForLine:(NSString *)name;
-- (IBAction)reloadData:(id)sender;
+- (IBAction)refreshData:(id)sender;
 - (void) enableReloadButton;
-
-@end
+- (void) disableReloadButton;
+- (void)refreshDataApplicationDidBecomeActive;
+- (void)saveRequestBodyToUserDefaults:(NSString*)value;
+-(NSString*)retrieveRequestBodyFromUserDefaults;
+ @end
