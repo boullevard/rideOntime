@@ -8,7 +8,7 @@
 
 #import "FavoriteLinesManager.h"
 #import "TabAppDelegate.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 @implementation FavoriteLinesManager
 
@@ -75,7 +75,7 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	NSLog(@"************ FavoriteLinesManager Flurry : view viewWillAppear");
-	[FlurryAPI logEvent:@"FavoriteLinesManager"];
+	[FlurryAnalytics logEvent:@"FavoriteLinesManager" timed:YES];
 }
 
 

@@ -28,4 +28,5 @@
 
 - (void) stopAndHideActivityIndicator;
 - (void) showActivityIndicator;
+- (NSString *)flattenHTML:(NSString *)html;
 @end

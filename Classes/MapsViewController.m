@@ -9,7 +9,7 @@
 //
 
 #import "MapsViewController.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 #define ZOOM_VIEW_TAG 100
 #define ZOOM_STEP 2
@@ -58,7 +58,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	NSLog(@"************ MAps Flurry : view viewWillAppear");
-[FlurryAPI logEvent:@"MapsViewController"];
+[FlurryAnalytics logEvent:@"MapsViewController"];
 }
  */
 

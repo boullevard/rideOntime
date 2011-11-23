@@ -10,7 +10,7 @@
 #import "ServiceDetailViewController.h"
 #import "FavoriteLinesManager.h"
 #import "TabAppDelegate.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 @implementation LineFavorites
 
@@ -208,7 +208,7 @@
 //	self.myHeaderView.backgroundColor = [UIColor clearColor];
 //	self.myHeaderView.frame = newFrame;
 //	favoriteTable.tableHeaderView = self.myHeaderView;	// note this will override UITableView's 'sectionHeaderHeight' property
-	
+  
 	myEmptyListLabel = [[[UILabel alloc] initWithFrame:CGRectMake(10, 50, 300, 140)] autorelease];
 	myEmptyListLabel.font = [UIFont systemFontOfSize: 20];
 	myEmptyListLabel.textAlignment = UITextAlignmentCenter;
@@ -225,7 +225,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	NSLog(@"************ LineFavorites Flurry : view viewWillAppear");
-	[FlurryAPI logEvent:@"LineFavorites"];
+	[FlurryAnalytics logEvent:@"LineFavorites"];
 }
  */
 
@@ -736,12 +736,11 @@
 	[blogEntries2 release];
 	[blogEntries3 release];
 	[blogEntries4 release];
-	[CXMLDocument release];
+//	[CXMLDocument release];
 	[mReceivedData release];
 	[serviceDetailController release];
     [super dealloc];
 }
-
 
 @end
 

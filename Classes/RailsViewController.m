@@ -10,7 +10,7 @@
 #import "ServiceDetailViewController.h"
 #import "TouchXML.h"
 #import "TabAppDelegate.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 @implementation RailsViewController
 
@@ -337,13 +337,15 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	NSLog(@"************ Rails Flurry : view viewWillAppear");
-	[FlurryAPI logEvent:@"RailsViewController"];
+	[FlurryAnalytics logEvent:@"RailsViewController"];
 }
 */
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-	//NSLog(@"3 RailsViewController: view viewDidAppear");
+	NSLog(@"3 RailsViewController: view viewDidAppear");
 	//[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"linesData"]; //clear rowSelectedArray from NSUserDefaults
+/*
+    NSLog(@"IMPORTATNT TO ** blogEntries count %@",[blogEntries count]);
 	if([blogEntries count] == 0) {
 		//reload button is initially disabled
 		[self disableReloadButton];
@@ -356,22 +358,19 @@
 		[request release];
 		[self startAnimation];
 	
-	}else if (self.timeStamp != @"null" ){
-	
+	}else if ([self.timeStamp length] > 0){
 		NSString *currentTimeFromTabAppDelegate = [appDelegate getTimeStamp];
 		self.timeStampLabel.text = [NSString stringWithFormat: @"Current as of %@", currentTimeFromTabAppDelegate];
 		//update lines with the latest linesData that was refresehd from Lines Favorites
 		self.tableContents = [appDelegate getLinesData];
-		NSLog(@"viewDidAppear blogTable reloadData");
+		NSLog(@"viewDidAppear blogTable reloadData self.timeStamp != null");
 		[blogTable reloadData];
-	
 	}
+ */
 }
 
 - (void) showTableData{
-	NSLog(@"showTableData");
-	
-	// Create the feed string, in this case I have used dBlog
+// Create the feed string, in this case I have used dBlog
 	NSString *nodeAddress = @"//service/subway/line";
 	[self grabRSSFeed:nodeAddress];
 	
@@ -415,6 +414,7 @@ NSLog(@"showTableData blogTable reloadData");
 
 - (void)refreshDataApplicationDidBecomeActive
 {
+       NSLog(@"******* refreshDataApplicationDidBecomeActive **** LOOK OUT");
 	[self disableReloadButton];
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -429,12 +429,10 @@ NSLog(@"showTableData blogTable reloadData");
 }
 
 - (void) disableReloadButton{
-	//NSLog(@"disableReloadButton  !");
 	self.reloadButton.enabled = NO;
 }
 
 - (void) enableReloadButton{
-	//NSLog(@"enableReloadButton  !");
 	self.reloadButton.enabled = YES;
 }
 
@@ -466,9 +464,9 @@ NSLog(@"showTableData blogTable reloadData");
 	//Retrieve xml requestBody if no connection
 	self.requestBody = [self retrieveRequestBodyFromUserDefaults];
 	self.timeStamp = [appDelegate retrieveTimeStampFromUserDefaults];
-	self.getInitialTimeStamp;
+    self.getInitialTimeStamp;
 	//load the table!!
-	[self showTableData];	
+	[self showTableData];	//nabil removed it because it was calling it somehow already
 	[self stopAnimation];
 	self.timeStampLabel.text = [NSString stringWithFormat: @"Current as of %@", self.timeStamp];
 	//NSLog(@"from ERROR: self.timeStampLabel.text %@",self.timeStampLabel.text);
@@ -478,7 +476,7 @@ NSLog(@"showTableData blogTable reloadData");
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	self.requestBody	= [[NSString alloc] initWithData:self.mReceivedData encoding:NSUTF8StringEncoding];
-	self.getInitialTimeStamp;
+    self.getInitialTimeStamp;
 	
 	//SAVE!!
 	[self saveRequestBodyToUserDefaults: self.requestBody];
@@ -498,22 +496,23 @@ NSLog(@"showTableData blogTable reloadData");
 //saverequestBody for rails
 -(void)saveRequestBodyToUserDefaults:(NSString*)value //removed the one saveToUserDefaults in railsViewController
 {
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *standardUserDefaults = [[NSUserDefaults standardUserDefaults] retain];
 	
 	if (standardUserDefaults) {
 		[standardUserDefaults setObject:value forKey:@"requestBody"];
 		[standardUserDefaults synchronize];
 	}
+    [standardUserDefaults release];
 }
 
 -(NSString*)retrieveRequestBodyFromUserDefaults
 {
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *standardUserDefaults = [[NSUserDefaults standardUserDefaults] retain];
 	NSString *val = nil;
 	
 	if (standardUserDefaults) 
 		val = [standardUserDefaults objectForKey:@"requestBody"];
-	
+	 [standardUserDefaults release];
 	return val;
 }
 
@@ -529,6 +528,7 @@ NSLog(@"showTableData blogTable reloadData");
 	
 	//save timeStamp to appDelegate so that LineFavorites class can display it 
 	[appDelegate setTimeStamp: self.timeStamp];
+    NSLog(@"getInitialTimeStamp self.timeStamp %@",self.timeStamp );
 }
 
 /* show the user that loading activity has started */
@@ -578,7 +578,7 @@ NSLog(@"showTableData blogTable reloadData");
 	[blogEntries4 release];
 	[self.tableContents release];
 	[self.sortedKeys release];
-	[CXMLDocument release];
+	//[CXMLDocument release];
 	[self.mReceivedData release];
 	[serviceDetailController release];
 

@@ -7,8 +7,7 @@
 //
 
 #import "TabAppDelegate.h"
-//#import "TVOutManager.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 
 @implementation TabAppDelegate
@@ -24,27 +23,42 @@
     // Override point for customization after application launch
 	// NSSetUncaughtExceptionHandler(&onUncaughtException);
 	//Flurry analytics
-	[FlurryAPI startSession:@"JAZA3I6RV59MBFAW6UNM"];
-	[FlurryAPI countPageViews: rootController];
+	//old delete
+    //[FlurryAPI startSession:@"JAZA3I6RV59MBFAW6UNM"];
+                          //    JAZA3I6RV59MBFAW6UNM
+	//[FlurryAPI countPageViews: rootController];
+    
+    //new Flurry v3.0.0
+    [FlurryAnalytics startSession:@"JAZA3I6RV59MBFAW6UNM"];
+                                  //JAZA3I6RV59MBFAW6UNM
 	//init stuff 
 	self.newlinesData = [[NSDictionary alloc] init];
 	rowsSelectedArray = [[NSMutableArray alloc] init];
 	
 	//on initial start i want to grab the rowsSelectedArray from saveToUserDefaults
 	rowsSelectedArray = self.retrieveFromUserDefaults;
-	//	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"linesData"]; //clear rowSelectedArray from NSUserDefaults
-
+	NSLog(@"Look for this rowsSelectedArray %@", rowsSelectedArray);
+    //	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"linesData"]; //clear rowSelectedArray from NSUserDefaults
+   
 	//NSLog(@"%@",[[UIDevice currentDevice] model]);
 	//NSLog(@"%@",[[UIDevice currentDevice] systemVersion]);
+    // Look for the bundle’s version number.
+   // NSBundle* mainBundle;
+    
+    // Get the main bundle for the app.
+   // mainBundle = [NSBundle mainBundle];
+    
+   // NSString *rideOnTimeNYCVersionNumber = [mainBundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+   // NSLog(@"rideOnTimeNYCVersionNumber %@",rideOnTimeNYCVersionNumber);
+
 	
-	//[[TVOutManager sharedInstance] startTVOut];
-	[window addSubview:rootController.view];
+  	[window addSubview:rootController.view];
 	[window makeKeyAndVisible];
 	return YES;
 }
 /*
 void onUncaughtException(NSException* exception) {
-	[FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
+	[FlurryAnalytics logError:@"Uncaught" message:@"Crash!" exception:exception];
 } 
  */
 - (void) setLinesData: (NSDictionary *) dictionary{
@@ -212,12 +226,12 @@ void onUncaughtException(NSException* exception) {
 }
 
 -(NSString*)retrieveFromUserDefaults {
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+	NSUserDefaults *standardUserDefaults = [[NSUserDefaults standardUserDefaults] retain];
 	NSString *val = nil;
 	
 	if (standardUserDefaults) 
 		val = [standardUserDefaults objectForKey:@"rowSelectedArray"];
-	
+  //  [standardUserDefaults release];
 	return val;
 }
 
@@ -231,10 +245,10 @@ void onUncaughtException(NSException* exception) {
 	}
 }
 
--(NSString*)retrieveLinesDataFromUserDefaults
+-(NSDictionary*)retrieveLinesDataFromUserDefaults
 {
 	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
-	NSString *val = nil;
+	NSDictionary *val = nil;
 	
 	if (standardUserDefaults) 
 		val = [standardUserDefaults objectForKey:@"linesData"];

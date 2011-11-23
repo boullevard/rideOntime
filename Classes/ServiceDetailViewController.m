@@ -8,7 +8,7 @@
 
 #import "ServiceDetailViewController.h"
 #import "Line.h"
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 @implementation ServiceDetailViewController
 
@@ -22,29 +22,53 @@
 }
 
 - (void)viewDidUnload {
-	[super viewDidUnload];
-	
+	[super viewDidUnload];	
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
 	[self showActivityIndicator];
-	
 }
 
+/*
+- (NSString *)flattenHTML:(NSString *)html {
+    NSScanner *theScanner;
+    NSString *text = nil;
+    theScanner = [NSScanner scannerWithString:html];
+    while ([theScanner isAtEnd] == NO) {
+        // find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL] ; 
+        NSLog(@"theScanner 1: %@", theScanner);
+        // find end of tag
+        [theScanner scanUpToString:@">" intoString:&text] ;
+        NSLog(@"theScanner 2: %@", theScanner);
+        // replace the found tag with a space
+        //(you can filter multi-spaces out later if you wish)
+      
+      //  if ([text isEqualToString:@"<STRONG"] || [text isEqualToString:@"</STRONG"] || [text isEqualToString:@"<P"] || [text isEqualToString:@"</P"]){
+        if ([text hasPrefix:@"<a style"]){
+            
+        
+    }else{
+            
+            NSLog(@"text %@ ",text);
+            html = [html stringByReplacingOccurrencesOfString:[ NSString stringWithFormat:@"%@>", text] withString:@" "];
+        }
+    } // while //
+    
+    return html;
+}
+*/
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
 	[self stopAndHideActivityIndicator];
-	
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	
+- (void)viewWillDisappear:(BOOL)animated{
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
 	//clear webview
-	//[myWebView loadHTMLString:@"" baseURL:[NSURL URLWithString:@""]];
 }
+
 - (void)viewWillAppear:(BOOL)animated { 
 	[super viewWillAppear:animated];
 	NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -54,37 +78,39 @@
 	//NSString *webImage = [NSString stringWithFormat: @"<img src=\'http://mta.info/status/widgetImages/%@.gif'>", [aLine objectForKey: @"name"]];
 
 	if (exists){
-		html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><img src=\'http://mta.info/status/widgetImages/%@.gif'><br><font face=\'arial'><b> (%@)</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
+        if ([aLine objectForKey: @"status"] == @"PLANNED WORK"){
+            NSLog(@"nabil planned WORKKKK");
+        }
+		html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><img src=\'http://mta.info/status/widgetImages/%@.gif'><br><font face=\'arial'><b> (%@)</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
 								[aLine objectForKey: @"Date"],
 							   [aLine objectForKey: @"Time"],
 							   [aLine objectForKey: @"name"],
 								[aLine objectForKey: @"name"],
 							   [aLine objectForKey: @"status"],
-							   [aLine objectForKey: @"text"]];					   
+                [aLine objectForKey: @"plannedworkheadline"],
+                                [aLine objectForKey: @"text"]];					   
 		}else{
 					   html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
 							   [aLine objectForKey: @"Date"],
 							   [aLine objectForKey: @"Time"],
 							   [aLine objectForKey: @"name"],
 							   [aLine objectForKey: @"status"],
-							   [aLine objectForKey: @"text"]];
+							  [aLine objectForKey: @"text"]];	
 					   
 				   }
     // Update the views appropriately  
 
 	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/widgetImages/"]]; 
 		NSLog(@"************ ServiceDetailViewController Flurry : view viewWillAppear");
-	[FlurryAPI logEvent:@"ServiceDetailViewController"];
+	[FlurryAnalytics logEvent:@"ServiceDetailViewController" timed:YES];
 }
 
 - (void) showActivityIndicator{
 	[self.activityIndicator startAnimating];
-
 }
 
 - (void) stopAndHideActivityIndicator{
 	[self.activityIndicator stopAnimating];
-	//[self.activityIndicator hidesWhenStopped:YES];
 	self.activityIndicator.hidden = YES;
 }
 
@@ -98,6 +124,7 @@
     [myWebView release];
     [super dealloc];
 }
+
 
 @end
 
