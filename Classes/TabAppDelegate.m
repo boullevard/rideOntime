@@ -20,7 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    //added to boullevard/rideOntime
+    //added to boullevard/rideOntime does this work
     // Override point for customization after application launch
 	// NSSetUncaughtExceptionHandler(&onUncaughtException);
 	//Flurry analytics
