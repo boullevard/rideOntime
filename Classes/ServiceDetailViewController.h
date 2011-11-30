@@ -17,6 +17,8 @@
 	Line *aLine;
 	IBOutlet UIActivityIndicatorView *activityIndicator;
 	NSString *html ;
+	BOOL exists;
+	NSString *myImagePath;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *myWebView;
@@ -26,4 +28,5 @@
 
 - (void) stopAndHideActivityIndicator;
 - (void) showActivityIndicator;
+- (NSString *)flattenHTML:(NSString *)html;
 @end

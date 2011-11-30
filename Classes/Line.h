@@ -17,6 +17,7 @@
 	NSString *url;	//Same name as the Entity Name.
 	NSString *Date;	//Same name as the Entity Name.
 	NSString *Time;	//Same name as the Entity Name.	
+    NSString *plannedworkheadline; // aded new by MTA 10/14/11
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -25,5 +26,5 @@
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) NSString *Date;
 @property (nonatomic, retain) NSString *Time;
-
+@property (nonatomic, retain) NSString *plannedworkheadline;
 @end

@@ -11,10 +11,11 @@
 
 @implementation Line
 
-@synthesize status, text, url, name, Date, Time;
+@synthesize status, text, url, name, Date, Time, plannedworkheadline;
 
 
 - (void) dealloc {
+    [plannedworkheadline release];
 	[Time release];
 	[Date release];
 	[url release];

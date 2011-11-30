@@ -1,0 +1,18 @@
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m: In function '-[LineFavorites connection:didFailWithError:]':
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:498: warning: 'LineFavorites' may not respond to '-showOffLineTableData'
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:498: warning: (Messages without a matching method signature
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:498: warning: will be assumed to return 'id' and accept
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:498: warning: '...' as arguments.)
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m: At top level:
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries' requires method '-blogEntries' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries' requires the method 'setBlogEntries:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries1' requires method '-blogEntries1' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries1' requires the method 'setBlogEntries1:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries2' requires method '-blogEntries2' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries2' requires the method 'setBlogEntries2:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries3' requires method '-blogEntries3' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries3' requires the method 'setBlogEntries3:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries4' requires method '-blogEntries4' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: property 'blogEntries4' requires the method 'setBlogEntries4:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: incomplete implementation of class 'LineFavorites'
+/Users/nmouzann/Documents/IPhone/rideOnTime/Classes/LineFavorites.m:746: warning: method definition for '-saveToUserDefaults:' not found

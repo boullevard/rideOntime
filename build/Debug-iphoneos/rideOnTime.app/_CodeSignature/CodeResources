@@ -24,29 +24,33 @@
 		<data>
 		Oe7AA1rq6cPDYxV6YLYmjPV6Khw=
 		</data>
-		<key>BTViewController.nib</key>
+		<key>CustomCell.nib</key>
 		<data>
-		8sf5L0r5ECfKBDc0+8C/oqHMKcc=
-		</data>
-		<key>BusTableViewController.nib</key>
-		<data>
-		Xks1n+7n2OZu42jfAfoqNhIxfJQ=
+		GHZ/gvnFM9Zmn3Rc546oaebjDsg=
 		</data>
 		<key>Default.png</key>
 		<data>
-		fYj7wVXHknqcaIzaPORtCER/5jg=
+		kWi+KyGRavzbMlGqO4fxhulzf4A=
 		</data>
-		<key>DefaultView.png</key>
+		<key>FavoriteLinesManager.nib</key>
 		<data>
-		eTLz1i0GbG4He+rbBFMAMPZ/EUE=
+		TTaFT/Oc+0XRp/NuIqE6fathUJQ=
 		</data>
 		<key>G.png</key>
 		<data>
 		3JlxzDmWmNdsJ5OdVEqxEN+feI4=
 		</data>
+		<key>Icon-72.png</key>
+		<data>
+		coufqFSndqnTrbK6FVtk5X07U9E=
+		</data>
 		<key>Icon.png</key>
 		<data>
-		UjnfuJY0rfpdOn/S4zy4iZYESOY=
+		3Gq0WBwChvsRf2NZ81jGVacTzHk=
+		</data>
+		<key>Icon@2x.png</key>
+		<data>
+		KvApSe+4ud54v3LWslwSZoOT/Qo=
 		</data>
 		<key>JZ.png</key>
 		<data>
@@ -56,13 +60,29 @@
 		<data>
 		PJ2zAIoOzHY/w+G49pooxViGoTQ=
 		</data>
+		<key>LIRRPickerIcon.png</key>
+		<data>
+		Z83qm1NIiphnPCeLSnT2r3azOHE=
+		</data>
+		<key>LineFavorites.nib</key>
+		<data>
+		AVXwfOShP7cnJ6C+zo2c935SuRU=
+		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		ZQqcde7VP1c4C7Qrcpp79mhb494=
+		gv1Cdxx0fE1ePa2X88DE5sTvyGI=
 		</data>
-		<key>MetroNorthViewController.nib</key>
+		<key>MapDetailViewController.nib</key>
 		<data>
-		fVZxtkqm0TgWRUcgGi6CAHSg//0=
+		TTaFT/Oc+0XRp/NuIqE6fathUJQ=
+		</data>
+		<key>MapTableViewController.nib</key>
+		<data>
+		3belkJoohKGa2PyBQhZjm7Xhxe4=
+		</data>
+		<key>MapsViewController.nib</key>
+		<data>
+		+LMr7dCEa+w6iGKfH1fagnNDyTo=
 		</data>
 		<key>NQR.png</key>
 		<data>
@@ -74,7 +94,7 @@
 		</data>
 		<key>RailsViewController.nib</key>
 		<data>
-		6drswVP9TFwXDcviD5CIYHLdHnE=
+		cS/1y+W5u43MQK7fZrzpSGePKNE=
 		</data>
 		<key>S.png</key>
 		<data>
@@ -86,35 +106,39 @@
 		</data>
 		<key>ServiceDetailView.nib</key>
 		<data>
-		JyT7eAX6W/jhrz1L4LI55xsocrQ=
+		4z6+Dfkml8jth80DMG/ImTTF0yU=
 		</data>
-		<key>SubwayServiceDetailViewController.nib</key>
+		<key>SimpleTiledScrollExampleViewController.nib</key>
 		<data>
-		MJ23wKQSqHi7fv9I8fBo01gPtBU=
+		py5hHsxqxJEJFZsVa8RrjjjSxhQ=
 		</data>
-		<key>SubwayViewController.nib</key>
+		<key>bridgesTunnelsPickerIcon.png</key>
 		<data>
-		cqJdeoYP36kCiabiQlPxhV/5OZ8=
+		q4Y/XUyfeMRu8SzDTnbnvtGEluY=
 		</data>
-		<key>bridge_icon.png</key>
+		<key>busPickerIcon.png</key>
 		<data>
-		5+ZwTXNqAoUq485lVpeeMd8lsoc=
-		</data>
-		<key>bus_icon.png</key>
-		<data>
-		Bc19NOeBG2EVNyatkOyJPfE90Ek=
+		rZVfBTi5+nq1iqjT5cyvehn9El8=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		NUPTBW+gpZrLAqBvrfXIy4hvf6U=
+		MNgao6NmjFiGG6uZN7H1qdOwPe8=
+		</data>
+		<key>map.png</key>
+		<data>
+		K+V/VwxjpxkydiJjm/cpkkbtKTM=
+		</data>
+		<key>metronorthPickerIcon.png</key>
+		<data>
+		QNcSZKiX6aE/CDGTCN8COE66AAo=
 		</data>
 		<key>rail_icon.png</key>
 		<data>
-		u5JSZmJWtmHo/1LVS/t1ZdDwz4k=
+		oahhFJcGSQ1F94k2323U7HVqx0M=
 		</data>
-		<key>subway_icon.png</key>
+		<key>subwaymap250.png</key>
 		<data>
-		mIcWbCWomay2jvxTkfazSTu8D0Q=
+		T9T2ARuCzEyAwtEsRpZA00Uhoo8=
 		</data>
 	</dict>
 	<key>rules</key>

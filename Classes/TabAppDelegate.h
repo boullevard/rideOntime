@@ -9,36 +9,46 @@
 #import <UIKit/UIKit.h>
 #import "TouchXML.h"
 
+
 @interface TabAppDelegate : NSObject <UIApplicationDelegate, UIAlertViewDelegate> {
     UIWindow *window;
 	UITabBarController *rootController;
-	NSMutableData *mReceivedData;
-	NSString *requestBody;
+	NSDictionary *linesData; 
+	NSDictionary *newlinesData;
 	NSString *timeStamp;
-	IBOutlet UIActivityIndicatorView *activityIndicator;
-	IBOutlet UIImageView *imageView;
-	NSString *currentTimestamp;
+	NSMutableArray *rowsSelectedArray;
+	UINavigationController *navController;
+	UIViewController *tableViewController; // to access railsViewController or LineFavorites
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
-@property (nonatomic, retain) NSMutableData *mReceivedData;
-@property (nonatomic, retain) NSString *requestBody;
+@property (nonatomic, retain) NSDictionary *linesData;
+@property (nonatomic, retain) NSDictionary *newlinesData;
 @property (nonatomic, retain) NSString *timeStamp;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) NSMutableArray *rowsSelectedArray;
 
-- (void) showAlertTitle:(NSString *) Title Text: (NSString *) Text;
-- (void) startAnimation;
-- (void) stopAnimation;
--(void)saveToUserDefaults:(NSString*)myString;
--(NSString*)retrieveFromUserDefaults;
+@property (nonatomic, retain) UINavigationController *navController;
+@property (nonatomic, retain) UIViewController *tableViewController;
+
+	
+- (void) setLinesData: (NSDictionary *)dictionary;
+- (NSDictionary *) getLinesData;
+
+- (void) setTimeStamp: (NSString *)time;
+- (NSString *) getTimeStamp; 
+
+-(void)saveToUserDefaults:(NSMutableArray*)value;
+-(void)saveLinesDataToUserDefaults:(NSDictionary*)value; //same as the one saveToUserDefaults in railsViewController
+-(NSString*)retrieveLinesDataFromUserDefaults;
+-(NSMutableArray*)retrieveFromUserDefaults;
+- (NSMutableArray *) getLinesDataBasedOnRowSelectedArray:(NSArray *)value;
 -(void)saveTimeStampToUserDefaults:(NSString*)myString;
 -(NSString*)retrieveTimeStampFromUserDefaults;
 
-- (NSString *) getBody;
-- (void) getInitialTimeStamp;
-- (NSString *) getTimeStamp;
+- (void) addObjectTorowSelectedArray: (NSInteger) value;
+- (void) deleteFromRowSelectedArray: (NSInteger) value;
 
 @end
 

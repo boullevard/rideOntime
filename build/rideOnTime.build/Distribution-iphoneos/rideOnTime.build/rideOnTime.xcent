@@ -4,6 +4,8 @@
 <dict>
 	<key>application-identifier</key>
 	<string>W787ULES9H.com.boullevard.rideontimenyc</string>
+	<key>aps-environment</key>
+	<string>production</string>
 	<key>get-task-allow</key>
 	<false/>
 	<key>keychain-access-groups</key>
