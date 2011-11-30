@@ -20,15 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    //added to boullevard/rideOntime does this work
+    //added to boullevard/rideOntime does this workx    
     // Override point for customization after application launch
-	// NSSetUncaughtExceptionHandler(&onUncaughtException);
-	//Flurry analytics
-	//old delete
-    //[FlurryAPI startSession:@"JAZA3I6RV59MBFAW6UNM"];
-                          //    JAZA3I6RV59MBFAW6UNM
-	//[FlurryAPI countPageViews: rootController];
-    
+	
     //new Flurry v3.0.0
     [FlurryAnalytics startSession:@"JAZA3I6RV59MBFAW6UNM"];
                                   //JAZA3I6RV59MBFAW6UNM
