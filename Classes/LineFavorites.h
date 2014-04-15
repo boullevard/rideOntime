@@ -22,12 +22,12 @@
 	// This is the outlet for the blog view, it will allow the data from the controller to be used in a view
     IBOutlet UITableView *favoriteTable;
 	NSMutableArray *tableContents;
-	int blogEntryIndex;
+	NSUInteger blogEntryIndex;
 	BOOL exists;
 	NSString *myImagePath;
 	ServiceDetailViewController *serviceDetailController;
 	FavoriteLinesManager *favoriteLinesManager;
-	NSInteger rowSelected;
+	NSUInteger rowSelected;
 	
 	//connection
 	NSMutableData *mReceivedData;
@@ -80,7 +80,6 @@
 - (NSString *) getBody;
 - (void) getInitialTimeStamp;
 
--(void)saveToUserDefaults:(NSString*)myString;
 -(void) showHideEmptyListLabel: (BOOL) value;
 - (void)refreshDataApplicationDidBecomeActive;
 - (void) showTableData;

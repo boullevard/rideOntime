@@ -1,5 +1,5 @@
 //
-//  BookDetailViewController.h
+//  ServiceDetailViewController.h
 //  XML
 //
 //  Created by iPhone SDK Articles on 11/23/08.
@@ -28,5 +28,5 @@
 
 - (void) stopAndHideActivityIndicator;
 - (void) showActivityIndicator;
-- (NSString *)flattenHTML:(NSString *)html;
+//- (NSString *)flattenHTML:(NSString *)html;
 @end

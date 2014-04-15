@@ -8,7 +8,7 @@
 
 #import "ServiceDetailViewController.h"
 #import "Line.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 @implementation ServiceDetailViewController
 
@@ -71,6 +71,10 @@
 
 - (void)viewWillAppear:(BOOL)animated { 
 	[super viewWillAppear:animated];
+    
+
+    self.navigationItem.title = [NSString stringWithFormat:@"%@: %@", [aLine objectForKey: @"name"],[aLine objectForKey: @"status"]] ;
+    
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 
 	myImagePath = [[NSBundle mainBundle] pathForResource: [aLine objectForKey: @"name"] ofType:@"png"];
@@ -78,16 +82,10 @@
 	//NSString *webImage = [NSString stringWithFormat: @"<img src=\'http://mta.info/status/widgetImages/%@.gif'>", [aLine objectForKey: @"name"]];
 
 	if (exists){
-        if ([aLine objectForKey: @"status"] == @"PLANNED WORK"){
-            NSLog(@"nabil planned WORKKKK");
-        }
-		html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><img src=\'http://mta.info/status/widgetImages/%@.gif'><br><font face=\'arial'><b> (%@)</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
+		html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span></br><b>%@</b><br><br><font face=\'arial'>%@</font></p>",
 								[aLine objectForKey: @"Date"],
 							   [aLine objectForKey: @"Time"],
 							   [aLine objectForKey: @"name"],
-								[aLine objectForKey: @"name"],
-							   [aLine objectForKey: @"status"],
-                [aLine objectForKey: @"plannedworkheadline"],
                                 [aLine objectForKey: @"text"]];					   
 		}else{
 					   html = [NSString stringWithFormat:@"<p><font style= \'font-family:arial; color: 0xCCCCCC; font-size:12px;'>Posted %@ %@</font><br><span style=\'font-family:arial; font-size:30px; font-weight:bold;'>MTA Service Notice</span><p><font face=\'arial'><b>%@</b></font><br><font face=\'arial'><b>%@</b></font><br><font face=\'arial'>%@ </font>", 
@@ -100,9 +98,9 @@
 				   }
     // Update the views appropriately  
 
-	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://mta.info/status/widgetImages/"]]; 
+	[myWebView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://www.mta.info/sites/all/themes/mta/images/subway_bullets/"]];
 		NSLog(@"************ ServiceDetailViewController Flurry : view viewWillAppear");
-	[FlurryAnalytics logEvent:@"ServiceDetailViewController" timed:YES];
+	[Flurry logEvent:@"ServiceDetailViewController" timed:YES];
 }
 
 - (void) showActivityIndicator{

@@ -5,176 +5,148 @@
 //  Abstract: View controller to manage a scrollview that displays a zoomable image.
 
 //  Created by Nabil Mouzannar on 7/30/10.
-//  Copyright 2010 Estee Lauder Companies Online. All rights reserved.
+//  Copyright 2014 Nabil Mouzannar. All rights reserved.
 //
 
 #import "MapsViewController.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
-#define ZOOM_VIEW_TAG 100
-#define ZOOM_STEP 2
-
-#define AUTOSCROLL_THRESHOLD 30
-
-@interface MapsViewController (ViewHandlingMethods)
-
-- (void)pickImageNamed:(NSString *)name;
-- (NSArray *)imageNames;
+@interface MapsViewController ()
 
 @end
 
-@interface MapsViewController (AutoscrollingMethods)
-- (void)autoscrollTimerFired:(NSTimer *)timer;
-- (void)legalizeAutoscrollDistance;
-- (float)autoscrollDistanceForProximityToEdge:(float)proximity;
-@end
 
-@interface MapsViewController (UtilityMethods)
-- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center;
-@end
+@interface MapsViewController () <UIScrollViewDelegate>
 
+@property (nonatomic, retain) IBOutlet UIScrollView* scrollView;
+
+@end
 
 @implementation MapsViewController
 
-- (void)loadView {
-    [super loadView];
-    CGRect webFrame = [[self view] bounds];
-	webFrame.origin.y = 0;//kTopMargin + 5.0;	// leave from the URL input field and its label
-	webFrame.size.height -= 40.0;
-    imageScrollView = [[UIScrollView alloc] initWithFrame:webFrame];
-	imageScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth; //to show all the map in landscape mode
-  
-	[imageScrollView setBackgroundColor:[UIColor whiteColor]];
-    [imageScrollView setDelegate:self];
-    [imageScrollView setBouncesZoom:YES];
-	//[imageScrollView setMaximumZoomScale: 2];
-    [[self view] addSubview:imageScrollView];
-    
-    [self pickImageNamed:@"subwaymap250"];
-	NSLog(@"1 MapsViewController loadView ");
-	
-}
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-	NSLog(@"************ MAps Flurry : view viewWillAppear");
-[FlurryAnalytics logEvent:@"MapsViewController"];
-}
- */
+NSMutableArray *spreadImageNames;
 
-- (void)dealloc {
-    [imageScrollView release];
-    [super dealloc];
-}
+UIView *imageContainerView;
+bool  isZoomed = NO;
 
-- (void)refreshDataApplicationDidBecomeActive
+
+- (void)viewDidLoad
 {
-	NSLog(@"Do Nothing");
-}
-
-#pragma mark UIScrollViewDelegate methods
-
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    UIView *view = nil;
-    if (scrollView == imageScrollView) {
-        view = [imageScrollView viewWithTag:ZOOM_VIEW_TAG];
-    }
-    return view;
-}
-
-/************************************** NOTE **************************************/
-/* The following delegate method works around a known bug in zoomToRect:animated: */
-/* In the next release after 3.0 this workaround will no longer be necessary      */
-/**********************************************************************************/
-- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale {
-    [scrollView setZoomScale:scale+0.01 animated:NO];
-    [scrollView setZoomScale:scale animated:NO];
-}
-
-#pragma mark TapDetectingImageViewDelegate methods
-
-- (void)tapDetectingImageView:(TapDetectingImageView *)view gotSingleTapAtPoint:(CGPoint)tapPoint {
-    // Single tap shows or hides drawer of thumbnails.
-    //[self toggleThumbView];
-}
-
-- (void)tapDetectingImageView:(TapDetectingImageView *)view gotDoubleTapAtPoint:(CGPoint)tapPoint {
-    // double tap zooms in
-    float newScale = [imageScrollView zoomScale] * ZOOM_STEP;
-    CGRect zoomRect = [self zoomRectForScale:newScale withCenter:tapPoint];
-    [imageScrollView zoomToRect:zoomRect animated:YES];
-}
-
-- (void)tapDetectingImageView:(TapDetectingImageView *)view gotTwoFingerTapAtPoint:(CGPoint)tapPoint {
-    // two-finger tap zooms out
-    float newScale = [imageScrollView zoomScale] / ZOOM_STEP;
-    CGRect zoomRect = [self zoomRectForScale:newScale withCenter:tapPoint];
-    [imageScrollView zoomToRect:zoomRect animated:YES];
-}
-
-
-
-- (void)pickImageNamed:(NSString *)name {
-	
-    // first remove previous image view, if any
-    [[imageScrollView viewWithTag:ZOOM_VIEW_TAG] removeFromSuperview];
-	
-    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", name]];
-    TapDetectingImageView *zoomView = [[TapDetectingImageView alloc] initWithImage:image];
-    [zoomView setDelegate:self];
-    [zoomView setTag:ZOOM_VIEW_TAG];
-    [imageScrollView addSubview:zoomView];
-    [imageScrollView setContentSize:[zoomView frame].size];
-    [zoomView release];
-	
-    // choose minimum scale so image width fits screen
-    float minScale  = ([imageScrollView frame].size.width  / [zoomView frame].size.width) +.1;//nabil added .1 to zoom it a little
-	//NSLog(@"minScale %f ", minScale);
-    [imageScrollView setMinimumZoomScale:minScale];
-    [imageScrollView setZoomScale:minScale];
-    [imageScrollView setContentOffset:CGPointZero];
-}
-
-- (NSArray *)imageNames {
+    [super viewDidLoad];
     
-    // the filenames are stored in a plist in the app bundle, so create array by reading this plist
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Images" ofType:@"plist"];
-    NSData *plistData = [NSData dataWithContentsOfFile:path];
-    NSString *error; NSPropertyListFormat format;
-    NSArray *imageNames = [NSPropertyListSerialization propertyListFromData:plistData
-                                                           mutabilityOption:NSPropertyListImmutable
-                                                                     format:&format
-                                                           errorDescription:&error];
-    if (!imageNames) {
-        NSLog(@"Failed to read image names. Error: %@", error);
-        [error release];
+    [self setupScrollContent];
+    [self setupTouchEvents];
+    [Flurry logEvent:@"MapsViewController"];
+}
+
+
+#pragma mark - Utility Methods
+
+- (void)setupScrollContent {
+    
+   // self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-40)];
+    
+    CGFloat scrollWidth = self.view.bounds.size.width+168;
+    imageContainerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, scrollWidth, self.scrollView.frame.size.height)];
+    
+    CGFloat maxHeight = 0.0;
+    UIImage *subwayImage;
+    
+    subwayImage = [UIImage imageNamed:@"subwaymap250.png"];
+    
+    CGFloat scale = scrollWidth / subwayImage.size.width;
+    UIImageView *atImageView = [[UIImageView alloc]
+                                initWithImage:subwayImage];
+    
+    CGFloat newHeight = (atImageView.bounds.size.height * scale);
+    
+    atImageView.frame = CGRectMake(0, 0.0, scrollWidth, newHeight);
+    
+    if (newHeight > maxHeight) {
+        maxHeight = newHeight;
     }
     
-    return imageNames;
+    [imageContainerView addSubview:atImageView];
+    
+    
+    CGRect newFrame = imageContainerView.frame;
+    newFrame.size.height = maxHeight;
+    imageContainerView.frame = newFrame;
+    
+    self.scrollView.minimumZoomScale = 1.0;
+    self.scrollView.maximumZoomScale = 8.0;
+    
+    [self.view addSubview:self.scrollView];
+    [self.scrollView addSubview:imageContainerView];
+    self.scrollView.contentSize = imageContainerView.bounds.size;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Support all orientations except upside-down
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+-(void) setupTouchEvents
+{
+    
+    
+    UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
+    doubleTapRecognizer.numberOfTapsRequired = 2;
+    doubleTapRecognizer.numberOfTouchesRequired = 1;
+    [self.scrollView addGestureRecognizer:doubleTapRecognizer];
+    
+    
 }
 
-#pragma mark Utility methods
+- (void)scrollViewDoubleTapped:(UITapGestureRecognizer *)recognizer
+{
+    if (isZoomed)
+    {
+        [self zoomOut];
+    }else
+    {
+        [self zoomIn:recognizer];
+    }
+}
 
-- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
+- (void)zoomIn: (UITapGestureRecognizer *)recognizer
+{
+    // Get the location within the image view where we tapped
+    CGPoint pointInView = [recognizer locationInView:imageContainerView];
     
-    CGRect zoomRect;
+    CGFloat newZoomScale = self.scrollView.maximumZoomScale; //maximumZoomScale is set to 8 in storyboard
     
-    // the zoom rect is in the content view's coordinates. 
-    //    At a zoom scale of 1.0, it would be the size of the imageScrollView's bounds.
-    //    As the zoom scale decreases, so more content is visible, the size of the rect grows.
-    zoomRect.size.height = [imageScrollView frame].size.height / scale;
-    zoomRect.size.width  = [imageScrollView frame].size.width  / scale;
+    // Figure out the rect we want to zoom to, then zoom to it
+    CGSize scrollViewSize = self.scrollView.bounds.size;
     
-    // choose an origin so as to get the right center.
-    zoomRect.origin.x    = center.x - (zoomRect.size.width  / 2.0);
-    zoomRect.origin.y    = center.y - (zoomRect.size.height / 2.0);
+    CGFloat w = scrollViewSize.width / newZoomScale;
+    CGFloat h = scrollViewSize.height / newZoomScale;
+    CGFloat x = pointInView.x - (w / 2.0f);
+    CGFloat y = pointInView.y - (h / 2.0f);
     
-    return zoomRect;
+    CGRect rectToZoomTo = CGRectMake(x, y, w, h);
+    
+    [self.scrollView zoomToRect:rectToZoomTo animated:YES];
+    isZoomed = YES;
+}
+
+- (void)zoomOut
+{
+    if (self.scrollView.zoomScale >= self.scrollView.maximumZoomScale)
+    {
+        [self.scrollView setZoomScale:self.scrollView.minimumZoomScale animated:YES];
+    }
+    isZoomed = NO;
+}
+
+
+#pragma mark - UIScrollViewDelegate
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return imageContainerView;
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

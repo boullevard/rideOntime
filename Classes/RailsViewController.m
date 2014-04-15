@@ -10,9 +10,14 @@
 #import "ServiceDetailViewController.h"
 #import "TouchXML.h"
 #import "TabAppDelegate.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
+
+@interface RailsViewController ()
+
+@end
 
 @implementation RailsViewController
+
 
 @synthesize blogEntries,blogEntries1,blogEntries2,blogEntries3,blogEntries4;
 @synthesize reloadButton;
@@ -22,6 +27,7 @@
 @synthesize requestBody;
 @synthesize timeStampLabel;
 @synthesize timeStamp;
+
 
 // grabRSSFeed function that takes a string (nodeAddress) as a parameter and
 // fills the global listData with the entries
@@ -276,7 +282,8 @@
 		statusLabel.textColor = [UIColor colorWithRed: 0 green: 0.6 blue: 0 alpha:1];//getRGB values and divide by 255
 	}else if ([newStringStatus isEqualToString: @"PLANNED WORK"] ||
 			  [newStringStatus isEqualToString: @"DELAYS"] ||
-			  [newStringStatus isEqualToString: @"SUSPENDED"]){
+			  [newStringStatus isEqualToString: @"SUSPENDED"] ||
+			  [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		statusLabel.textColor = [UIColor redColor];		
 	}else if ([newStringStatus isEqualToString: @"SERVICE CHANGE"]){
 		statusLabel.textColor = [UIColor orangeColor];
@@ -286,7 +293,8 @@
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"] || 
-		[newStringStatus isEqualToString: @"SUSPENDED"]){
+		[newStringStatus isEqualToString: @"SUSPENDED"]||
+        [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
@@ -304,7 +312,8 @@
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]||
-		[newStringStatus isEqualToString: @"SUSPENDED"]){
+		[newStringStatus isEqualToString: @"SUSPENDED"]||
+        [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		
 		if(serviceDetailController == nil)
 			serviceDetailController = [[ServiceDetailViewController alloc] initWithNibName:@"ServiceDetailView" bundle:[NSBundle mainBundle]];
@@ -315,6 +324,10 @@
 	}
 }
 
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 - (UIImage *)imageForLine:(NSString *)name {	
 	NSString *newStringStatus = [name stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -324,6 +337,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    
 	// Uncomment the following line to add the Edit button to the navigation bar.
 	// self.navigationItem.leftBarButtonItem = self.editButtonItem;
 	NSLog(@"1 RailsViewController : view viewDidLoad");
@@ -333,13 +347,14 @@
 	
 }
 
-/*
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	NSLog(@"************ Rails Flurry : view viewWillAppear");
-	[FlurryAnalytics logEvent:@"RailsViewController"];
+	[Flurry logEvent:@"RailsViewController"];
+    
 }
-*/
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 	NSLog(@"3 RailsViewController: view viewDidAppear");
@@ -394,13 +409,13 @@
 	
 	// Call the reloadData function on the blogTable, this
 	// will cause it to refresh itself with our new data
-NSLog(@"showTableData blogTable reloadData");
 	[blogTable reloadData];
 }	
 - (IBAction)refreshData:(id)sender
 {
 	[self disableReloadButton];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
+    
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web.mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (!connection){
 		NSLog (@"Unable To Connect");
@@ -416,7 +431,7 @@ NSLog(@"showTableData blogTable reloadData");
 {
        NSLog(@"******* refreshDataApplicationDidBecomeActive **** LOOK OUT");
 	[self disableReloadButton];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web.mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (!connection){
 		NSLog (@"Unable To Connect");
@@ -457,7 +472,7 @@ NSLog(@"showTableData blogTable reloadData");
 
 	NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
-          [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 	NSString *msg = [NSString stringWithFormat: @"Connection failed. Please make sure you are connected to the internet and try again. We will try to display the last updated current status."];
 	// - %@",[error localizedDescription]
 	
@@ -489,7 +504,7 @@ NSLog(@"showTableData blogTable reloadData");
 	//NSLog(@"from connectionDidFinishLoading: self.timeStampLabel.text %@",self.timeStampLabel.text);
 	
 	[connection release];
-	[self.requestBody release];
+	[requestBody release];
 	self.mReceivedData = nil;
 	
 }
@@ -576,7 +591,7 @@ NSLog(@"showTableData blogTable reloadData");
 	[blogEntries2 release];
 	[blogEntries3 release];
 	[blogEntries4 release];
-	[self.tableContents release];
+	//[self.tableContents release];
 	[self.sortedKeys release];
 	//[CXMLDocument release];
 	[self.mReceivedData release];

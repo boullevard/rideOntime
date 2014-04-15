@@ -338,6 +338,7 @@
 		// total : 9 - starting from 1
 		
 		self.customPickerArray = viewArray;
+        NSLog(@"self.customPickerArray %@ ",[self.customPickerArray objectAtIndex:0]);
 		[viewArray release];
 	}
 	return self;
@@ -381,11 +382,29 @@
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row
 		  forComponent:(NSInteger)component reusingView:(UIView *)view
 {
-	return [customPickerArray objectAtIndex:row];
+    // THE BELOW IS a hack from: http://stackoverflow.com/questions/19158319/ios7-uipickerview-doesnt-properly-display-custom-views-with-images
+    
+    // self.myImages is an array of UIImageView objects
+    UIView * myView = [customPickerArray objectAtIndex:row];
+    
+    // first convert to a UIImage
+    UIGraphicsBeginImageContextWithOptions(myView.bounds.size, NO, 0);
+    
+    [myView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    // then convert back to a UIImageView and return it
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    
+    return imageView;
+    
+//    return [customPickerArray objectAtIndex:row];
 }
 
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-	NSLog(@"row selected %d", row);
 	rowSelected = row;
 }
 

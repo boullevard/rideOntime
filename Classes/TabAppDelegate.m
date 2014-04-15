@@ -7,7 +7,7 @@
 //
 
 #import "TabAppDelegate.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 
 @implementation TabAppDelegate
@@ -23,10 +23,10 @@
     //added to boullevard/rideOntime does this workx    
     // Override point for customization after application launch
 	
-    //new Flurry v3.0.0
-    [FlurryAnalytics startSession:@"JAZA3I6RV59MBFAW6UNM"];
-                                  //JAZA3I6RV59MBFAW6UNM
-	//init stuff 
+    //new Flurry v3.0.5
+    [Flurry startSession:@"JAZA3I6RV59MBFAW6UNM"];
+	
+    //init stuff 
 	self.newlinesData = [[NSDictionary alloc] init];
 	rowsSelectedArray = [[NSMutableArray alloc] init];
 	
@@ -51,11 +51,8 @@
 	[window makeKeyAndVisible];
 	return YES;
 }
-/*
-void onUncaughtException(NSException* exception) {
-	[FlurryAnalytics logError:@"Uncaught" message:@"Crash!" exception:exception];
-} 
- */
+
+
 - (void) setLinesData: (NSDictionary *) dictionary{
 	if (dictionary != linesData){
 		[dictionary retain];

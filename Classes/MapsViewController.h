@@ -16,6 +16,5 @@
 	UIScrollView *imageScrollView;
 }
 
-- (void)refreshDataApplicationDidBecomeActive;
-	
+
 @end

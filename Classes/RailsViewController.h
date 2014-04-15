@@ -28,7 +28,7 @@
 
 	ServiceDetailViewController *serviceDetailController;
 	
-	int blogEntryIndex;
+	NSUInteger blogEntryIndex;
 	IBOutlet UIBarButtonItem * reloadButton;
 	IBOutlet UILabel * timeStampLabel;
 	
@@ -52,6 +52,7 @@
 @property (nonatomic, retain) NSMutableData *mReceivedData;
 @property (nonatomic, retain) NSString *requestBody;
 @property (nonatomic, retain) NSString *timeStamp;
+
 
 @property (nonatomic, retain) IBOutlet UILabel * timeStampLabel;
 

@@ -12,22 +12,17 @@
 
 @class TabAppDelegate;
 
-@interface FavoriteLinesManager : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
-	TabAppDelegate *appDelegate;
-	UIPickerView		*myPickerView;	
-	UIPickerView		*customPickerView;
-	CustomPickerDataSource *customPickerDataSource;
-	
+@interface FavoriteLinesManager : UIViewController{
+    
+	TabAppDelegate *appDelegate;	
 	NSMutableArray *temp; //temp to hold the uilabels of all liens in the favorite list
 }
 
-@property (nonatomic, retain) UIPickerView *myPickerView;
 
-@property (nonatomic, retain) UIPickerView *customPickerView;
-@property (nonatomic, retain) CustomPickerDataSource *customPickerDataSource;
+@property (strong, nonatomic) UIPickerView *myPickerView;
+@property (nonatomic, strong) CustomPickerDataSource *customPickerDataSource;
 
 @property (nonatomic, retain) NSMutableArray *temp;
 
-- (NSInteger) getPickerRowSelected;
-- (void)createCustomPicker;
+
 @end

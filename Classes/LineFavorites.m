@@ -10,7 +10,7 @@
 #import "ServiceDetailViewController.h"
 #import "FavoriteLinesManager.h"
 #import "TabAppDelegate.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 @implementation LineFavorites
 
@@ -21,6 +21,7 @@
 @synthesize requestBody;
 @synthesize myEmptyListLabel;
 @synthesize tableContents;
+@synthesize blogEntries,blogEntries1,blogEntries2,blogEntries3,blogEntries4;
 
 // grabRSSFeed function that takes a string (nodeAddress) as a parameter and
 // fills the global listData with the entries
@@ -211,8 +212,8 @@
   
 	myEmptyListLabel = [[[UILabel alloc] initWithFrame:CGRectMake(10, 50, 300, 140)] autorelease];
 	myEmptyListLabel.font = [UIFont systemFontOfSize: 20];
-	myEmptyListLabel.textAlignment = UITextAlignmentCenter;
-	myEmptyListLabel.lineBreakMode = UILineBreakModeWordWrap;
+	myEmptyListLabel.textAlignment = NSTextAlignmentCenter;
+	myEmptyListLabel.lineBreakMode = NSLineBreakByWordWrapping;
 	myEmptyListLabel.numberOfLines = 0;
 	myEmptyListLabel.textColor = [UIColor blackColor];
 	myEmptyListLabel.text = @"Tap on the ADD button above to add your Favorite Line(s).\n\nSwipe your finger across to delete a Favorite Line.";
@@ -221,13 +222,12 @@
 	[self.view addSubview:myEmptyListLabel]; 
 
 }
-/*
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	NSLog(@"************ LineFavorites Flurry : view viewWillAppear");
-	[FlurryAnalytics logEvent:@"LineFavorites"];
+	[Flurry logEvent:@"LineFavorites"];
 }
- */
 
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -251,7 +251,7 @@
 
 }
 
--(void) showHideEmptyListLabel: (BOOL) value{
+- (void) showHideEmptyListLabel: (BOOL) value{
 	myEmptyListLabel.hidden = value;
 	if (!value){ //if value equal NO then also clear timestamp
 		self.timeStampLabel.text = @"";
@@ -290,6 +290,7 @@
 	
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        
 		myImagePath = [[NSBundle mainBundle] pathForResource: [[self.tableContents objectAtIndex: blogEntryIndex] objectForKey: @"name"] ofType:@"png"];
 		exists = [fileManager fileExistsAtPath:myImagePath];
 	
@@ -339,7 +340,8 @@
 		statusLabel.textColor = [UIColor colorWithRed: 0 green: 0.6 blue: 0 alpha:1];//getRGB values and divide by 255
 	}else if ([newStringStatus isEqualToString: @"PLANNED WORK"] ||
 			  [newStringStatus isEqualToString: @"DELAYS"] ||
-			  [newStringStatus isEqualToString: @"SUSPENDED"]){
+			  [newStringStatus isEqualToString: @"SUSPENDED"]||
+              [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		statusLabel.textColor = [UIColor redColor];		
 	}else if ([newStringStatus isEqualToString: @"SERVICE CHANGE"]){
 		statusLabel.textColor = [UIColor orangeColor];
@@ -349,7 +351,8 @@
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"] || 
-		[newStringStatus isEqualToString: @"SUSPENDED"]){
+		[newStringStatus isEqualToString: @"SUSPENDED"]||
+        [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	}else {
@@ -414,7 +417,9 @@
 	if ([newStringStatus isEqualToString: @"PLANNED WORK"] || 
 		[newStringStatus isEqualToString: @"SERVICE CHANGE"] ||
 		[newStringStatus isEqualToString: @"DELAYS"]||
-		[newStringStatus isEqualToString: @"SUSPENDED"]){
+		[newStringStatus isEqualToString: @"SUSPENDED"]||
+        [newStringStatus isEqualToString: @"SANDY REROUTE"]||
+        [newStringStatus isEqualToString: @"SANDY REROUTE"]){
 		
 	if(serviceDetailController == nil)
 		serviceDetailController = [[ServiceDetailViewController alloc] initWithNibName:@"ServiceDetailView" bundle:[NSBundle mainBundle]];
@@ -432,7 +437,7 @@
 - (IBAction)refreshData:(id)sender
 {
 	[self disableReloadButton];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web.mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (!connection){
 		NSLog (@"Unable To Connect");
@@ -447,7 +452,7 @@
 - (void)refreshDataApplicationDidBecomeActive
 {
 	[self disableReloadButton];
-	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
+	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web.mta.info/status/serviceStatus.txt"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:6];
 	NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	if (!connection){
 		NSLog (@"Unable To Connect");
@@ -491,7 +496,7 @@
 	
 	NSLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
-          [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 	NSString *msg = [NSString stringWithFormat: @"Connection failed. Please make sure you are connected to the internet and try again. We will try to display the last updated current status."];
 	// - %@",[error localizedDescription]
 	//load the table!!
@@ -503,11 +508,9 @@
 	
 }
 
-- (void) connectionDidFinishLoading:(NSURLConnection *)connection
-{
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection {
 	self.requestBody	= [[NSString alloc] initWithData:mReceivedData encoding:NSUTF8StringEncoding];
 	self.getInitialTimeStamp; //from inside this class
-	
 	//load the table!!
 	[self showTableData];	
 	[self stopAnimation];
@@ -573,14 +576,12 @@
 
 /* show the user that loading activity has stopped */
 
-- (void) stopAnimation
-{
+- (void) stopAnimation {
 	UIApplication *application = [UIApplication sharedApplication];
 	application.networkActivityIndicatorVisible = NO;
 }
 
-- (void) showAlertTitle:(NSString *) Title Text: (NSString *) Text
-{
+- (void) showAlertTitle:(NSString *) Title Text: (NSString *) Text {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:Title 
 													message:Text
 												   delegate:self
@@ -591,7 +592,7 @@
 }
 
 
-- (IBAction) addLine:(id)sender{
+- (IBAction) addLine:(id)sender {
 	//open a model view
 	//in modal view have a drop down list to select a line
 	//on select - add that line to the array here
@@ -604,7 +605,7 @@
 	// Create the navigation controller and present it modally.
 	UINavigationController *modalNavigationController = [[UINavigationController alloc] initWithRootViewController:favoriteLinesManager];
 
-	modalNavigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+	modalNavigationController.navigationBar.barStyle = UIBarStyleDefault;
 	modalNavigationController.title = @"Choose A Line";
 	
 	//ACTION: Done
@@ -613,7 +614,8 @@
 	//ACTION: Cancel
 	favoriteLinesManager.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)] autorelease];
 
-	[self presentModalViewController:modalNavigationController animated:YES];
+	[self presentViewController:modalNavigationController animated:YES completion:nil];
+
 	
 	// The navigation controller is now owned by the current view controller
 	// and the root view controller is owned by the navigation controller,
@@ -636,14 +638,14 @@
 		[self reloadDataWithFavoriteLinesInBulk: [appDelegate rowsSelectedArray]];
 	}
 	
-		[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // Tell the delegate about the cancellation.
-- (void)cancelAction:(id)sender
-{
+- (void)cancelAction:(id)sender {
 	NSLog(@"cancel modal view");
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 - (void) reloadDataWithFavoriteLinesInBulk:(NSArray*)value { 
@@ -659,13 +661,11 @@
 
 //For Later to do likefoursquare drag to refresh
 #pragma mark Scrolling Overrides
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 //	NSLog(@"scrollViewWillBeginDragging");
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 	/*
 	if (reloading) return;
 	
@@ -690,8 +690,7 @@
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
-				  willDecelerate:(BOOL)decelerate
-{
+				  willDecelerate:(BOOL)decelerate {
 	/*
 	if (reloading) return;
 	
@@ -736,7 +735,7 @@
 	[blogEntries2 release];
 	[blogEntries3 release];
 	[blogEntries4 release];
-//	[CXMLDocument release];
+	[CXMLDocument release];
 	[mReceivedData release];
 	[serviceDetailController release];
     [super dealloc];
