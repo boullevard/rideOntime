@@ -11,9 +11,9 @@
 
 #import "TapDetectingImageView.h"
 
-	
+
 @interface MapsViewController : UIViewController <UIScrollViewDelegate, TapDetectingImageViewDelegate> {
-	UIScrollView *imageScrollView;
+    UIScrollView *imageScrollView;
 }
 
 

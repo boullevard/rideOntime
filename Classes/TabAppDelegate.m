@@ -23,7 +23,7 @@
     //added to boullevard/rideOntime does this workx    
     // Override point for customization after application launch
 	
-    //new Flurry v3.0.5
+    //new Flurry v5.4.0
     [Flurry startSession:@"JAZA3I6RV59MBFAW6UNM"];
 	
     //init stuff 
@@ -184,6 +184,7 @@
     }
 }
 
+
 - (NSString *) getTimeStamp{
 	if (!timeStamp){
 		return [self retrieveTimeStampFromUserDefaults];
@@ -199,7 +200,7 @@
 	if ([rowsSelectedArray count] == 0){
 		rowsSelectedArray = [[NSMutableArray alloc] init];
 	}
-	[rowsSelectedArray addObject:[NSNumber numberWithInt:value]];
+    [rowsSelectedArray addObject:[NSNumber numberWithInteger:value]];
 	NSLog (@"!!!!! addObjectTorowSelectedArray rowsSelectedArray  %@ ",rowsSelectedArray  );
 }
 

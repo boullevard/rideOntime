@@ -11,6 +11,7 @@
 #import "MapsViewController.h"
 #import "Flurry.h"
 
+
 @interface MapsViewController ()
 
 @end
@@ -28,14 +29,16 @@ NSMutableArray *spreadImageNames;
 
 UIView *imageContainerView;
 bool  isZoomed = NO;
+NSString *subwayImageName = @"subwaymap-September14-4000.jpg";
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self setupScrollContent];
     [self setupTouchEvents];
+    
     [Flurry logEvent:@"MapsViewController"];
 }
 
@@ -44,15 +47,13 @@ bool  isZoomed = NO;
 
 - (void)setupScrollContent {
     
-   // self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-40)];
-    
     CGFloat scrollWidth = self.view.bounds.size.width+168;
     imageContainerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, scrollWidth, self.scrollView.frame.size.height)];
     
     CGFloat maxHeight = 0.0;
     UIImage *subwayImage;
-    
-    subwayImage = [UIImage imageNamed:@"subwaymap250.png"];
+    //map update april 15, 2014 - downlaoded pdf from mta website then selected it and imported it in photoshop then blew the width of the image to 4000 from like 700
+    subwayImage = [UIImage imageNamed:subwayImageName];
     
     CGFloat scale = scrollWidth / subwayImage.size.width;
     UIImageView *atImageView = [[UIImageView alloc]
@@ -81,9 +82,8 @@ bool  isZoomed = NO;
     self.scrollView.contentSize = imageContainerView.bounds.size;
 }
 
--(void) setupTouchEvents
+-(void) setupTouchEvents //setup for double taps
 {
-    
     
     UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
     doubleTapRecognizer.numberOfTapsRequired = 2;
@@ -92,6 +92,7 @@ bool  isZoomed = NO;
     
     
 }
+
 
 - (void)scrollViewDoubleTapped:(UITapGestureRecognizer *)recognizer
 {

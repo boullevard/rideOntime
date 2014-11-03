@@ -510,7 +510,7 @@
 
 - (void) connectionDidFinishLoading:(NSURLConnection *)connection {
 	self.requestBody	= [[NSString alloc] initWithData:mReceivedData encoding:NSUTF8StringEncoding];
-	self.getInitialTimeStamp; //from inside this class
+	//self.getInitialTimeStamp; //from inside this class
 	//load the table!!
 	[self showTableData];	
 	[self stopAnimation];
